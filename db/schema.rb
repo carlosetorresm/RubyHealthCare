@@ -10,39 +10,91 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_19_022545) do
+ActiveRecord::Schema.define(version: 2020_05_19_093754) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "cities", force: :cascade do |t|
-    t.bigint "state_id"
-    t.string "name"
+  create_table "active_storage_attachments", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.bigint "blob_id", null: false
     t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["state_id"], name: "index_cities_on_state_id"
+    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
+    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
   end
 
-  create_table "countries", force: :cascade do |t|
+  create_table "active_storage_blobs", force: :cascade do |t|
+    t.string "key", null: false
+    t.string "filename", null: false
+    t.string "content_type"
+    t.text "metadata"
+    t.bigint "byte_size", null: false
+    t.string "checksum", null: false
+    t.datetime "created_at", null: false
+    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
+
+  create_table "doctors", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
     t.string "name"
+    t.string "lastname"
+    t.string "license"
+    t.bigint "speciality_id"
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.integer "cellphone"
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_doctors_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_doctors_on_reset_password_token", unique: true
+    t.index ["speciality_id"], name: "index_doctors_on_speciality_id"
+  end
+
+  create_table "patients", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "name"
+    t.string "lastname"
+    t.datetime "birth"
+    t.text "allergy"
+    t.text "chronic_diseases"
+    t.text "surgeries"
+    t.string "address"
+    t.string "city"
+    t.string "state"
+    t.string "country"
+    t.integer "cellphone"
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_patients_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_patients_on_reset_password_token", unique: true
   end
 
   create_table "specialities", force: :cascade do |t|
     t.string "name"
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "states", force: :cascade do |t|
-    t.bigint "country_id"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["country_id"], name: "index_states_on_country_id"
-  end
-
-  add_foreign_key "cities", "states"
-  add_foreign_key "states", "countries"
+  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
 end

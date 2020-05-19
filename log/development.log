@@ -1734,3 +1734,1125 @@ Completed 200 OK in 1505ms (Views: 1504.5ms | ActiveRecord: 0.0ms)
 
 
 >>>>>>> bf601a803994c845a0bafd8e681d7ed118700c23
+  [1m[35m (47.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (20.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (400.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "RubyHealthCare"[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (277.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "RubyHealthCare_test"[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2037.4ms)[0m  [1m[35mCREATE DATABASE "RubyHealthCare" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (787.5ms)[0m  [1m[35mCREATE DATABASE "RubyHealthCare_test" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (100.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (106.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateSpecialities (20200519022545)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (123.0ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519022545_create_specialities.rb:3
+  [1m[35m (1.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateSpecialities (20200519022545)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (89.1ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519022545_create_specialities.rb:3
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateSpecialities (20200519022545)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (110.6ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519022545_create_specialities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519022545"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (19.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateDoctors (20200519023736)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (64.3ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "name" character varying, "lastname" character varying, "license" character varying, "speciality_id" bigint, "address" character varying, "city" character varying, "state" character varying, "country" character varying, "cellphone" integer, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:5
+  [1m[35m (61.9ms)[0m  [1m[35mCREATE  INDEX  "index_doctors_on_speciality_id" ON "doctors"  ("speciality_id")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:5
+  [1m[35m (39.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_doctors_on_email" ON "doctors"  ("email")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:50
+  [1m[35m (40.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_doctors_on_reset_password_token" ON "doctors"  ("reset_password_token")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:51
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519023736"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (12.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreatePatients (20200519023745)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (107.0ms)[0m  [1m[35mCREATE TABLE "patients" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "name" character varying, "lastname" character varying, "birth" timestamp, "allergy" text, "chronic_diseases" text, "surgeries" text, "address" character varying, "city" character varying, "state" character varying, "country" character varying, "cellphone" integer, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:5
+  [1m[35m (44.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_patients_on_email" ON "patients"  ("email")[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:52
+  [1m[35m (39.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_patients_on_reset_password_token" ON "patients"  ("reset_password_token")[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:53
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519023745"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (12.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateActiveStorageTables (20200519090924)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (72.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (51.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (89.6ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (37.1ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (50.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519090924"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (18.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-19 09:37:30.180209"], ["updated_at", "2020-05-19 09:37:30.180209"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (30.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to Insert (20200519093754)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to Insert (20200519093754)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mSpeciality Create (1.8ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Alergologia"], ["description", "La Alergología es la especialidad médica que comprende el conocimiento, diagnóstico y tratamiento de la patología producida por mecanismos inmunológicos, con las técnicas que le son propias; con especial atención a la alergia."], ["created_at", "2020-05-19 09:38:59.923959"], ["updated_at", "2020-05-19 09:38:59.923959"]]
+  ↳ db/migrate/20200519093754_insert.rb:4
+  [1m[36mSpeciality Create (0.7ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cardiología"], ["description", "La cardiología es la especialidad médica que se ocupa de las afecciones del corazón y del aparato circulatorio."], ["created_at", "2020-05-19 09:38:59.928463"], ["updated_at", "2020-05-19 09:38:59.928463"]]
+  ↳ db/migrate/20200519093754_insert.rb:5
+  [1m[36mSpeciality Create (0.6ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dermatología"], ["description", "La dermatología es la especialidad médica encargada del estudio de la piel, su estructura, función y enfermedades."], ["created_at", "2020-05-19 09:38:59.931160"], ["updated_at", "2020-05-19 09:38:59.931160"]]
+  ↳ db/migrate/20200519093754_insert.rb:6
+  [1m[36mSpeciality Create (0.6ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gastroenterología"], ["description", "La gastroenterología es la rama del Aparato Digestivo que comprende el diagnóstico y tratamiento de pacientes con afecciones del esófago, estómago, intestino delgado, colon, recto y páncreas."], ["created_at", "2020-05-19 09:38:59.933704"], ["updated_at", "2020-05-19 09:38:59.933704"]]
+  ↳ db/migrate/20200519093754_insert.rb:7
+  [1m[36mSpeciality Create (0.8ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Genética"], ["description", "La genética es el campo de las ciencias biológicas que trata de comprender cómo la herencia biológica es transmitida de una generación a la siguiente, y cómo se efectúa el desarrollo de las características que controlan estos procesos."], ["created_at", "2020-05-19 09:38:59.936062"], ["updated_at", "2020-05-19 09:38:59.936062"]]
+  ↳ db/migrate/20200519093754_insert.rb:8
+  [1m[36mSpeciality Create (0.7ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Geriatría"], ["description", "La Geriatría es la especialidad médica que se ocupa de los aspectos preventivos, curativos y de la rehabilitación de las enfermedades del adulto en senectud."], ["created_at", "2020-05-19 09:38:59.939122"], ["updated_at", "2020-05-19 09:38:59.939122"]]
+  ↳ db/migrate/20200519093754_insert.rb:9
+  [1m[36mSpeciality Create (0.8ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ginecología"], ["description", "Ginecología es la especialidad médica y quirúrgica que trata las enfermedades del sistema reproductor femenino (útero, vagina y ovarios) y de la reproducción."], ["created_at", "2020-05-19 09:38:59.941929"], ["updated_at", "2020-05-19 09:38:59.941929"]]
+  ↳ db/migrate/20200519093754_insert.rb:10
+  [1m[36mSpeciality Create (0.6ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Neurología"], ["description", "La neurología es la especialidad médica que trata los trastornos del sistema nervioso."], ["created_at", "2020-05-19 09:38:59.944824"], ["updated_at", "2020-05-19 09:38:59.944824"]]
+  ↳ db/migrate/20200519093754_insert.rb:11
+  [1m[36mSpeciality Create (0.5ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pediatría"], ["description", "La pediatría es la especialidad médica que estudia al niño y sus enfermedades."], ["created_at", "2020-05-19 09:38:59.947267"], ["updated_at", "2020-05-19 09:38:59.947267"]]
+  ↳ db/migrate/20200519093754_insert.rb:12
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519093754"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mSpeciality Load (0.7ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2020-05-19 05:31:57 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (34.0ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 5270ms (Views: 5257.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctor" for 127.0.0.1 at 2020-05-19 05:32:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctor"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctor/sign_in" for 127.0.0.1 at 2020-05-19 05:32:40 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctor/sign_in"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 05:32:46 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (3.5ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (193.6ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 402ms (Views: 324.1ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2020-05-19 05:32:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctors"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors/log_in" for 127.0.0.1 at 2020-05-19 05:33:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctors/log_in"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 05:33:08 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 05:33:10 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered doctors/shared/_links.html.erb (2.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (76.5ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/patients/sign_up" for 127.0.0.1 at 2020-05-19 05:33:18 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering patients/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered patients/shared/_links.html.erb (2.2ms)
+  Rendered patients/registrations/new.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 152ms (Views: 91.9ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 12:50:32 -0500
+  [1m[35m (33.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 1044ms (Views: 1029.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 12:50:41 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (125.7ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 375ms (Views: 199.4ms | ActiveRecord: 120.1ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2020-05-19 12:50:47 -0500
+Processing by Doctors::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Yv9IQMnx2xywnHq9unLZq1xV/ID2qThzi5jj/TTSwldQRFjmUfXtb1be8+TILVErrWiOCOKWfhtEs3Pf1qUiQ==", "doctor"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.9ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 135ms (Views: 88.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/registro_medicos" for 127.0.0.1 at 2020-05-19 13:10:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/registro_medicos"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/registro_medicos/RegistroMedicos" for 127.0.0.1 at 2020-05-19 13:10:41 -0500
+Processing by RegistroMedicosController#RegistroMedicos as HTML
+  Rendering registro_medicos/RegistroMedicos.html.erb within layouts/application
+  Rendered registro_medicos/RegistroMedicos.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "//registro_medicos/RegistroMedicos" for 127.0.0.1 at 2020-05-19 13:11:02 -0500
+Processing by RegistroMedicosController#RegistroMedicos as HTML
+  Rendering registro_medicos/RegistroMedicos.html.erb within layouts/application
+  Rendered registro_medicos/RegistroMedicos.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 83ms (Views: 80.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 13:11:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 56.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 13:11:13 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "//registro_medicos/RegistroMedicos" for 127.0.0.1 at 2020-05-19 13:57:49 -0500
+Processing by RegistroMedicosController#RegistroMedicos as HTML
+  Rendering registro_medicos/RegistroMedicos.html.erb within layouts/application
+  Rendered registro_medicos/RegistroMedicos.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "//registro_medicos/RegistroMedicos" for 127.0.0.1 at 2020-05-19 14:08:06 -0500
+Processing by RegistroMedicosController#RegistroMedicos as HTML
+  Rendering registro_medicos/RegistroMedicos.html.erb within layouts/application
+  Rendered registro_medicos/RegistroMedicos.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 68ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:08:13 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 83.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:08:58 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 72.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2020-05-19 14:09:08 -0500
+Processing by Doctors::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oKSQ9asbHPXF3wLoEv1wVQ/gHdu0CVAOltpBB8yRXNmwvD3Wqcnoiy1H5ClpGf97hjMmAOZ1lPZDtN8Cqb7yjA==", "doctor"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (1.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.9ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 92ms (Views: 76.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2020-05-19 14:14:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctors"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors" for 127.0.0.1 at 2020-05-19 14:14:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctors"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "//r" for 127.0.0.1 at 2020-05-19 14:14:31 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/r"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-05-19 14:14:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 224ms (Views: 222.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:24:20 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered doctors/shared/_links.html.erb (2.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 85ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:24:20 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 96ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:25:34 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 2954ms (Views: 2951.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:25:38 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 82ms (Views: 80.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:30:59 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 126ms (Views: 124.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:31:00 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered doctors/shared/_links.html.erb (1.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:31:33 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (22.2ms)
+  Rendered layouts/_alerts.html.erb (1.6ms)
+Completed 200 OK in 129ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:31:44 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 83ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:32:04 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:32:06 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (2.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.2ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 77.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:32:16 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:32:22 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:32:33 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:33:47 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:34:05 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:34:40 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 80ms (Views: 78.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:34:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 94ms (Views: 91.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:34:56 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 88ms (Views: 85.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:03 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 83ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:12 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:15 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:31 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:35 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 92ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:39 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:35:44 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 80ms (Views: 78.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:36:55 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.7ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 81ms (Views: 79.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:36:58 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 78ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:37:41 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 14:37:43 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (2.6ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (60.0ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 129ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:37:46 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered doctors/shared/_links.html.erb (2.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 91ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:39:26 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.4ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:39:33 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 86.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:39:39 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 82ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:47:19 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:26: syntax error, unexpected constant, expecting ')'
+...end=( f.label :Telefono Celular );@output_buffer.safe_append...
+...                        ^~~~~~~
+):
+  
+app/views/doctors/registrations/new.html.erb:26: syntax error, unexpected constant, expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:47:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 87ms (Views: 84.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:47:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (27.7ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 110ms (Views: 107.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:47:57 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered doctors/shared/_links.html.erb (1.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (10.7ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 68ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:48:06 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:48:12 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (3.5ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 77ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:48:15 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (2.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:48:30 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:52:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (3.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:52:38 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 85.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:52:43 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:53:13 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.5ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 88ms (Views: 86.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:55:54 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/shared/_links.html.erb (2.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (57.0ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 125ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:56:47 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 89ms (Views: 86.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:56:53 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered doctors/shared/_links.html.erb (2.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:57:04 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 14:57:23 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 15:03:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.0ms)
+
+

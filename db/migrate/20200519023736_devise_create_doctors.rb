@@ -7,6 +7,17 @@ class DeviseCreateDoctors < ActiveRecord::Migration[5.2]
       t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
+      #Datos del usuario
+      t.string :name
+      t.string :lastname
+      t.string :license
+      t.belongs_to :speciality
+      t.string :address
+      t.string :city
+      t.string :state
+      t.string :country
+      t.integer :cellphone
+
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
@@ -32,7 +43,7 @@ class DeviseCreateDoctors < ActiveRecord::Migration[5.2]
       # t.string   :unlock_token # Only if unlock strategy is :email or :both
       # t.datetime :locked_at
 
-      
+
       t.timestamps null: false
     end
 

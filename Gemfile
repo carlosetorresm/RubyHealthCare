@@ -3,8 +3,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+# Configura un servicio de sesiones seguro y rapido
 gem 'devise'
+# Recupera la información de paises, estados y ciudades de la bd de max mind
 gem 'city-state'
+# Recupera tu imagen de perfil universal de tu correo, esta en toda app de wordpress
+gem 'gravtastic'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
