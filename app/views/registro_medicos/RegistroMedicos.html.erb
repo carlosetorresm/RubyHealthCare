@@ -1,17 +1,92 @@
-<div class="formulario">
+<div class="container">
+    <div class="formulario">
 
-  <%= form_tag :action => 'RegistroMedicos' do %>
+    <%= form_tag :action => 'RegistroMedicos' do %>
 
-    <div>
-      <label>Nombre</label>
-      <%= text_field_tag 'nombre' %>
-    </div>
+      <p class="seccion">Datos primordiales</p>
 
-    <%= submit_tag 'Registrarse' %>
+      <div>
+        <label class="texto-fomr">Nombre</label>
+        <%= text_field_tag 'nombre' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Apellido paterno</label>
+        <%= text_field_tag 'apePaterno' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Apellido materno</label>
+        <%= text_field_tag 'apeMaterno' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Especialidad</label>
+        <%= text_field_tag 'especialidad' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Cédula</label>
+        <%= text_field_tag 'cedula' %>
+      </div>
 
-<% end %>
+      <br><br>
+      <p class="seccion">Donde vive</p>
 
+      <div>
+        <label class="texto-fomr">Dirección</label>
+        <%= text_field_tag 'direccion' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">País</label>
+        <%= text_field_tag 'pais' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Estado</label>
+        <%= text_field_tag 'estado' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Municipio</label>
+        <%= text_field_tag 'municipio' %>
+      </div>
+
+      <br><br>
+      <p class="seccion">Datos de inicio de contacto</p>
+
+      <div>
+        <label class="texto-fomr">Teléfono móvil</label>
+        <%= text_field_tag 'telMovil' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Correo Electrónico</label>
+        <%= text_field_tag 'email' %>
+      </div>
+
+      <br><br>
+      <p class="seccion">Datos de inicio de sesión</p>
+
+      <div>
+        <label class="texto-fomr">Usuario</label>
+        <%= text_field_tag 'usuario' %>
+      </div>
+      <br>
+      <div>
+        <label class="texto-fomr">Contraseña</label>
+        <%= text_field_tag 'contrasenia' %>
+      </div>
+
+
+      <br><br>
+      <div class="enviar">
+        <%= submit_tag 'Registrarse' %>
+      </div>
+
+
+  <% end %>
+
+  </div>
 </div>
-
-<br>
-El ultimo nombre registrado fue <%= @nombre %>
