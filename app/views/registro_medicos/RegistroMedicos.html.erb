@@ -1,0 +1,17 @@
+<div class="formulario">
+
+  <%= form_tag :action => 'RegistroMedicos' do %>
+
+    <div>
+      <label>Nombre</label>
+      <%= text_field_tag 'nombre' %>
+    </div>
+
+    <%= submit_tag 'Registrarse' %>
+
+<% end %>
+
+</div>
+
+<br>
+El ultimo nombre registrado fue <%= @nombre %>
