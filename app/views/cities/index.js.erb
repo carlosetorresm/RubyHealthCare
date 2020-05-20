@@ -1,30 +1,26 @@
 // Find the state select box
-var dcity = document.getElementById("doctor_city");
-
+var city = document.getElementById("doctor_city");
+if ( city == null )
+{
+    city = document.getElementById("patient_city");
+}
 // Clear the options in the select box
-while (dcity.firstChild) city.removeChild(dcity.firstChild);
+while (city.firstChild) city.removeChild(city.firstChild);
 
 // Add a placeholder
 var placeholder = document.createElement("option");
 placeholder.text = "Ciudad";
 placeholder.value = "";
-dcity.appendChild(placeholder);
+city.appendChild(placeholder);
 
 // Add the states
-<% @dcities.each do |c| %>
-    dcity.options[dcity.options.length] = new Option('<%= c %>');
-<% end %>
-
-// Find the state select box
-var pcity = document.getElementById("patient_city");
-
-// Clear the options in the select box
-while (pcity.firstChild) city.removeChild(pcity.firstChild);
-
-// Add a placeholder
-pcity.appendChild(placeholder);
-
-// Add the states
-<% @pcities.each do |c| %>
-    pcity.options[pcity.options.length] = new Option('<%= c %>');
-<% end %>
+if(city == document.getElementById("doctor_city"))
+{
+    <% @dcities.each do |c| %>
+        city.options[city.options.length] = new Option('<%= c %>');
+    <% end %>
+}else{
+    <% @pcities.each do |c| %>
+        city.options[city.options.length] = new Option('<%= c %>');
+    <% end %>
+}

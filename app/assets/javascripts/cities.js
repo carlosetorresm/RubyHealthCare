@@ -6,31 +6,32 @@ document.addEventListener("turbolinks:load", function(){
   var pcountry = document.getElementById("patient_country");
   var pstate = document.getElementById("patient_state");
 
-  dcountry.addEventListener("change", function(){
-    Rails.ajax({
-      url: "/states?dcountry=" + dcountry.value,
-      type: "GET"
+  if (pcountry != null)
+  {
+    pcountry.addEventListener("change", function(){
+      Rails.ajax({
+        url: "/states?pcountry=" + pcountry.value,
+        type: "GET"
+      })
+    })  
+    pstate.addEventListener("change", function(){
+      Rails.ajax({
+        url: "/cities?pcountry=" + pcountry.value + "&pstate=" + pstate.value,
+        type: "GET"
+      })
     })
-  })
-
-  dstate.addEventListener("change", function(){
-    Rails.ajax({
-      url: "/cities?dcountry=" + dcountry.value + "&dstate=" + dstate.value,
-      type: "GET"
+  }else{
+    dcountry.addEventListener("change", function(){
+      Rails.ajax({
+        url: "/states?dcountry=" + dcountry.value,
+        type: "GET"
+      })
     })
-  })
-
-  pcountry.addEventListener("change", function(){
-    Rails.ajax({
-      url: "/states?pcountry=" + pcountry.value,
-      type: "GET"
+    dstate.addEventListener("change", function(){
+      Rails.ajax({
+        url: "/cities?dcountry=" + dcountry.value + "&dstate=" + dstate.value,
+        type: "GET"
+      })
     })
-  })
-
-  pstate.addEventListener("change", function(){
-    Rails.ajax({
-      url: "/cities?pcountry=" + pcountry.value + "&pstate=" + pstate.value,
-      type: "GET"
-    })
-  })
+  }
 })

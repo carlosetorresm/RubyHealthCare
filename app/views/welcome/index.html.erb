@@ -1,21 +1,7 @@
-<div class="container">
- <div class="row text-center">
-   <div class="col-sm-6">
-     <h3><%=link_to "Registrarse como Medico", new_doctor_registration_path%></h3></br>
-     <h3><%=link_to "Iniciar sesión como Medico", new_doctor_session_path%></h3>
-   </div>
-
-   <div class="col-sm-6">
-     <a href="/registro_pacientes/RegistroPacientes">
-       <p>Registrarse como</p>
-       <h3>paciente</h3>
-     </a>
-   </div>
- </div>
-
- <div class="text-center">
-   <p>Si ya estas registrado puedes iniciar sesión</p>
-   <button type="button" class="btn btn-success">Aquí</button>
- </div>
-
-</div>
+<%if doctor_signed_in? %>
+        <h3>Bienvenido <%= current_doctor.name %></h3>
+    <%end%>
+    <%if patient_signed_in? %>
+        <h3>Bienvenido <%= current_patient.name %></h3>
+    <%end%>
+<%= render 'partials/login'%>

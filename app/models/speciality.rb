@@ -1,3 +1,3 @@
 class Speciality < ApplicationRecord
-    has_many :doctors
+    has_many :doctor
 end

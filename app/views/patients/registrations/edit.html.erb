@@ -1,23 +1,106 @@
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
+<h2>Editar Perfil de <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  
+<%-# Imagen de perfil -%>  
+  <div class="row">
+    <div class="col-sm-1">
+      <%= image_tag user_avatar(resource, 100), class: "img-circle" %>
+    </div>
+    <div class="col-sm-4">
+      <%= f.file_field :avatar %>
+    </div>
   </div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
+<p></p>
+<%-# Nombre y Apellidos -%>
+  <div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :'Nombre(s)' %><br />
+      <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+    </div>
+    <div class="col-sm-2 field">
+      <%= f.label :'Apellido(s)' %><br />
+      <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
+    </div>
+  </div>
+<p></p>
+<%-# Fecha de nacimiento y Numero telefonico -%>
+  <div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :Fecha_de_Nacimiento %><br />
+      <%= f.date_field :birth, autofocus: true, autocomplete: "email" %>
+    </div>
+    <div class="col-sm-2 field">
+      <%= f.label :Numero_de_Teléfono %><br />
+      <%= f.text_field :cellphone, autofocus: true%>
+    </div>
+  </div>
+<p></p>
+<%-# Alergias, enfermedades cronicas y cirugía -%>
+  <div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :Alergias %><br />
+      <%= f.text_area :allergy, :cols => 45, :rows => 5 %>
+    </div>
+  </div>
+<p></p>
+<div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :Enfermedades_cronicas %>
+      <%= f.text_area :chronic_diseases, :cols => 45, :rows => 5 %>
+    </div>
+  </div>
+<p></p>
+<div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :Cirugía_recibida %>
+      <%= f.text_area :surgeries, :cols => 45, :rows => 5  %>
+    </div>
+  </div>
+<p></p>
+<%-# Pais -%>
+  <div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :Pais %>
+      <%= f.text_field :country, autofocus: true %>
+    </div>
+    <div class="col-sm-2 field">
+      <%= f.label :Estado %>
+      <%= f.text_field :state, autofocus: true %>
+    </div>
+  </div>
+<p></p>
+<%-# Ciudad -%>
+  <div class="row">
+    <div class="col-sm-2 field">
+      <%= f.label :Ciudad %>
+      <%= f.text_field :city, autofocus: true %>
+    </div>
+    <div class="col-sm-2 field">
+      <%= f.label :Dirección %><br />
+      <%= f.text_field :address, autofocus: true %>
+    </div>
+  </div>
+<p></p>
+<%-# Correo -%>
+  <div class="row">
+    <div class="col-sm-2  field">
+      <%= f.label :Email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+      <div>Esperando por confirmación de: <%= resource.unconfirmed_email %></div>
+    <% end %>
+  </div>
+<p></p>
 
   <div class="field">
-    <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+    <%= f.label :Contraseña %> <i>(Dejelo en blanco si no desea cambiar su contraseña)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
     <% if @minimum_password_length %>
       <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+      <em><%= @minimum_password_length %> caracteres minimos</em>
     <% end %>
   </div>
 
@@ -27,7 +110,7 @@
   </div>
 
   <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.label :Contraseña_actual %> <i>(Ingresa tu contraseña para guardar los cambios)</i><br />
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
 

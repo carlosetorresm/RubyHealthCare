@@ -8,7 +8,7 @@ gem 'devise'
 # Recupera la información de paises, estados y ciudades de la bd de max mind
 gem 'city-state', '~> 0.1.0'
 # Recupera tu imagen de perfil universal de tu correo, esta en toda app de wordpress
-gem 'gravtastic'
+gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
@@ -37,7 +37,7 @@ gem 'bootstrap-sass'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+ gem 'mini_magick', '~> 4.8'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

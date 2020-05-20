@@ -1,31 +1,28 @@
 // Find the state select box
-var dstate = document.getElementById("doctor_state");
+var state = document.getElementById("doctor_state");
+if ( state == null )
+{
+    state = document.getElementById("patient_state");
+}
 
 // Clear the options in the select box
-while (dstate.firstChild) dstate.removeChild(dstate.firstChild);
+while (state.firstChild) state.removeChild(state.firstChild);
 
 // Add a placeholder
 var placeholder = document.createElement("option");
-placeholder.text = "Choose a state";
+placeholder.text = "Estados";
 placeholder.value = "";
 placeholder.placeholder = true;
-dstate.appendChild(placeholder);
+state.appendChild(placeholder);
 
 // Add the states
-<% @dstates.each do |s| %>
-dstate.options[dstate.options.length] = new Option('<%= s[1] %>', '<%= s[0] %>');
-<% end %>
-
-// Find the state select box
-var pstate = document.getElementById("patient_state");
-
-// Clear the options in the select box
-while (pstate.firstChild) state.removeChild(pstate.firstChild);
-
-// Add a placeholder
-pstate.appendChild(placeholder);
-
-// Add the states
-<% @pstates.each do |s| %>
-pstate.options[pstate.options.length] = new Option('<%= s[1] %>', '<%= s[0] %>');
-<% end %>
+if ( state == document.getElementById("doctor_state") )
+{
+    <% @dstates.each do |s| %>
+        state.options[state.options.length] = new Option('<%= s[1] %>', '<%= s[0] %>');
+    <% end %>
+}else{
+    <% @pstates.each do |s| %>
+        state.options[state.options.length] = new Option('<%= s[1] %>', '<%= s[0] %>');
+    <% end %>
+}
