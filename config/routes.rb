@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  get 'medicos_registrar_servicio/MedicosRegistrarServicio'
+  get 'pacientes_menu/PacientesMenu'
+  
+  get 'medicos_menu/MedicosMenu'
+
   get 'registro_pacientes/RegistroPacientes'
   post 'registro_pacientes/RegistroPacientes'
 
   get 'registro_medicos/RegistroMedicos'
   post 'registro_medicos/RegistroMedicos'
-  
+
   get 'registro_medicos/new'
   get 'registro_medicos/create'
 

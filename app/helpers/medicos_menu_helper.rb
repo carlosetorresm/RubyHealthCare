@@ -1,0 +1,2 @@
+module MedicosMenuHelper
+end

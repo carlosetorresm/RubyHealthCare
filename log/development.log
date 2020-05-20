@@ -3261,3 +3261,219 @@ Processing by RegistroMedicosController#RegistroMedicos as HTML
 Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-05-19 21:38:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 3884ms (Views: 3882.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 21:38:52 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:39:09 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:43:28 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 2010ms (Views: 2008.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:44:06 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 2023ms (Views: 2021.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:44:38 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 1921ms (Views: 1920.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:45:02 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 1990ms (Views: 1989.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:46:00 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1917ms (Views: 1916.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:46:39 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 1952ms (Views: 1951.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:47:15 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 1936ms (Views: 1934.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:47:19 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:48:30 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 2157ms (Views: 2155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:49:00 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 1993ms (Views: 1992.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:49:12 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2199ms (Views: 2197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:49:45 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:50:28 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (2.9ms)
+Completed 200 OK in 1884ms (Views: 1882.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:52:09 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2139ms (Views: 2138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:52:36 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 2020ms (Views: 2019.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:52:41 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:53:17 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1884ms (Views: 1883.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:53:21 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:53:32 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 2249ms (Views: 2247.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:54:46 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1915ms (Views: 1914.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:55:02 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (3.3ms)
+Completed 200 OK in 2428ms (Views: 2425.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 21:55:48 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2029ms (Views: 2027.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:55:55 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 131ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 21:56:09 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (4.4ms)
+Completed 200 OK in 203ms (Views: 201.9ms | ActiveRecord: 0.0ms)
+
+
