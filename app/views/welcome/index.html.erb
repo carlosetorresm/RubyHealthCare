@@ -1,16 +1,8 @@
 <div class="container">
-  <div class="jumbotron text-center">
-   <h2>Bienvenido al Sistema de Salud</h2>
-    <h1>Ruby Health Care</h1>
-    <p>Si eres nuevo, puedes registrarte a continuación</p>
-  </div>
-
  <div class="row text-center">
    <div class="col-sm-6">
-     <a href="/doctors/sign_up">
-       <p>Registrarse como</p>
-       <h3>médico</h3>
-     </a>
+     <h3><%=link_to "Registrarse como Medico", new_doctor_registration_path%></h3></br>
+     <h3><%=link_to "Iniciar sesión como Medico", new_doctor_session_path%></h3>
    </div>
 
    <div class="col-sm-6">

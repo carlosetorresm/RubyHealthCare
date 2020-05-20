@@ -7032,3 +7032,1792 @@ Completed 200 OK in 203ms (Views: 201.9ms | ActiveRecord: 0.0ms)
 >>>>>>> 7500b2aa6d98456ee61287332a160efd66000e91
 
 
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:22:37 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (235.7ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 6385ms (Views: 6196.0ms | ActiveRecord: 28.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 22:22:48 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 123ms (Views: 120.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 22:22:51 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 129ms (Views: 126.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 22:23:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 125ms (Views: 123.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:23:05 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (48.2ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 175ms (Views: 169.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 22:25:08 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 240ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 22:25:09 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 146ms (Views: 142.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 22:26:56 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 110ms (Views: 107.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:27:01 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (58.1ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 174ms (Views: 168.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 22:27:44 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.6ms)
+Completed 200 OK in 24ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 22:27:47 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.4ms)
+Completed 200 OK in 31ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:34:13 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (49.4ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 165ms (Views: 159.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:34:50 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (50.5ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 159ms (Views: 153.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:34:57 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.8ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 159ms (Views: 155.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:35:44 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (65.7ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 181ms (Views: 176.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:35:51 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 159ms (Views: 155.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:35:54 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (3.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (48.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 160ms (Views: 154.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:36:17 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (51.4ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 164ms (Views: 159.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:36:39 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 156ms (Views: 152.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:52:17 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (2.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 164ms (Views: 157.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 22:53:06 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.4ms)
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 22:53:09 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.5ms)
+Completed 200 OK in 28ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2020-05-19 22:53:29 -0500
+Processing by Doctors::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OjEJ2ifV+RCPDlCA6l5tNiGw+joW0sgjFHCpvgfcdb8qKaT5JQcNbmeWtkGRuuIYqGPB4USuDNvBHje7YvPb6g==", "doctor"=>{"name"=>"Carlos Eugenio", "lastname"=>"Torres Mota", "email"=>"14030641@itcelaya.edu.mx", "cellphone"=>"4615461152", "license"=>"6548611", "speciality_id"=>"5", "country"=>"MX", "state"=>"GUA", "city"=>"Celaya", "address"=>"Morelos #203", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[36mDoctor Exists (4.5ms)[0m  [1m[34mSELECT  1 AS one FROM "doctors" WHERE "doctors"."email" = $1 LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (3.2ms)
+  [1m[36mSpeciality Load (2.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (48.7ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 842ms (Views: 150.3ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 22:53:40 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.2ms)
+Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=MEX" for 127.0.0.1 at 2020-05-19 22:53:44 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"MEX"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (7.4ms)
+Completed 200 OK in 28ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 22:54:06 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (5.8ms)
+Completed 200 OK in 27ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MO" for 127.0.0.1 at 2020-05-19 22:54:47 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MO"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 1217ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 22:54:57 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.2ms)
+Completed 200 OK in 27ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 22:55:00 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.2ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MO" for 127.0.0.1 at 2020-05-19 22:55:35 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MO"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MC" for 127.0.0.1 at 2020-05-19 22:55:38 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MC"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.6ms)
+Completed 200 OK in 23ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=NG" for 127.0.0.1 at 2020-05-19 22:55:44 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"NG"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.2ms)
+Completed 200 OK in 1181ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=NG&dstate=ED" for 127.0.0.1 at 2020-05-19 22:55:47 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"NG", "dstate"=>"ED"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (5.6ms)
+Completed 200 OK in 36ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:55:57 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (52.7ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 163ms (Views: 159.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:57:06 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (55.6ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 279ms (Views: 275.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?dcountry=BR" for 127.0.0.1 at 2020-05-19 22:57:11 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"BR"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 1465ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=BR&dstate=MG" for 127.0.0.1 at 2020-05-19 22:57:14 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"BR", "dstate"=>"MG"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (10.0ms)
+Completed 200 OK in 134ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 22:57:31 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 37ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 22:57:36 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (7.3ms)
+Completed 200 OK in 32ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GRO" for 127.0.0.1 at 2020-05-19 22:57:45 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GRO"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.4ms)
+Completed 200 OK in 31ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 22:57:48 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.4ms)
+Completed 200 OK in 29ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:01:26 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 180ms (Views: 176.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?dcountry=MW" for 127.0.0.1 at 2020-05-19 23:01:37 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.9ms)
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 23:01:41 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 21ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=MEX" for 127.0.0.1 at 2020-05-19 23:01:54 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"MEX"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.6ms)
+Completed 200 OK in 30ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MO" for 127.0.0.1 at 2020-05-19 23:02:04 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MO"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.6ms)
+Completed 200 OK in 21ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=VE" for 127.0.0.1 at 2020-05-19 23:02:23 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"VE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 1226ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=VE&dstate=J" for 127.0.0.1 at 2020-05-19 23:02:26 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"VE", "dstate"=>"J"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (5.8ms)
+Completed 200 OK in 40ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:05:38 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.1ms)
+  [1m[36mSpeciality Load (3.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (57.2ms)
+  Rendered layouts/_alerts.html.erb (1.9ms)
+Completed 200 OK in 170ms (Views: 163.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/states?dcountry=TZ" for 127.0.0.1 at 2020-05-19 23:05:41 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"TZ"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 1262ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 23:05:45 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 25ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=COL" for 127.0.0.1 at 2020-05-19 23:05:47 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"COL"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (7.0ms)
+Completed 200 OK in 29ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=PE" for 127.0.0.1 at 2020-05-19 23:05:56 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"PE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 1164ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=PE&dstate=JUN" for 127.0.0.1 at 2020-05-19 23:06:02 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"PE", "dstate"=>"JUN"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (5.7ms)
+Completed 200 OK in 36ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:06:25 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (1.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (80.3ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 276ms (Views: 175.5ms | ActiveRecord: 33.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 23:07:27 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.3ms)
+Completed 200 OK in 22ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 23:07:29 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (5.9ms)
+Completed 200 OK in 28ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2020-05-19 23:07:46 -0500
+Processing by Doctors::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+guNMga0o+KPrcFLzDBj66CLAr9wNRlnqkZX2FayourqEyARBGZXnGc1J4q31OzFKVg5ZCJJ3Z9/KMndM50Mvw==", "doctor"=>{"name"=>"Carlos Eugenio", "lastname"=>"Torres Mota", "email"=>"14030641@itcelaya.edu.mx", "cellphone"=>"4611901091", "license"=>"3546843184318", "speciality_id"=>"5", "country"=>"MX", "state"=>"GUA", "city"=>"Celaya", "address"=>"Morelos #203", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[36mDoctor Exists (2.7ms)[0m  [1m[34mSELECT  1 AS one FROM "doctors" WHERE "doctors"."email" = $1 LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Completed 500 Internal Server Error in 415ms (ActiveRecord: 3.7ms)
+
+
+  
+ActiveModel::RangeError (4611901091 is out of range for ActiveModel::Type::Integer with limit 4 bytes):
+  
+activemodel (5.2.4.2) lib/active_model/type/integer.rb:53:in `ensure_in_range'
+activemodel (5.2.4.2) lib/active_model/type/integer.rb:29:in `serialize'
+activemodel (5.2.4.2) lib/active_model/attribute.rb:55:in `value_for_database'
+activerecord (5.2.4.2) lib/active_record/relation/query_attribute.rb:13:in `value_for_database'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/quoting.rb:145:in `block in type_casted_binds'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/quoting.rb:145:in `map'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/quoting.rb:145:in `type_casted_binds'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:608:in `exec_no_cache'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:598:in `execute_and_clear'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:81:in `exec_query'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:130:in `exec_insert'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/postgresql/database_statements.rb:115:in `exec_insert'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:162:in `insert'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/query_cache.rb:21:in `insert'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:187:in `_insert_record'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:734:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/counter_cache.rb:184:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/locking/optimistic.rb:70:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/attribute_methods/dirty.rb:140:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:346:in `block in _create_record'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:816:in `_run_create_callbacks'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:346:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/timestamp.rb:102:in `_create_record'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:705:in `create_or_update'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:342:in `block in create_or_update'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:816:in `_run_save_callbacks'
+activerecord (5.2.4.2) lib/active_record/callbacks.rb:342:in `create_or_update'
+activerecord (5.2.4.2) lib/active_record/persistence.rb:275:in `save'
+activerecord (5.2.4.2) lib/active_record/validations.rb:46:in `save'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:310:in `block (2 levels) in save'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:387:in `block in with_transaction_returning_status'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `block in transaction'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:239:in `block in within_new_transaction'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `synchronize'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/transaction.rb:236:in `within_new_transaction'
+activerecord (5.2.4.2) lib/active_record/connection_adapters/abstract/database_statements.rb:267:in `transaction'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:212:in `transaction'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:385:in `with_transaction_returning_status'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:310:in `block in save'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:325:in `rollback_active_record_state!'
+activerecord (5.2.4.2) lib/active_record/transactions.rb:309:in `save'
+activerecord (5.2.4.2) lib/active_record/suppressor.rb:44:in `save'
+devise (4.7.1) app/controllers/devise/registrations_controller.rb:19:in `create'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (5.2.4.2) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (25.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (365.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "RubyHealthCare"[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (231.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "RubyHealthCare_test"[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1831.9ms)[0m  [1m[35mCREATE DATABASE "RubyHealthCare" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (699.6ms)[0m  [1m[35mCREATE DATABASE "RubyHealthCare_test" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (92.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (85.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateSpecialities (20200519022545)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (125.7ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519022545_create_specialities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519022545"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (17.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateDoctors (20200519023736)
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (73.9ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "name" character varying, "lastname" character varying, "license" character varying, "speciality_id" bigint, "address" character varying, "city" character varying, "state" character varying, "country" character varying, "cellphone" character varying, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:5
+  [1m[35m (74.9ms)[0m  [1m[35mCREATE  INDEX  "index_doctors_on_speciality_id" ON "doctors"  ("speciality_id")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:5
+  [1m[35m (34.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_doctors_on_email" ON "doctors"  ("email")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:50
+  [1m[35m (39.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_doctors_on_reset_password_token" ON "doctors"  ("reset_password_token")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:51
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519023736"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (10.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreatePatients (20200519023745)
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (90.0ms)[0m  [1m[35mCREATE TABLE "patients" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "name" character varying, "lastname" character varying, "birth" timestamp, "allergy" text, "chronic_diseases" text, "surgeries" text, "address" character varying, "city" character varying, "state" character varying, "country" character varying, "cellphone" character varying, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:5
+  [1m[35m (39.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_patients_on_email" ON "patients"  ("email")[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:52
+  [1m[35m (38.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_patients_on_reset_password_token" ON "patients"  ("reset_password_token")[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:53
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519023745"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (19.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateActiveStorageTables (20200519090924)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (74.3ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (49.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (81.3ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (48.5ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (38.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519090924"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to Insert (20200519093754)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mSpeciality Create (1.9ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Alergologia"], ["description", "La Alergología es la especialidad médica que comprende el conocimiento, diagnóstico y tratamiento de la patología producida por mecanismos inmunológicos, con las técnicas que le son propias; con especial atención a la alergia."], ["created_at", "2020-05-20 04:09:49.182667"], ["updated_at", "2020-05-20 04:09:49.182667"]]
+  ↳ db/migrate/20200519093754_insert.rb:4
+  [1m[36mSpeciality Create (1.2ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cardiología"], ["description", "La cardiología es la especialidad médica que se ocupa de las afecciones del corazón y del aparato circulatorio."], ["created_at", "2020-05-20 04:09:49.188614"], ["updated_at", "2020-05-20 04:09:49.188614"]]
+  ↳ db/migrate/20200519093754_insert.rb:5
+  [1m[36mSpeciality Create (1.0ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dermatología"], ["description", "La dermatología es la especialidad médica encargada del estudio de la piel, su estructura, función y enfermedades."], ["created_at", "2020-05-20 04:09:49.192941"], ["updated_at", "2020-05-20 04:09:49.192941"]]
+  ↳ db/migrate/20200519093754_insert.rb:6
+  [1m[36mSpeciality Create (0.9ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gastroenterología"], ["description", "La gastroenterología es la rama del Aparato Digestivo que comprende el diagnóstico y tratamiento de pacientes con afecciones del esófago, estómago, intestino delgado, colon, recto y páncreas."], ["created_at", "2020-05-20 04:09:49.197176"], ["updated_at", "2020-05-20 04:09:49.197176"]]
+  ↳ db/migrate/20200519093754_insert.rb:7
+  [1m[36mSpeciality Create (1.0ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Genética"], ["description", "La genética es el campo de las ciencias biológicas que trata de comprender cómo la herencia biológica es transmitida de una generación a la siguiente, y cómo se efectúa el desarrollo de las características que controlan estos procesos."], ["created_at", "2020-05-20 04:09:49.201568"], ["updated_at", "2020-05-20 04:09:49.201568"]]
+  ↳ db/migrate/20200519093754_insert.rb:8
+  [1m[36mSpeciality Create (0.9ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Geriatría"], ["description", "La Geriatría es la especialidad médica que se ocupa de los aspectos preventivos, curativos y de la rehabilitación de las enfermedades del adulto en senectud."], ["created_at", "2020-05-20 04:09:49.205843"], ["updated_at", "2020-05-20 04:09:49.205843"]]
+  ↳ db/migrate/20200519093754_insert.rb:9
+  [1m[36mSpeciality Create (0.9ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ginecología"], ["description", "Ginecología es la especialidad médica y quirúrgica que trata las enfermedades del sistema reproductor femenino (útero, vagina y ovarios) y de la reproducción."], ["created_at", "2020-05-20 04:09:49.210373"], ["updated_at", "2020-05-20 04:09:49.210373"]]
+  ↳ db/migrate/20200519093754_insert.rb:10
+  [1m[36mSpeciality Create (0.9ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Neurología"], ["description", "La neurología es la especialidad médica que trata los trastornos del sistema nervioso."], ["created_at", "2020-05-20 04:09:49.214287"], ["updated_at", "2020-05-20 04:09:49.214287"]]
+  ↳ db/migrate/20200519093754_insert.rb:11
+  [1m[36mSpeciality Create (1.0ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pediatría"], ["description", "La pediatría es la especialidad médica que estudia al niño y sus enfermedades."], ["created_at", "2020-05-20 04:09:49.217961"], ["updated_at", "2020-05-20 04:09:49.217961"]]
+  ↳ db/migrate/20200519093754_insert.rb:12
+  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519093754"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (14.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-05-20 04:09:49.263548"], ["updated_at", "2020-05-20 04:09:49.263548"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:11:46 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 1043ms (Views: 1022.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:11:50 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (99.5ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 317ms (Views: 205.8ms | ActiveRecord: 32.9ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 23:12:19 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.5ms)
+Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 23:12:21 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.6ms)
+Completed 200 OK in 30ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2020-05-19 23:12:37 -0500
+Processing by Doctors::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iIKhCIafgHHXkuvfLdnCpArOoo23sm3tKh5CwYTN65owSE1KHP+QqBgL4fpIELyGCQpXR5fikPSJIuyBD0Q0Gg==", "doctor"=>{"name"=>"Carlos Eugenio", "lastname"=>"Torres Mota", "email"=>"14030641@itcelaya.edu.mx", "cellphone"=>"4611901091", "license"=>"224246546", "speciality_id"=>"5", "country"=>"MX", "state"=>"GUA", "city"=>"Celaya", "address"=>"Morelos #203", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[36mDoctor Exists (3.1ms)[0m  [1m[34mSELECT  1 AS one FROM "doctors" WHERE "doctors"."email" = $1 LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[36mDoctor Create (2.4ms)[0m  [1m[32mINSERT INTO "doctors" ("email", "encrypted_password", "name", "lastname", "license", "speciality_id", "address", "city", "state", "country", "cellphone", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["email", "14030641@itcelaya.edu.mx"], ["encrypted_password", "$2a$11$6kYrzy/RKJeeyExCJlYXO.8rGXzJk135hBL5DmXIzijZEmHt1v1/u"], ["name", "Carlos Eugenio"], ["lastname", "Torres Mota"], ["license", "224246546"], ["speciality_id", 5], ["address", "Morelos #203"], ["city", "Celaya"], ["state", "GUA"], ["country", "MX"], ["cellphone", "4611901091"], ["created_at", "2020-05-20 04:12:38.396795"], ["updated_at", "2020-05-20 04:12:38.396795"]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (12.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 442ms (ActiveRecord: 18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:12:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 111ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mDoctor Load (1.8ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" ORDER BY "doctors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:15:10 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 124ms (Views: 121.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 23:26:36 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 118ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:26:38 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (2.3ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 16ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:26:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 134ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/patients/sign_up" for 127.0.0.1 at 2020-05-19 23:26:46 -0500
+Processing by Patients::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (1.4ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:26:46 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/patients/sign_up" for 127.0.0.1 at 2020-05-19 23:26:52 -0500
+Processing by Patients::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (1.3ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:26:52 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 239ms (Views: 236.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:26:59 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (1.3ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 19ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:26:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 173ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 23:27:21 -0500
+Processing by Doctors::SessionsController#new as HTML
+  [1m[36mDoctor Load (1.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:27:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 111ms (Views: 108.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:27:25 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (1.4ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:27:25 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 127ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/patients/sign_up" for 127.0.0.1 at 2020-05-19 23:27:32 -0500
+Processing by Patients::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (0.8ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:27:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 110ms (Views: 107.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/patients/sign_in" for 127.0.0.1 at 2020-05-19 23:27:43 -0500
+Processing by Patients::SessionsController#new as HTML
+  [1m[36mDoctor Load (0.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:27:43 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 109ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:31:19 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 125ms (Views: 122.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:31:31 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 140ms (Views: 137.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:31:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_alerts.html.erb (2.4ms)
+Completed 200 OK in 227ms (Views: 224.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:38:24 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (2.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:38:24 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 117ms (Views: 114.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:46:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/layouts/application.html.erb:25: syntax error, unexpected `ensure', expecting `end'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/layouts/application.html.erb:27: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/views/layouts/application.html.erb:25: syntax error, unexpected `ensure', expecting `end'
+app/views/layouts/application.html.erb:27: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:47:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 120ms (Views: 117.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:47:07 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (1.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:47:07 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 130ms (Views: 127.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:47:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_alerts.html.erb (1.6ms)
+Completed 200 OK in 127ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:47:22 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 9ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:47:22 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 114ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:47:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 914ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `doctor_signed_in' for #<#<Class:0x000055ab1212f620>:0x00007fbd60323c58>
+Did you mean?  doctor_signed_in?):
+    13:     <div class="jumbotron text-center">
+    14:     <h2>Bienvenido al Sistema de Salud</h2>
+    15:     <h1>Ruby Health Care</h1>
+    16:     <%if patient_signed_in? || doctor_signed_in%>
+    17:     <%else%>
+    18:     <p>Si eres nuevo, puedes registrarte a continuación</p>
+    19:     <%end%>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1493408679224238213_24980'
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:48:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 1089ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `doctor_signed_in' for #<#<Class:0x000055ab1212f620>:0x00007fbd69194118>
+Did you mean?  doctor_signed_in?):
+    13:     <div class="jumbotron text-center">
+    14:     <h2>Bienvenido al Sistema de Salud</h2>
+    15:     <h1>Ruby Health Care</h1>
+    16:     <%if patient_signed_in? or doctor_signed_in%>
+    17:     <%else%>
+    18:     <p>Si eres nuevo, puedes registrarte a continuación</p>
+    19:     <%end%>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1493408679224238213_25680'
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:48:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 1034ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `doctor_signed_in' for #<#<Class:0x000055ab1212f620>:0x00007fbd691aada0>
+Did you mean?  doctor_signed_in?):
+    13:     <div class="jumbotron text-center">
+    14:     <h2>Bienvenido al Sistema de Salud</h2>
+    15:     <h1>Ruby Health Care</h1>
+    16:     <%if patient_signed_in? || doctor_signed_in%>
+    17:     <%else%>
+    18:     <p>Si eres nuevo, puedes registrarte a continuación</p>
+    19:     <%end%>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___1493408679224238213_26280'
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:50:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 142ms (Views: 137.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:55:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[36mDoctor Load (2.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+Completed 500 Internal Server Error in 1004ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `curren_doctor' for #<#<Class:0x000055ab1212f620>:0x00007fbd69bb0c50>
+Did you mean?  current_doctor):
+    14:     <h2>Bienvenido al Sistema de Salud</h2>
+    15:     <h1>Ruby Health Care</h1>
+    16:     <%if patient_signed_in? || doctor_signed_in? %>
+    17:     <p>Bienvido <%= curren_doctor%></p>
+    18:     <%else%>
+    19:     <p>Si eres nuevo, puedes registrarte a continuación</p>
+    20:     <%end%>
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___1493408679224238213_27000'
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:56:04 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+Completed 500 Internal Server Error in 894ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `curren_doctor' for #<#<Class:0x000055ab1212f620>:0x00007fbd6a24e8a0>
+Did you mean?  current_doctor):
+    14:     <h2>Bienvenido al Sistema de Salud</h2>
+    15:     <h1>Ruby Health Care</h1>
+    16:     <%if patient_signed_in? || doctor_signed_in? %>
+    17:     <p>Bienvido <%= curren_doctor.name%></p>
+    18:     <%else%>
+    19:     <p>Si eres nuevo, puedes registrarte a continuación</p>
+    20:     <%end%>
+  
+app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___1493408679224238213_27600'
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:58:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+  [1m[36mDoctor Load (1.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 180ms (Views: 175.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:58:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  [1m[36mDoctor Load (2.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 151ms (Views: 143.3ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/doctors/sign_out" for 127.0.0.1 at 2020-05-19 23:58:42 -0500
+Processing by Doctors::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nBTWYg+KhaazW6BvIQpXS8UKRu04XQ4ADw5r8ctEqsyMDHtBDVhx2FvDRq5a7thlTNl9NmohyvjaYPX0rmsEmQ=="}
+  [1m[36mDoctor Load (1.7ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 153ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:58:42 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 124ms (Views: 121.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 23:58:46 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (55.4ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 169ms (Views: 164.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:58:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 111ms (Views: 108.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 23:59:43 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (3.8ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (49.1ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 172ms (Views: 168.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 23:59:47 -0500
+Processing by Doctors::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PyJjXuYIbi2AsYslcy2bL4JJiViy8sR/Pk3koVQUGsTgUJOn475RV52hAlfOPq4W1RZLio4iN6wc+3zCymUEew==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Processing by Doctors::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PyJjXuYIbi2AsYslcy2bL4JJiViy8sR/Pk3koVQUGsTgUJOn475RV52hAlfOPq4W1RZLio4iN6wc+3zCymUEew==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (3.4ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (13.1ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 135ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 23:59:50 -0500
+Processing by Doctors::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XkJOBCg0A42tZf8x3YekHb24y3bKyGop9RXY9H1JdKaBML79LYI897B1dkNglJEk6ucJpPYYmfrXo0CX4zhqGQ==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."email" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Completed 401 Unauthorized in 412ms (ActiveRecord: 1.2ms)
+
+
+Processing by Doctors::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XkJOBCg0A42tZf8x3YekHb24y3bKyGop9RXY9H1JdKaBML79LYI897B1dkNglJEk6ucJpPYYmfrXo0CX4zhqGQ==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (3.5ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 531ms (Views: 139.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors/sign_in" for 127.0.0.1 at 2020-05-19 23:59:57 -0500
+Processing by Doctors::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZDdZoj1P3+wuaCT8t+2OvO+semr/nZWdsgYq725sZX67RalbOPngljN4rY4K/ruFuPO4uMNNZk6QsLKM8B17wQ==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mDoctor Load (2.5ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."email" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 407ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 23:59:58 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+  [1m[36mDoctor Load (1.4ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:16
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 120ms (Views: 115.7ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/doctors/sign_out" for 127.0.0.1 at 2020-05-20 00:00:09 -0500
+Processing by Doctors::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iO+ldA4h1BjhWnF794MK61MJaKQAp0vBpclvVUr4ikUjN53bCS/PK4BNIrHBi9D1bPzneVkg2+wsqe3yLhEDPQ=="}
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:00:09 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 111ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:05:59 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (4.8ms)
+  Rendered layouts/_alerts.html.erb (0.2ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:06:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (4.9ms)
+  Rendered layouts/_alerts.html.erb (0.1ms)
+Completed 200 OK in 118ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:07:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (4.8ms)
+Completed 200 OK in 153ms (Views: 151.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:13:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (6.5ms)
+Completed 200 OK in 132ms (Views: 130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:14:16 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+  Rendered partials/_navigation.html.erb (4.6ms)
+Completed 200 OK in 110ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:14:27 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+  Rendered partials/_navigation.html.erb (5.4ms)
+Completed 200 OK in 121ms (Views: 118.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:14:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+  Rendered partials/_navigation.html.erb (4.5ms)
+Completed 200 OK in 110ms (Views: 108.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:16:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+  Rendered partials/_navigation.html.erb (4.5ms)
+Completed 200 OK in 118ms (Views: 116.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-20 00:16:06 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (5.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (62.1ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (5.1ms)
+Completed 200 OK in 189ms (Views: 179.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:12 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (4.7ms)
+Completed 200 OK in 142ms (Views: 139.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:23 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+  Rendered partials/_navigation.html.erb (5.1ms)
+Completed 200 OK in 122ms (Views: 119.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:17:27 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (8.7ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (5.4ms)
+Completed 200 OK in 146ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:17:32 -0500
+Processing by Doctors::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q2R15C8z7wNNCp6rbduZ7oc011CZFiX9eMsE2WQq46x550wXH5JhhwAYkWh2jUEdLRPfbO8k2RjOfW7rFQv5UQ==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mDoctor Load (4.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."email" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 413ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:33 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.0ms)
+  [1m[36mDoctor Load (1.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (10.8ms)
+Completed 200 OK in 131ms (Views: 128.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-20 00:17:38 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (2.3ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:38 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.4ms)
+  Rendered partials/_navigation.html.erb (10.1ms)
+Completed 200 OK in 131ms (Views: 127.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:17:40 -0500
+Processing by Doctors::SessionsController#new as HTML
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.4ms)
+  [1m[36mDoctor Load (1.4ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (9.8ms)
+Completed 200 OK in 139ms (Views: 135.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-20 00:17:47 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (8.0ms)
+  [1m[36mDoctor Load (1.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (9.6ms)
+Completed 200 OK in 139ms (Views: 133.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-20 00:17:51 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (2.0ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 15ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:51 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+  [1m[36mDoctor Load (2.4ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.6ms)
+  Rendered partials/_navigation.html.erb (10.8ms)
+Completed 200 OK in 130ms (Views: 124.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:17:55 -0500
+Processing by Doctors::SessionsController#new as HTML
+  [1m[36mDoctor Load (0.8ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 8ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:17:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+  [1m[36mDoctor Load (0.8ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (9.3ms)
+Completed 200 OK in 127ms (Views: 123.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/patients/sign_up" for 127.0.0.1 at 2020-05-20 00:18:00 -0500
+Processing by Patients::RegistrationsController#new as HTML
+  [1m[36mDoctor Load (0.8ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:18:00 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  [1m[36mDoctor Load (0.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (9.0ms)
+Completed 200 OK in 115ms (Views: 111.5ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/doctors/sign_out" for 127.0.0.1 at 2020-05-20 00:18:31 -0500
+Processing by Doctors::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4syOFgkvCYgnzCr2VYV0MmTvNFWbpvI4WwYRJKTtMqrCapstKsBDjeZHvQB3xQrKsO1NhPH++xpjSJrdx8SqsQ=="}
+  [1m[36mDoctor Load (1.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 28ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:18:31 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (5.1ms)
+Completed 200 OK in 120ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:18:33 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (5.5ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (4.8ms)
+Completed 200 OK in 146ms (Views: 142.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:21:32 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_alerts.html.erb (1.7ms)
+  Rendered partials/_navigation.html.erb (5.8ms)
+Completed 200 OK in 133ms (Views: 129.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:21:34 -0500
+Processing by Doctors::SessionsController#new as HTML
+  Rendering doctors/sessions/new.html.erb within layouts/application
+  Rendered doctors/shared/_links.html.erb (3.8ms)
+  Rendered doctors/sessions/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (5.2ms)
+Completed 200 OK in 137ms (Views: 133.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/doctors/sign_in" for 127.0.0.1 at 2020-05-20 00:21:39 -0500
+Processing by Doctors::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ldski5utPBRjOkyoxGOOKE4dARM7aj7OwI1cVWSbNpBumPJn4EsCnIVI5Vscge/IDMrA2My3mEJaZv1y/EGZjA==", "doctor"=>{"email"=>"14030641@itcelaya.edu.mx", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mDoctor Load (2.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."email" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["email", "14030641@itcelaya.edu.mx"], ["LIMIT", 1]]
+  ↳ app/controllers/concerns/accessible.rb:9
+Redirected to http://localhost:3000/
+Filter chain halted as :check_user rendered or redirected
+Completed 302 Found in 425ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:21:39 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+  [1m[36mDoctor Load (1.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.1ms)
+  Rendered partials/_navigation.html.erb (11.7ms)
+Completed 200 OK in 133ms (Views: 129.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:21:54 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (10.9ms)
+Completed 200 OK in 124ms (Views: 120.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:22:05 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+  [1m[36mDoctor Load (1.8ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (13.3ms)
+Completed 200 OK in 140ms (Views: 135.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:22:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[36mDoctor Load (1.2ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.2ms)
+  Rendered partials/_navigation.html.erb (10.3ms)
+Completed 200 OK in 124ms (Views: 120.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:22:28 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  [1m[36mDoctor Load (0.7ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.1ms)
+  Rendered partials/_navigation.html.erb (9.2ms)
+Completed 200 OK in 124ms (Views: 119.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:23:35 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[36mDoctor Load (1.4ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.4ms)
+  Rendered partials/_navigation.html.erb (10.8ms)
+Completed 200 OK in 131ms (Views: 127.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:23:55 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+  [1m[36mDoctor Load (1.1ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.3ms)
+  Rendered partials/_navigation.html.erb (9.6ms)
+Completed 200 OK in 126ms (Views: 122.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:25:41 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+  [1m[36mDoctor Load (2.5ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.4ms)
+  Rendered partials/_navigation.html.erb (15.8ms)
+Completed 200 OK in 136ms (Views: 130.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:25:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[36mDoctor Load (0.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (2.5ms)
+  Rendered partials/_navigation.html.erb (11.7ms)
+Completed 200 OK in 135ms (Views: 131.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:25:57 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+  [1m[36mDoctor Load (0.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.4ms)
+  Rendered partials/_navigation.html.erb (9.8ms)
+Completed 200 OK in 155ms (Views: 148.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-20 00:26:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  [1m[36mDoctor Load (1.3ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" WHERE "doctors"."id" = $1 ORDER BY "doctors"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/partials/_navigation.html.erb:1
+  Rendered layouts/_alerts.html.erb (1.5ms)
+  Rendered partials/_navigation.html.erb (11.8ms)
+Completed 200 OK in 145ms (Views: 140.9ms | ActiveRecord: 1.3ms)
+
+

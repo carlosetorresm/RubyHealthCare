@@ -16,7 +16,7 @@ class DeviseCreateDoctors < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :state
       t.string :country
-      t.integer :cellphone
+      t.string :cellphone
 
       ## Recoverable
       t.string   :reset_password_token

@@ -15,8 +15,7 @@ Rails.application.routes.draw do
 
   resources :states, only: :index
   resources :cities, only: :index
-  
-  devise_for :patients, path: 'patients', controllers: { 
+
   devise_for :patients, path: 'patients', controllers: {
     sessions: "patients/sessions",
     passwords: "patients/passwords",

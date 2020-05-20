@@ -1,0 +1,13 @@
+<%if patient_signed_in? || doctor_signed_in? %>
+    <%if doctor_signed_in? %>
+        <h3>Bienvenido <%= current_doctor.name %></h3>
+        <%= link_to "Cerrar sesión", destroy_doctor_session_path, method: :delete%>
+    <%end%>
+    <%if patient_signed_in? %>
+        <h3>Bienvenido <%= current_patient.name %></h3>
+        <%= link_to "Cerrar sesión", destroy_patient_session_path, method: :delete%>
+    <%end%>
+<%else%>
+    <p>Si eres nuevo, puedes registrarte a continuación</p>
+<%end%>
+<%= render 'layouts/alerts' %>
