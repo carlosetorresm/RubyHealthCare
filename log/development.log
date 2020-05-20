@@ -2856,6 +2856,7 @@ Processing by Doctors::RegistrationsController#new as HTML
 Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.0ms)
 
 
+<<<<<<< HEAD
   [1m[36mDoctor Load (28.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" ORDER BY "doctors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mSpeciality Load (47.0ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" ORDER BY "specialities"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
@@ -6408,5 +6409,626 @@ Processing by CitiesController#index as */*
   Rendering cities/index.js.erb
   Rendered cities/index.js.erb (5.9ms)
 Completed 200 OK in 55ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+=======
+Started GET "/" for 127.0.0.1 at 2020-05-19 16:43:37 -0500
+  [1m[35m (30.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.2) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.2) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "RubyHealthCare" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "RubyHealthCare_test" ENCODING = 'unicode'[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateSpecialities (20200519022545)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (331.6ms)[0m  [1m[35mCREATE TABLE "specialities" ("id" bigserial primary key, "name" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519022545_create_specialities.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519022545"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (53.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreateDoctors (20200519023736)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (37.8ms)[0m  [1m[35mCREATE TABLE "doctors" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "name" character varying, "lastname" character varying, "license" character varying, "speciality_id" bigint, "address" character varying, "city" character varying, "state" character varying, "country" character varying, "cellphone" integer, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:5
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE  INDEX  "index_doctors_on_speciality_id" ON "doctors"  ("speciality_id")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:5
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_doctors_on_email" ON "doctors"  ("email")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:50
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_doctors_on_reset_password_token" ON "doctors"  ("reset_password_token")[0m
+  ↳ db/migrate/20200519023736_devise_create_doctors.rb:51
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519023736"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to DeviseCreatePatients (20200519023745)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE "patients" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "name" character varying, "lastname" character varying, "birth" timestamp, "allergy" text, "chronic_diseases" text, "surgeries" text, "address" character varying, "city" character varying, "state" character varying, "country" character varying, "cellphone" integer, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:5
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_patients_on_email" ON "patients"  ("email")[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:52
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_patients_on_reset_password_token" ON "patients"  ("reset_password_token")[0m
+  ↳ db/migrate/20200519023745_devise_create_patients.rb:53
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519023745"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to CreateActiveStorageTables (20200519090924)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (60.9ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200519090924_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519090924"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Migrating to Insert (20200519093754)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mSpeciality Create (2.8ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Alergologia"], ["description", "La Alergología es la especialidad médica que comprende el conocimiento, diagnóstico y tratamiento de la patología producida por mecanismos inmunológicos, con las técnicas que le son propias; con especial atención a la alergia."], ["created_at", "2020-05-19 21:44:32.557098"], ["updated_at", "2020-05-19 21:44:32.557098"]]
+  ↳ db/migrate/20200519093754_insert.rb:4
+  [1m[36mSpeciality Create (0.6ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Cardiología"], ["description", "La cardiología es la especialidad médica que se ocupa de las afecciones del corazón y del aparato circulatorio."], ["created_at", "2020-05-19 21:44:32.561960"], ["updated_at", "2020-05-19 21:44:32.561960"]]
+  ↳ db/migrate/20200519093754_insert.rb:5
+  [1m[36mSpeciality Create (0.3ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Dermatología"], ["description", "La dermatología es la especialidad médica encargada del estudio de la piel, su estructura, función y enfermedades."], ["created_at", "2020-05-19 21:44:32.565752"], ["updated_at", "2020-05-19 21:44:32.565752"]]
+  ↳ db/migrate/20200519093754_insert.rb:6
+  [1m[36mSpeciality Create (1.8ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Gastroenterología"], ["description", "La gastroenterología es la rama del Aparato Digestivo que comprende el diagnóstico y tratamiento de pacientes con afecciones del esófago, estómago, intestino delgado, colon, recto y páncreas."], ["created_at", "2020-05-19 21:44:32.567044"], ["updated_at", "2020-05-19 21:44:32.567044"]]
+  ↳ db/migrate/20200519093754_insert.rb:7
+  [1m[36mSpeciality Create (0.3ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Genética"], ["description", "La genética es el campo de las ciencias biológicas que trata de comprender cómo la herencia biológica es transmitida de una generación a la siguiente, y cómo se efectúa el desarrollo de las características que controlan estos procesos."], ["created_at", "2020-05-19 21:44:32.570400"], ["updated_at", "2020-05-19 21:44:32.570400"]]
+  ↳ db/migrate/20200519093754_insert.rb:8
+  [1m[36mSpeciality Create (3.6ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Geriatría"], ["description", "La Geriatría es la especialidad médica que se ocupa de los aspectos preventivos, curativos y de la rehabilitación de las enfermedades del adulto en senectud."], ["created_at", "2020-05-19 21:44:32.571812"], ["updated_at", "2020-05-19 21:44:32.571812"]]
+  ↳ db/migrate/20200519093754_insert.rb:9
+  [1m[36mSpeciality Create (0.4ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ginecología"], ["description", "Ginecología es la especialidad médica y quirúrgica que trata las enfermedades del sistema reproductor femenino (útero, vagina y ovarios) y de la reproducción."], ["created_at", "2020-05-19 21:44:32.576449"], ["updated_at", "2020-05-19 21:44:32.576449"]]
+  ↳ db/migrate/20200519093754_insert.rb:10
+  [1m[36mSpeciality Create (0.4ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Neurología"], ["description", "La neurología es la especialidad médica que trata los trastornos del sistema nervioso."], ["created_at", "2020-05-19 21:44:32.578500"], ["updated_at", "2020-05-19 21:44:32.578500"]]
+  ↳ db/migrate/20200519093754_insert.rb:11
+  [1m[36mSpeciality Create (0.2ms)[0m  [1m[32mINSERT INTO "specialities" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Pediatría"], ["description", "La pediatría es la especialidad médica que estudia al niño y sus enfermedades."], ["created_at", "2020-05-19 21:44:32.580035"], ["updated_at", "2020-05-19 21:44:32.580035"]]
+  ↳ db/migrate/20200519093754_insert.rb:12
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200519093754"]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[36mActiveRecord::InternalMetadata Load (12.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7832515095297491550)[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/share/rubygems-integration/all/gems/rake-13.0.1/lib/rake/task.rb:281
+Started GET "/" for 127.0.0.1 at 2020-05-19 16:44:47 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1210ms (Views: 1194.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 16:44:50 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  Rendered doctors/shared/_links.html.erb (3.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (259.3ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 343ms (Views: 300.6ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 16:49:49 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 4055ms (Views: 4053.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 16:49:56 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"RegistroMedicos", :controller=>"registro_pacientes"}):
+    1: <div class="container">
+    2:     <div class="formulario">
+    3: 
+    4:     <%= form_tag :action => 'RegistroMedicos' do %>
+    5: 
+    6:       <p class="seccion">Datos primordiales</p>
+    7: 
+  
+app/views/registro_pacientes/RegistroPacientes.html.erb:4:in `_app_views_registro_pacientes__egistro_acientes_html_erb___4039648053733635136_27700'
+Started GET "/" for 127.0.0.1 at 2020-05-19 16:50:14 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 60.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 16:50:16 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_alerts.html.erb (5.1ms)
+Completed 200 OK in 131ms (Views: 129.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 16:52:28 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 16:53:09 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 16:53:33 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:50:56 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:54:26 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Sites/RubyHealthCare/app/views/registro_pacientes/RegistroPacientes.html.erb:65: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...ext_field_tag :alergias, cols :25, rows :20 );@output_buffer...
+...                              ^
+):
+  
+app/views/registro_pacientes/RegistroPacientes.html.erb:65: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:55:17 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:55:36 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:56:03 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:57:34 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:58:39 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_alerts.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:59:20 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 17:59:50 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:01:39 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 1535ms (Views: 1534.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:02:45 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 55ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:04:03 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 78ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:05:25 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:05:37 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:05:53 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:07:27 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:08:52 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:09:04 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 39ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:09:37 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_pacientes/RegistroPacientes" for 127.0.0.1 at 2020-05-19 18:11:33 -0500
+Processing by RegistroPacientesController#RegistroPacientes as HTML
+  Rendering registro_pacientes/RegistroPacientes.html.erb within layouts/application
+  Rendered registro_pacientes/RegistroPacientes.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registro_medicos/RegistroMedicos" for 127.0.0.1 at 2020-05-19 18:13:39 -0500
+Processing by RegistroMedicosController#RegistroMedicos as HTML
+  Rendering registro_medicos/RegistroMedicos.html.erb within layouts/application
+  Rendered registro_medicos/RegistroMedicos.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 21:38:40 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 3884ms (Views: 3882.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 21:38:52 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:39:09 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:43:28 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 2010ms (Views: 2008.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:44:06 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 2023ms (Views: 2021.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:44:38 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 1921ms (Views: 1920.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:45:02 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 1990ms (Views: 1989.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:46:00 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1917ms (Views: 1916.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:46:39 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 1952ms (Views: 1951.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:47:15 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 1936ms (Views: 1934.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:47:19 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:48:30 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 2157ms (Views: 2155.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:49:00 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 1993ms (Views: 1992.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:49:12 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2199ms (Views: 2197.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:49:45 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:50:28 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (2.9ms)
+Completed 200 OK in 1884ms (Views: 1882.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:52:09 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2139ms (Views: 2138.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:52:36 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 2020ms (Views: 2019.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:52:41 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:53:17 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1884ms (Views: 1883.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:53:21 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:53:32 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 2249ms (Views: 2247.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:54:46 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 1915ms (Views: 1914.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:55:02 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (3.3ms)
+Completed 200 OK in 2428ms (Views: 2425.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 21:55:48 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2029ms (Views: 2027.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 21:55:55 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 131ms (Views: 125.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 21:56:09 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (4.4ms)
+Completed 200 OK in 203ms (Views: 201.9ms | ActiveRecord: 0.0ms)
+>>>>>>> 7500b2aa6d98456ee61287332a160efd66000e91
 
 
