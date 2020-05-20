@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get 'paciente_generar_consulta/GenerarConsulta'
   post 'paciente_generar_consulta/GenerarConsulta'
 
+  get 'medicos_emitir_factura/EmitirFactura'
+  post 'medicos_emitir_factura/EmitirFactura'
+
   get 'medicos_preescribir_receta/MedicosPreescribirReceta'
   post 'medicos_preescribir_receta/MedicosPreescribirReceta'
 
