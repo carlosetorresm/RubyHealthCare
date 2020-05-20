@@ -1,0 +1,86 @@
+
+
+<div class="container">
+
+<div class="text-center encabezado-seccion">
+  <h1>Por favor, preescriba la receta adecuada al paciente</h1>
+</div>
+
+    <div class="formulario">
+
+    <%= form_tag :action => 'MedicosPreescribirReceta' do %>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Médico</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'medico' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Especialidad</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'especialidad' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Paciente</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'paciente' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Fecha</label>
+        </div>
+        <div class="col-md-3">
+          <%= date_field_tag 'fecha' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Receta / tratamiento</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_area_tag 'receta' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Correo médico</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'emailM' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Correo paciente</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'emailP' %>
+        </div>
+      </div>
+
+
+      <br><br>
+      <div class="enviar">
+        <%= submit_tag 'Enviar' %>
+      </div>
+
+
+  <% end %>
+
+  </div>
+</div>

@@ -1,7 +1,21 @@
 Rails.application.routes.draw do
+  get 'paciente_datos_facturacion/DatosFacturacion'
+  post 'paciente_datos_facturacion/DatosFacturacion'
+
+  get 'paciente_generar_consulta/GenerarConsulta'
+  post 'paciente_generar_consulta/GenerarConsulta'
+
+  get 'medicos_emitir_factura/EmitirFactura'
+  post 'medicos_emitir_factura/EmitirFactura'
+
+  get 'medicos_preescribir_receta/MedicosPreescribirReceta'
+  post 'medicos_preescribir_receta/MedicosPreescribirReceta'
+
   get 'medicos_registrar_servicio/MedicosRegistrarServicio'
+  post 'medicos_registrar_servicio/MedicosRegistrarServicio'
+
   get 'pacientes_menu/PacientesMenu'
-  
+
   get 'medicos_menu/MedicosMenu'
 
   get 'registro_pacientes/RegistroPacientes'

@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="text-center encabezado-seccion">
+    <h1>Proporciona la información de tus síntomas correctamente</h1>
+  </div>
+
+    <div class="formulario">
+
+    <%= form_tag :action => 'GenerarConsulta' do %>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Síntomas</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_area_tag 'sintomas' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Archivos (foto o video)</label>
+        </div>
+        <div class="col-md-3">
+          <%= file_field_tag 'archivo' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Especialidad deseada del médico</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'especialidad' %>
+        </div>
+      </div>
+
+
+      <br><br>
+      <div class="enviar">
+        <%= submit_tag 'Generar Consulta' %>
+      </div>
+
+
+  <% end %>
+
+  </div>
+</div>
