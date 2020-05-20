@@ -1,1 +1,35 @@
-<h1>MedicosRegistrarServicio#MedicosRegistrarServicio</h1>
+<h1>Registra el nombre de ru servicio y el costo de este</h1>
+<div class="container">
+    <div class="formulario">
+
+    <%= form_tag :action => 'MedicosRegistrarServicio' do %>
+
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Servicio</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'servicio' %>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3">
+          <label class="texto-form">Costo</label>
+        </div>
+        <div class="col-md-3">
+          <%= text_field_tag 'costo' %>
+        </div>
+      </div>
+
+
+      <br><br>
+      <div class="enviar">
+        <%= submit_tag 'Registrarse' %>
+      </div>
+
+
+  <% end %>
+
+  </div>
+</div>
