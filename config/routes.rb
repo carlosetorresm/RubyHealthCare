@@ -3,6 +3,9 @@ Rails.application.routes.draw do
   post 'registro_medicos/RegistroMedicos'
   get 'registro_medicos/new'
   get 'registro_medicos/create'
+
+  resources :states, only: :index
+  resources :cities, only: :index
   
   devise_for :patients, path: 'patients', controllers: { 
     sessions: "patients/sessions",

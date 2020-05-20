@@ -210,7 +210,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   chromedriver-helper
-  city-state
+  city-state (~> 0.1.0)
   coffee-rails (~> 4.2)
   devise
   gravtastic

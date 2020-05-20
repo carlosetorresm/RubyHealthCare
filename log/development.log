@@ -2856,3 +2856,3557 @@ Processing by Doctors::RegistrationsController#new as HTML
 Completed 200 OK in 74ms (Views: 71.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[36mDoctor Load (28.9ms)[0m  [1m[34mSELECT  "doctors".* FROM "doctors" ORDER BY "doctors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSpeciality Load (47.0ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" ORDER BY "specialities"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mSpeciality Load (0.4ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSpeciality Load (0.7ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mSpeciality Load (0.7ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mSpeciality Load (0.6ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:12:32 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 12.8ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:41: syntax error, unexpected ')'
+...nd=( f.select :speciality_id, );@output_buffer.safe_append='
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:64: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:69: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:71: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:41: syntax error, unexpected ')'
+app/views/doctors/registrations/new.html.erb:64: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:69: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:71: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:12:48 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (41.7ms)
+Completed 500 Internal Server Error in 164ms (ActiveRecord: 12.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:     <div class="col-sm-2">
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %><br />
+    41:       <%= f.select :speciality_id %>
+    42:     </div></div>
+    43:   </div>
+    44: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_19840'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_19840'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:17:37 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:     <div class="col-sm-2">
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %><br />
+    41:       <%= f.select :speciality_id, options_from_collection_for_select(@speciality,:id,:name) %>
+    42:     </div></div>
+    43:   </div>
+    44: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_20420'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_20420'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:17:39 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:     <div class="col-sm-2">
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %><br />
+    41:       <%= f.select :speciality_id, options_from_collection_for_select(@speciality,:id,:name) %>
+    42:     </div></div>
+    43:   </div>
+    44: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_21000'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_21000'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:18:14 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (48.2ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 658ms (Views: 655.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:18:23 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 88ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:18:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :speciality_id, options_from_collection_for_select(@speciality,:id,:name) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_22100'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_22100'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:18:55 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :speciality, options_from_collection_for_select(@speciality,:id,:name) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_22640'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_22640'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:19:04 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :email, options_from_collection_for_select(@speciality,:id,:name) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_23180'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_23180'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:20:02 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :speciality, options_from_collection_for_select(@speciality,:id,:name) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_23720'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_23720'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:20:42 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :speciality_id, options_for_select(@speciality,:id,:name) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_24260'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_24260'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:21:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :speciality_id, options_for_select(@speciality,:id) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_24800'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_24800'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:21:25 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41: 
+    42:       <%= f.select :speciality_id, options_for_select(@speciality) %>
+    43:     </div></div>
+    44:   </div>
+    45: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:42:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_25340'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_25340'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:24:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT  "specialities".* FROM "specialities" WHERE "specialities"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/registrations/new.html.erb within layouts/application (59.0ms)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 8.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Speciality with 'id'=all):
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_25880'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_25880'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:25:15 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 114ms (Views: 111.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:25:31 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:25:43 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  [1m[36mSpeciality Load (1.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (21.5ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 98ms (Views: 94.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:31:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 13.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:     <div class="col-sm-2">
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41:       <%= f.select :speciality_id, options_for_select(@speciality) %>
+    42:     </div></div>
+    43:   </div>
+    44: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_32900'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_32900'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:31:15 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.8ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 115ms (Views: 105.1ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/registro_medicos" for 127.0.0.1 at 2020-05-19 17:31:41 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/registro_medicos"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/registro_medicos" for 127.0.0.1 at 2020-05-19 17:31:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/registro_medicos"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/registro_medicos" for 127.0.0.1 at 2020-05-19 17:31:43 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/registro_medicos"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors" for 127.0.0.1 at 2020-05-19 17:31:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctors"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:31:58 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    38:     <div class="col-sm-2">
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41:       <%= f.select :speciality_id, options_for_select(Speciality.all, :id, :name) %>
+    42:     </div></div>
+    43:   </div>
+    44: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_35740'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_35740'
+Started GET "/" for 127.0.0.1 at 2020-05-19 17:33:51 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:33:56 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (20.9ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    38:     <div class="col-sm-2">
+    39:       <div class="field">
+    40:       <%= f.label :Especialidad %>
+    41:       <%= f.select :speciality_id, options_for_select(Speciality.all, :id, :name) %>
+    42:     </div></div>
+    43:   </div>
+    44: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:41:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_36380'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_36380'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:34:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  [1m[36mSpeciality Load (1.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 78.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:35:23 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:41: syntax error, unexpected ','
+...(Speciality.all, :id, :name), , { prompt: 'Choose' } );@outp...
+...                              ^
+):
+  
+app/views/doctors/registrations/new.html.erb:41: syntax error, unexpected ','
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:35:35 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 114ms (Views: 111.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:35:52 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (5.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (1.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (25.7ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 99ms (Views: 91.0ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:36:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (3.0ms)
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (27.2ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:36:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (29.5ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:52:45 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.1ms)
+  [1m[36mSpeciality Load (1.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  [1m[36mCACHE Speciality Load (0.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:54
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (91.7ms)
+  Rendered layouts/_alerts.html.erb (0.7ms)
+Completed 200 OK in 161ms (Views: 157.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:54:56 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:41
+  Rendered doctors/shared/_links.html.erb (3.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (49.4ms)
+  Rendered layouts/_alerts.html.erb (1.6ms)
+Completed 200 OK in 185ms (Views: 181.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:56:59 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:42
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 89ms (Views: 84.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 17:59:42 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.1ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (1.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (32.9ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 91.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:00:34 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 101ms (Views: 98.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:00:42 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.1ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (34.6ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 106ms (Views: 102.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:00:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  [1m[36mSpeciality Load (0.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (34.1ms)
+  Rendered layouts/_alerts.html.erb (1.0ms)
+Completed 200 OK in 107ms (Views: 104.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:00:59 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (32.6ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:01:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.5ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (1.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (33.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 103ms (Views: 100.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:01:34 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.3ms)
+  [1m[36mSpeciality Load (0.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 102ms (Views: 99.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:02:01 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  [1m[36mSpeciality Load (0.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (1.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (27.8ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 87ms (Views: 84.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:02:12 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (49.2ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 150ms (Views: 146.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:02:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 144ms (Views: 139.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:16:34 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (4.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (87.9ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 426ms (Views: 313.2ms | ActiveRecord: 30.3ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:20:28 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (80.5ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 287ms (Views: 182.2ms | ActiveRecord: 30.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:21:44 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.6ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.5ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 165ms (Views: 159.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:27:02 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected symbol literal, expecting ']'
+...e, options_for_select([CS.get :country]) );@output_buffer.sa...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected symbol literal, expecting ']'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:27:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected symbol literal, expecting ']'
+...e, options_for_select([CS.get :us]) );@output_buffer.safe_ap...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected symbol literal, expecting ']'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:27:45 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected symbol literal, expecting ']'
+...ptions_for_select([CS.get.map :us { |c| [c[1], c[0]] } )  );...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected '}', expecting ')'
+...et.map :us { |c| [c[1], c[0]] } )  );@output_buffer.safe_app...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected symbol literal, expecting ']'
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected '}', expecting ')'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:28:29 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected ')', expecting ']'
+...:us).map { |c| [c[1], c[0]] } )  );@output_buffer.safe_appen...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected ')', expecting ']'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:28:31 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected ')', expecting ']'
+...:us).map { |c| [c[1], c[0]] } )  );@output_buffer.safe_appen...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected ')', expecting ']'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:28:50 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected '}', expecting ']'
+...s( :us).map { |c| [c[1], c[0] } )  );@output_buffer.safe_app...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting '}'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected '}', expecting ']'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting '}'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:29:23 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected '}', expecting ']'
+...es(:us).map { |c| [c[1], c[0] } )  );@output_buffer.safe_app...
+...                              ^
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting '}'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:62: syntax error, unexpected '}', expecting ']'
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting '}'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:29:44 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1566.1ms)
+Completed 500 Internal Server Error in 1575ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    59:     <div class="col-sm-2">
+    60:       <div class="field">
+    61:       <%= f.label :Estado %>
+    62:       <%= f.select :state, options_for_select(CS.states(:us).map { |c| [c[1], c[0]] } )  %>
+    63:     </div></div>
+    64:     <div class="col-sm-2">
+    65:       <div class="field">
+  
+app/views/doctors/registrations/new.html.erb:62:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_55560'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_55560'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:30:14 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1548.2ms)
+Completed 500 Internal Server Error in 1556ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    59:     <div class="col-sm-2">
+    60:       <div class="field">
+    61:       <%= f.label :Estado %>
+    62:       <%= f.select :state, options_for_select(CS.states(:us) )  %>
+    63:     </div></div>
+    64:     <div class="col-sm-2">
+    65:       <div class="field">
+  
+app/views/doctors/registrations/new.html.erb:62:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_56100'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_56100'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:30:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (41.0ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 0, expected 1)):
+    59:     <div class="col-sm-2">
+    60:       <div class="field">
+    61:       <%= f.label :Estado %>
+    62:       <%= f.select :state, options_for_select(CS.states )  %>
+    63:     </div></div>
+    64:     <div class="col-sm-2">
+    65:       <div class="field">
+  
+app/views/doctors/registrations/new.html.erb:62:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_56640'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_56640'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:30:47 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (62.6ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 168ms (Views: 164.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:30:54 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (3.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1596.6ms)
+Completed 500 Internal Server Error in 1605ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    59:     <div class="col-sm-2">
+    60:       <div class="field">
+    61:       <%= f.label :Estado %>
+    62:       <%= f.select :state, options_for_select(CS.states(:us).map { |c| [c[1], c[0]] } )  %>
+    63:     </div></div>
+    64:     <div class="col-sm-2">
+    65:       <div class="field">
+  
+app/views/doctors/registrations/new.html.erb:62:in `block in _app_views_doctors_registrations_new_html_erb___3679640308862638702_57400'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___3679640308862638702_57400'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:35:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (6.4ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (59.7ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 169ms (Views: 164.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:51:03 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (94.1ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 298ms (Views: 195.2ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:52:56 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (2.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 145ms (Views: 140.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-19 18:53:03 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 104ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:53:05 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 148ms (Views: 144.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:53:39 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.2ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 142ms (Views: 138.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 18:53:45 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.7ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 139ms (Views: 134.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:33:34 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.1ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 258ms (Views: 254.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:36:13 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.6ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 145ms (Views: 139.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:39:01 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.2ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 258ms (Views: 253.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:39:20 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (3.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (51.3ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/config
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/images
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/javascripts
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/stylesheets
+  /usr/share/ruby-coffee-rails/lib/assets/javascripts
+  /var/lib/gems/2.7.0/gems/gravtastic-3.2.6/vendor/assets/javascripts
+  /var/lib/gems/2.7.0/gems/actioncable-5.2.4.2/lib/assets/compiled
+  /var/lib/gems/2.7.0/gems/activestorage-5.2.4.2/app/assets/javascripts
+  /var/lib/gems/2.7.0/gems/actionview-5.2.4.2/lib/assets/compiled
+  /var/lib/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/carlos/Proyectos/RubyHealthCare/node_modules
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/images):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3726256118648781320_65380'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:39:26 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.8ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/config
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/images
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/javascripts
+  /home/carlos/Proyectos/RubyHealthCare/app/assets/stylesheets
+  /usr/share/ruby-coffee-rails/lib/assets/javascripts
+  /var/lib/gems/2.7.0/gems/gravtastic-3.2.6/vendor/assets/javascripts
+  /var/lib/gems/2.7.0/gems/actioncable-5.2.4.2/lib/assets/compiled
+  /var/lib/gems/2.7.0/gems/activestorage-5.2.4.2/app/assets/javascripts
+  /var/lib/gems/2.7.0/gems/actionview-5.2.4.2/lib/assets/compiled
+  /var/lib/gems/2.7.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/carlos/Proyectos/RubyHealthCare/node_modules
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/stylesheets
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/javascripts
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/fonts
+  /var/lib/gems/2.7.0/gems/bootstrap-sass-3.4.1/assets/images):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___3726256118648781320_65960'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:41:06 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (5.6ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (246.2ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 7001ms (Views: 6854.0ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:41:47 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_alerts.html.erb (3.9ms)
+Completed 200 OK in 322ms (Views: 317.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:43:26 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (6.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (7.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (221.1ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 1195ms (Views: 1026.8ms | ActiveRecord: 34.5ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:59:26 -0500
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (232.4ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 1204ms (Views: 1057.1ms | ActiveRecord: 54.5ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 19:59:56 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.6ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 262ms (Views: 257.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:01:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.7ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 271ms (Views: 266.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/states?country=AL" for 127.0.0.1 at 2020-05-19 20:01:14 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AL"}
+Completed 500 Internal Server Error in 1366ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.al):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:01:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 252ms (Views: 246.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 20:01:30 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+Completed 500 Internal Server Error in 1141ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.ae):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/states?country=AD" for 127.0.0.1 at 2020-05-19 20:01:39 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AD"}
+Completed 500 Internal Server Error in 1161ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.ad):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:01:50 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (43.7ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 268ms (Views: 263.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:10:42 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (49.9ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 272ms (Views: 267.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:11:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (2.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.9ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 138ms (Views: 133.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/states?country=AF" for 127.0.0.1 at 2020-05-19 20:11:24 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AF"}
+Completed 500 Internal Server Error in 1131ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.af):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:11:40 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (40.9ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 250ms (Views: 246.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 20:11:43 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+Completed 500 Internal Server Error in 1090ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.ai):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/states?country=AL" for 127.0.0.1 at 2020-05-19 20:11:47 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AL"}
+Completed 500 Internal Server Error in 1108ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.al):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:15:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.3ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 258ms (Views: 254.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 20:15:44 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+Completed 500 Internal Server Error in 1104ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.ae):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:16:45 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.4ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (42.9ms)
+  Rendered layouts/_alerts.html.erb (1.1ms)
+Completed 200 OK in 135ms (Views: 131.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 20:16:49 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+Completed 500 Internal Server Error in 1174ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.ai):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:17:40 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.9ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 148ms (Views: 144.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:19:51 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (81.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 272ms (Views: 170.5ms | ActiveRecord: 29.1ms)
+
+
+Started GET "/states?country=AG" for 127.0.0.1 at 2020-05-19 20:19:54 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AG"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.2ms)
+Completed 200 OK in 23ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 20:20:09 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=BR" for 127.0.0.1 at 2020-05-19 20:20:15 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BR"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 20ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:22:37 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (66.8ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 232ms (Views: 166.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=BO" for 127.0.0.1 at 2020-05-19 20:22:41 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BO"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.9ms)
+Completed 200 OK in 23ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:23:04 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (43.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 139ms (Views: 135.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=BN" for 127.0.0.1 at 2020-05-19 20:23:07 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BN"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 21ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:23:54 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (67.6ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 233ms (Views: 161.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=BL" for 127.0.0.1 at 2020-05-19 20:23:58 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BL"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `log' for nil:NilClass):
+  
+app/controllers/states_controller.rb:4:in `index'
+Started GET "/states?country=BI" for 127.0.0.1 at 2020-05-19 20:24:01 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BI"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `log' for nil:NilClass):
+  
+app/controllers/states_controller.rb:4:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:24:49 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (72.9ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 258ms (Views: 190.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/states?country=BG" for 127.0.0.1 at 2020-05-19 20:24:52 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BG"}
+Completed 500 Internal Server Error in 1237ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.bg):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:24:54 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.6ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (74.2ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 263ms (Views: 186.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/states?country=BE" for 127.0.0.1 at 2020-05-19 20:24:57 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 22ms (Views: 13.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:26:13 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.1ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 148ms (Views: 143.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/states?country=BB" for 127.0.0.1 at 2020-05-19 20:26:18 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BB"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 22ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:28:17 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (2.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.3ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 145ms (Views: 140.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/states?country=BA" for 127.0.0.1 at 2020-05-19 20:28:19 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"BA"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.5ms)
+Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:29:18 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.3ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 156ms (Views: 151.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/states?country=AX" for 127.0.0.1 at 2020-05-19 20:29:21 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:31:24 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (68.2ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 232ms (Views: 167.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=AW" for 127.0.0.1 at 2020-05-19 20:31:27 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 23ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:32:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (63.3ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 355ms (Views: 286.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=CD" for 127.0.0.1 at 2020-05-19 20:32:35 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"CD"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=AD" for 127.0.0.1 at 2020-05-19 20:33:19 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AD"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:36:31 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.2ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (54.4ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 316ms (Views: 311.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 20:36:35 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 26ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:37:43 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (3.0ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (5.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (88.0ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 249ms (Views: 242.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/states?country=AD" for 127.0.0.1 at 2020-05-19 20:37:46 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AD"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.8ms)
+Completed 200 OK in 23ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:38:29 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (71.6ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 245ms (Views: 171.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/states?country=AG" for 127.0.0.1 at 2020-05-19 20:38:32 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AG"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.5ms)
+Completed 200 OK in 23ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:39:17 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (76.4ms)
+  Rendered layouts/_alerts.html.erb (1.6ms)
+Completed 200 OK in 267ms (Views: 189.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 20:39:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/states"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:39:31 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (71.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 246ms (Views: 171.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AM" for 127.0.0.1 at 2020-05-19 20:39:33 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AM"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.3ms)
+Completed 200 OK in 22ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:40:32 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (70.2ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 249ms (Views: 163.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:41:57 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (86.5ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 274ms (Views: 177.0ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 20:42:00 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (6.0ms)
+Completed 200 OK in 28ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:43:00 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.6ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (76.2ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 247ms (Views: 178.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AF" for 127.0.0.1 at 2020-05-19 20:43:04 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AF"}
+Completed 500 Internal Server Error in 1206ms (ActiveRecord: 0.0ms)
+
+
+  
+Errno::EACCES (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.dcountry):
+  
+app/controllers/states_controller.rb:3:in `index'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:44:03 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1625.1ms)
+Completed 500 Internal Server Error in 1694ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    51:       <div class="field">
+    52:       <%= f.label :Pais %>
+    53:       <em>(Una vez elegido seleccione su estado y despues su ciudad)</em>
+    54:       <%= f.select :country, options_for_select(CS.states(:us) { |c| [c[1], c[0]] } ) %>
+    55:     </div></div>
+    56:   </div>
+    57: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:54:in `block in _app_views_doctors_registrations_new_html_erb___489010423553354429_109300'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___489010423553354429_109300'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:44:12 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1598.2ms)
+Completed 500 Internal Server Error in 1608ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    51:       <div class="field">
+    52:       <%= f.label :Pais %>
+    53:       <em>(Una vez elegido seleccione su estado y despues su ciudad)</em>
+    54:       <%= f.select :country, options_for_select(CS.states(:us)  ) %>
+    55:     </div></div>
+    56:   </div>
+    57: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:54:in `block in _app_views_doctors_registrations_new_html_erb___489010423553354429_109860'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___489010423553354429_109860'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:44:26 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (2.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1855.0ms)
+Completed 500 Internal Server Error in 1872ms (ActiveRecord: 2.5ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    51:       <div class="field">
+    52:       <%= f.label :Pais %>
+    53:       <em>(Una vez elegido seleccione su estado y despues su ciudad)</em>
+    54:       <%= f.select :country, options_for_select(CS.get :us ) %>
+    55:     </div></div>
+    56:   </div>
+    57: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:54:in `block in _app_views_doctors_registrations_new_html_erb___489010423553354429_110400'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___489010423553354429_110400'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:57:34 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (7.4ms)
+  [1m[36mSpeciality Load (1.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1760.0ms)
+Completed 500 Internal Server Error in 1910ms (ActiveRecord: 25.6ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    51:       <div class="field">
+    52:       <%= f.label :Pais %>
+    53:       <em>(Una vez elegido seleccione su estado y despues su ciudad)</em>
+    54:       <%= f.select :country, options_for_select(CS.get :us ) %>
+    55:     </div></div>
+    56:   </div>
+    57: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:54:in `block in _app_views_doctors_registrations_new_html_erb___4340280467151684230_20040'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___4340280467151684230_20040'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 20:59:52 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/registrations/new.html.erb within layouts/application (1719.0ms)
+Completed 500 Internal Server Error in 1886ms (ActiveRecord: 26.3ms)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_sysopen - /var/lib/gems/2.7.0/gems/city-state-0.1.0/lib/db/states.us):
+    51:       <div class="field">
+    52:       <%= f.label :Pais %>
+    53:       <em>(Una vez elegido seleccione su estado y despues su ciudad)</em>
+    54:       <%= f.select :country, options_for_select(CS.get :us ) %>
+    55:     </div></div>
+    56:   </div>
+    57: <p></p>
+  
+app/views/doctors/registrations/new.html.erb:54:in `block in _app_views_doctors_registrations_new_html_erb___2809142346215567697_20040'
+app/views/doctors/registrations/new.html.erb:3:in `_app_views_doctors_registrations_new_html_erb___2809142346215567697_20040'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:06:03 -0500
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (2292.3ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 3288ms (Views: 3139.9ms | ActiveRecord: 23.7ms)
+
+
+Started GET "/states?country=Arizona" for 127.0.0.1 at 2020-05-19 21:06:12 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Arizona"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 21ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:09:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (2.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (70.4ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 170ms (Views: 164.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 21:09:39 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 22ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 21:09:59 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:10:22 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.6ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (79.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 270ms (Views: 166.1ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/states?country=AD" for 127.0.0.1 at 2020-05-19 21:10:24 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AD"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.2ms)
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:10:41 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (82.2ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 292ms (Views: 194.8ms | ActiveRecord: 23.5ms)
+
+
+Started GET "/states?country=AF" for 127.0.0.1 at 2020-05-19 21:10:44 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AF"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (0.9ms)
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:11:43 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (8.5ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (104.7ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 311ms (Views: 306.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AD" for 127.0.0.1 at 2020-05-19 21:11:46 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AD"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 20ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=AD&state=1" for 127.0.0.1 at 2020-05-19 21:11:49 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"AD", "state"=>"1"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.9ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___2822143341601479002_449180'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:12:22 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.7ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 149ms (Views: 144.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/states?country=AQ" for 127.0.0.1 at 2020-05-19 21:12:29 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AQ"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (10.1ms)
+Completed 200 OK in 29ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=AR" for 127.0.0.1 at 2020-05-19 21:12:36 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AR"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:12:42 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (3.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (51.9ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 152ms (Views: 145.1ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/states?country=AQ" for 127.0.0.1 at 2020-05-19 21:12:51 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AQ"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:13:00 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (9.2ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (65.7ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 182ms (Views: 175.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/states?country=AL" for 127.0.0.1 at 2020-05-19 21:13:06 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AL"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.2ms)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:13:24 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.6ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 148ms (Views: 143.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 21:13:28 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.5ms)
+Completed 200 OK in 22ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:13:46 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.1ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 146ms (Views: 141.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AL" for 127.0.0.1 at 2020-05-19 21:13:53 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AL"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:14:35 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (75.4ms)
+  Rendered layouts/_alerts.html.erb (1.8ms)
+Completed 200 OK in 253ms (Views: 162.1ms | ActiveRecord: 21.9ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 21:14:38 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 23ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:15:20 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (84.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 302ms (Views: 181.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:18:09 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (72.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 255ms (Views: 174.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 21:18:13 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.5ms)
+Completed 200 OK in 25ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:22:52 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.8ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (5.6ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (241.8ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 5886ms (Views: 5714.5ms | ActiveRecord: 28.8ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 21:23:01 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 21ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:24:41 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (82.6ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 303ms (Views: 215.7ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/states?country=AF" for 127.0.0.1 at 2020-05-19 21:24:44 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AF"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (3.6ms)
+Completed 200 OK in 28ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:27:09 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (245.4ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 1105ms (Views: 948.6ms | ActiveRecord: 25.4ms)
+
+
+Started GET "/states?country=AE" for 127.0.0.1 at 2020-05-19 21:27:52 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AE"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 23ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:27:53 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (4.1ms)
+  [1m[36mSpeciality Load (2.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (5.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (162.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 475ms (Views: 371.4ms | ActiveRecord: 31.2ms)
+
+
+Started GET "/states?country=AF" for 127.0.0.1 at 2020-05-19 21:27:55 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AF"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 22ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:28:10 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (68.6ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 239ms (Views: 174.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:28:22 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (104.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 298ms (Views: 229.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:28:44 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (4.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.6ms)
+  Rendered layouts/_alerts.html.erb (1.6ms)
+Completed 200 OK in 165ms (Views: 157.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/states?country=California" for 127.0.0.1 at 2020-05-19 21:28:52 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"California"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 21ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=California&state=DE" for 127.0.0.1 at 2020-05-19 21:29:10 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"California", "state"=>"DE"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (12.8ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_38840'
+Started GET "/states?country=Connecticut" for 127.0.0.1 at 2020-05-19 21:29:19 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Connecticut"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.4ms)
+Completed 200 OK in 22ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=Alaska" for 127.0.0.1 at 2020-05-19 21:30:45 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Alaska"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 21ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:31:27 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (55.6ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 224ms (Views: 157.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/states?country=Alabama" for 127.0.0.1 at 2020-05-19 21:31:29 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Alabama"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (5.2ms)
+Completed 200 OK in 26ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:31:53 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (70.4ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 265ms (Views: 170.0ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/states?country=Arizona" for 127.0.0.1 at 2020-05-19 21:31:56 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Arizona"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (4.8ms)
+Completed 200 OK in 29ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=Connecticut" for 127.0.0.1 at 2020-05-19 21:32:04 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Connecticut"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (5.3ms)
+Completed 200 OK in 27ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=Connecticut&state=AR" for 127.0.0.1 at 2020-05-19 21:32:07 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"Connecticut", "state"=>"AR"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_51340'
+Started GET "/states?country=Georgia" for 127.0.0.1 at 2020-05-19 21:32:09 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Georgia"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (5.3ms)
+Completed 200 OK in 26ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=Georgia&state=AS" for 127.0.0.1 at 2020-05-19 21:32:11 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"Georgia", "state"=>"AS"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.3ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_51600'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:33:31 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.5ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (31.4ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 134ms (Views: 130.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=Alaska" for 127.0.0.1 at 2020-05-19 21:33:39 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Alaska"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (5.2ms)
+Completed 200 OK in 26ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=District%20of%20Columbia" for 127.0.0.1 at 2020-05-19 21:35:27 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"District of Columbia"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (5.0ms)
+Completed 200 OK in 26ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:35:29 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (2.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 261ms (Views: 256.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:35:53 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (35.2ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 269ms (Views: 265.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=Connecticut" for 127.0.0.1 at 2020-05-19 21:35:56 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Connecticut"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (4.8ms)
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=California" for 127.0.0.1 at 2020-05-19 21:36:59 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"California"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (4.8ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:37:41 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.3ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (58.9ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 170ms (Views: 165.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/states?country=AG" for 127.0.0.1 at 2020-05-19 21:37:46 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AG"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (5.1ms)
+Completed 200 OK in 25ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=AG&state=AE" for 127.0.0.1 at 2020-05-19 21:38:36 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"AG", "state"=>"AE"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.8ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_58480'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:38:50 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (69.8ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 242ms (Views: 170.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:39:08 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (74.8ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 277ms (Views: 207.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AL" for 127.0.0.1 at 2020-05-19 21:39:11 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AL"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.4ms)
+Completed 200 OK in 23ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:39:38 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (77.9ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 265ms (Views: 174.2ms | ActiveRecord: 22.1ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 21:39:42 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.2ms)
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=AL" for 127.0.0.1 at 2020-05-19 21:39:51 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AL"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (3.0ms)
+Completed 200 OK in 28ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=AL&state=DC" for 127.0.0.1 at 2020-05-19 21:39:52 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"AL", "state"=>"DC"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (10.6ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_71040'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:41:02 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered doctors/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+'.freeze; end 
+          ^~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+          ensure
+          ^~~~~~
+/home/carlos/Proyectos/RubyHealthCare/app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+          end
+          ^~~
+):
+  
+app/views/doctors/registrations/new.html.erb:90: syntax error, unexpected `end', expecting ')'
+app/views/doctors/registrations/new.html.erb:95: syntax error, unexpected `ensure', expecting ')'
+app/views/doctors/registrations/new.html.erb:97: syntax error, unexpected `end', expecting ')'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:41:12 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.4ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.6ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 156ms (Views: 151.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/states?country=Arizona" for 127.0.0.1 at 2020-05-19 21:41:20 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Arizona"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.4ms)
+Completed 200 OK in 22ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:41:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (2.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (1383.2ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 1489ms (Views: 1483.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/states?country=Mexico%20City" for 127.0.0.1 at 2020-05-19 21:41:53 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"Mexico City"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 22ms (Views: 12.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:42:14 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 159ms (Views: 154.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=MX" for 127.0.0.1 at 2020-05-19 21:42:24 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 21ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:42:51 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (2.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (50.5ms)
+  Rendered layouts/_alerts.html.erb (1.6ms)
+Completed 200 OK in 281ms (Views: 275.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:43:02 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.7ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 440ms (Views: 436.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:43:16 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (54.5ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 175ms (Views: 170.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=MW" for 127.0.0.1 at 2020-05-19 21:43:19 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.7ms)
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=MX" for 127.0.0.1 at 2020-05-19 21:43:24 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.7ms)
+Completed 200 OK in 26ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:44:14 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (102.2ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 319ms (Views: 231.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/states?country=MW" for 127.0.0.1 at 2020-05-19 21:44:19 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.2ms)
+Completed 200 OK in 1218ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?country=MX" for 127.0.0.1 at 2020-05-19 21:44:27 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 20ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:45:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.2ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 148ms (Views: 143.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/states?country=MW" for 127.0.0.1 at 2020-05-19 21:45:39 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 22ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:45:51 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.5ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 150ms (Views: 145.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/states?country=MX" for 127.0.0.1 at 2020-05-19 21:45:56 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 22ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=MX&state=1" for 127.0.0.1 at 2020-05-19 21:45:59 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"MX", "state"=>"1"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (10.9ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_112460'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:46:25 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (66.7ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 234ms (Views: 167.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=MW" for 127.0.0.1 at 2020-05-19 21:46:29 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (16.7ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "csasd":String):
+    12: state.appendChild(placeholder);
+    13: state.options[state.options.length] = new Option('<%= @dstates %>', '<%= 1 %>');
+    14: // Add the states
+    15: <% @dstates.each do |s| %>
+    16: state.options[state.options.length] = new Option('<%= s[1] %>', '<%= s[0] %>');
+    17: <% end %>
+  
+app/views/states/index.js.erb:15:in `_app_views_states_index_js_erb__3129822522760155519_118600'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:46:39 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (52.3ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 178ms (Views: 173.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?country=MV" for 127.0.0.1 at 2020-05-19 21:46:41 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MV"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.3ms)
+Completed 200 OK in 25ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:46:53 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 158ms (Views: 153.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/states?country=MX" for 127.0.0.1 at 2020-05-19 21:46:56 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.2ms)
+Completed 200 OK in 20ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=MX&state=1" for 127.0.0.1 at 2020-05-19 21:46:59 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"MX", "state"=>"1"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_119220'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:47:48 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.6ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.4ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (51.0ms)
+  Rendered layouts/_alerts.html.erb (1.4ms)
+Completed 200 OK in 158ms (Views: 153.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/states?country=MW" for 127.0.0.1 at 2020-05-19 21:47:52 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (17.7ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for "csasd":String):
+    12: state.appendChild(placeholder);
+    13: 
+    14: // Add the states
+    15: <% @dstates.each do |s| %>
+    16: state.options[state.options.length] = new Option('<%= s[1] %>', '<%= s[0] %>');
+    17: <% end %>
+  
+app/views/states/index.js.erb:15:in `_app_views_states_index_js_erb__3129822522760155519_119540'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:48:45 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.8ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (89.5ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 292ms (Views: 191.7ms | ActiveRecord: 22.7ms)
+
+
+Started GET "/states?country=MN" for 127.0.0.1 at 2020-05-19 21:48:53 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"MN"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 24ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:48:56 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.6ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.9ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.8ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 154ms (Views: 150.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?country=AI" for 127.0.0.1 at 2020-05-19 21:48:58 -0500
+Processing by StatesController#index as */*
+  Parameters: {"country"=>"AI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.4ms)
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:50:36 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.3ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (69.9ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 368ms (Views: 296.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/states?dcountry=AF" for 127.0.0.1 at 2020-05-19 21:50:38 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"AF"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.6ms)
+Completed 200 OK in 1237ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=AF&state=" for 127.0.0.1 at 2020-05-19 21:50:44 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"AF", "state"=>""}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.5ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_132320'
+Started GET "/states?dcountry=FI" for 127.0.0.1 at 2020-05-19 21:50:48 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"FI"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.5ms)
+Completed 200 OK in 1262ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?country=FI&state=" for 127.0.0.1 at 2020-05-19 21:50:51 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"country"=>"FI", "state"=>""}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.1ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_146980'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:52:23 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (45.8ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 274ms (Views: 269.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dstates?dcountry=DM" for 127.0.0.1 at 2020-05-19 21:52:26 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/dstates"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:52:58 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (9.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (5.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (76.4ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 314ms (Views: 302.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 21:53:13 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 22ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 21:53:15 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.0ms)
+Completed 500 Internal Server Error in 75ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_147600'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:54:53 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.1ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.2ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (48.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 156ms (Views: 151.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?dcountry=MQ" for 127.0.0.1 at 2020-05-19 21:54:56 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MQ"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.7ms)
+Completed 200 OK in 1264ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 21:55:02 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 20ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=CHP" for 127.0.0.1 at 2020-05-19 21:55:07 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"CHP"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (11.7ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    11: city.appendChild(placeholder);
+    12: 
+    13: // Add the states
+    14: <% @cities.each do |c| %>
+    15:     city.options[city.options.length] = new Option('<%= c %>');
+    16: <% end %>
+  
+app/views/cities/index.js.erb:14:in `_app_views_cities_index_js_erb___3749247386990170055_148120'
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 21:56:21 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.7ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.1ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 146ms (Views: 142.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?dcountry=MW" for 127.0.0.1 at 2020-05-19 21:56:24 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MW"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.5ms)
+Completed 200 OK in 1262ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MX" for 127.0.0.1 at 2020-05-19 21:56:27 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MX"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.4ms)
+Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MX&dstate=GUA" for 127.0.0.1 at 2020-05-19 21:56:30 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MX", "dstate"=>"GUA"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (1.9ms)
+Completed 200 OK in 23ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:00:04 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.1ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.8ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (54.4ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 151ms (Views: 147.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/states?dcountry=MN" for 127.0.0.1 at 2020-05-19 22:00:06 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MN"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.1ms)
+Completed 200 OK in 1250ms (Views: 12.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MN&dstate=057" for 127.0.0.1 at 2020-05-19 22:00:09 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MN", "dstate"=>"057"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.6ms)
+Completed 200 OK in 32ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:00:32 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (1.9ms)
+  [1m[36mSpeciality Load (1.2ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.0ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (47.3ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 149ms (Views: 144.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/states?dcountry=MC" for 127.0.0.1 at 2020-05-19 22:00:34 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MC"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.8ms)
+Completed 200 OK in 1229ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/states?dcountry=MN" for 127.0.0.1 at 2020-05-19 22:00:43 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"MN"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (2.0ms)
+Completed 200 OK in 22ms (Views: 13.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=MN&dstate=057" for 127.0.0.1 at 2020-05-19 22:00:45 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"MN", "dstate"=>"057"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (6.5ms)
+Completed 200 OK in 30ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:01:24 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.8ms)
+  [1m[36mSpeciality Load (1.5ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.3ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (54.9ms)
+  Rendered layouts/_alerts.html.erb (12.0ms)
+Completed 200 OK in 182ms (Views: 177.9ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/doctors" for 127.0.0.1 at 2020-05-19 22:05:06 -0500
+Processing by Doctors::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K2FwwF+DRyRv0wFLWY2BnKOX0qsoah16YqEozwwh87M7ed3jXVGzWodL54oiaQ6yKkTpcHoW2YK3z7bKaQ5d5g==", "doctor"=>{"name"=>"", "lastname"=>"", "email"=>"", "cellphone"=>"", "license"=>"", "speciality_id"=>"4", "country"=>"MN", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (3.9ms)
+  [1m[36mSpeciality Load (0.9ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (2.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (46.5ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 163ms (Views: 140.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/doctors" for 127.0.0.1 at 2020-05-19 22:05:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/doctors"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-05-19 22:05:26 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_alerts.html.erb (1.5ms)
+Completed 200 OK in 103ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/doctors/sign_up" for 127.0.0.1 at 2020-05-19 22:05:28 -0500
+Processing by Doctors::RegistrationsController#new as HTML
+  Rendering doctors/registrations/new.html.erb within layouts/application
+  Rendered /var/lib/gems/2.7.0/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (2.0ms)
+  [1m[36mSpeciality Load (1.0ms)[0m  [1m[34mSELECT "specialities".* FROM "specialities"[0m
+  ↳ app/views/doctors/registrations/new.html.erb:44
+  Rendered doctors/shared/_links.html.erb (3.7ms)
+  Rendered doctors/registrations/new.html.erb within layouts/application (48.3ms)
+  Rendered layouts/_alerts.html.erb (1.3ms)
+Completed 200 OK in 164ms (Views: 159.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/states?dcountry=AR" for 127.0.0.1 at 2020-05-19 22:12:42 -0500
+Processing by StatesController#index as */*
+  Parameters: {"dcountry"=>"AR"}
+  Rendering states/index.js.erb
+  Rendered states/index.js.erb (1.9ms)
+Completed 200 OK in 1351ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cities?dcountry=AR&dstate=K" for 127.0.0.1 at 2020-05-19 22:12:46 -0500
+Processing by CitiesController#index as */*
+  Parameters: {"dcountry"=>"AR", "dstate"=>"K"}
+  Rendering cities/index.js.erb
+  Rendered cities/index.js.erb (5.9ms)
+Completed 200 OK in 55ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
