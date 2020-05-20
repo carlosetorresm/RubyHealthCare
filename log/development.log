@@ -3477,3 +3477,827 @@ Processing by PacientesMenuController#PacientesMenu as HTML
 Completed 200 OK in 203ms (Views: 201.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:06:36 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (8.8ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 2157ms (Views: 2156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:08:04 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:08:44 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 2333ms (Views: 2331.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:08:50 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:08:57 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 69.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 23:29:02 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 23:29:04 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (4.4ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:29:09 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:29:11 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+  Rendering medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application
+  Rendered medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:29:15 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:31:08 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 2445ms (Views: 2444.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:31:12 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+  Rendering medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application
+  Rendered medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_preescribir_receta/MedicosPreescribirReceta" for 127.0.0.1 at 2020-05-19 23:31:17 -0500
+Processing by MedicosPreescribirRecetaController#MedicosPreescribirReceta as HTML
+  Rendering medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application
+  Rendered medicos_preescribir_receta/MedicosPreescribirReceta.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 121ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:37:29 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 2089ms (Views: 2088.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:37:33 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+Completed 406 Not Acceptable in 71ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MedicosRegistrarServicioController#MedicosRegistrarServicio is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:38:03 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+  Rendering medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application
+  Rendered medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:38:17 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (3.1ms)
+Completed 200 OK in 80ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:41:27 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_emitir_factura/EmitirFactura" for 127.0.0.1 at 2020-05-19 23:41:29 -0500
+Processing by MedicosEmitirFacturaController#EmitirFactura as HTML
+  Rendering medicos_emitir_factura/EmitirFactura.html.erb within layouts/application
+  Rendered medicos_emitir_factura/EmitirFactura.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"MedicosRegistrarServicio", :controller=>"medicos_emitir_factura"}):
+     5: 
+     6:     <div class="formulario">
+     7: 
+     8:     <%= form_tag :action => 'MedicosRegistrarServicio' do %>
+     9: 
+    10:       <div class="row">
+    11:         <div class="col-md-3">
+  
+app/views/medicos_emitir_factura/EmitirFactura.html.erb:8:in `_app_views_medicos_emitir_factura__mitir_actura_html_erb___2192918949030447896_103840'
+Started GET "/medicos_emitir_factura/EmitirFactura" for 127.0.0.1 at 2020-05-19 23:42:19 -0500
+Processing by MedicosEmitirFacturaController#EmitirFactura as HTML
+  Rendering medicos_emitir_factura/EmitirFactura.html.erb within layouts/application
+  Rendered medicos_emitir_factura/EmitirFactura.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.9ms)
+Completed 200 OK in 123ms (Views: 121.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_emitir_factura/EmitirFactura" for 127.0.0.1 at 2020-05-19 23:44:36 -0500
+Processing by MedicosEmitirFacturaController#EmitirFactura as HTML
+  Rendering medicos_emitir_factura/EmitirFactura.html.erb within layouts/application
+  Rendered medicos_emitir_factura/EmitirFactura.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (1.2ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:44:38 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 79.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:44:40 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+Completed 406 Not Acceptable in 90ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MedicosRegistrarServicioController#MedicosRegistrarServicio is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:45:20 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_alerts.html.erb (2.4ms)
+Completed 200 OK in 109ms (Views: 108.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_menu/MedicosMenu" for 127.0.0.1 at 2020-05-19 23:45:21 -0500
+Processing by MedicosMenuController#MedicosMenu as HTML
+  Rendering medicos_menu/MedicosMenu.html.erb within layouts/application
+  Rendered medicos_menu/MedicosMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 108ms (Views: 107.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:45:23 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/medicos_registrar_servicio/MedicosRegistrarServicio"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:45:43 -0500
+  
+AbstractController::ActionNotFound (The action 'MedicosRegistrarServicio' could not be found for MedicosRegistrarServicioController):
+  
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:45:59 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+Completed 406 Not Acceptable in 64ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MedicosRegistrarServicioController#MedicosRegistrarServicio is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.4.2) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.2) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.2) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.2) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.2) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.2) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.2) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.2) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/medicos_registrar_servicio/MedicosRegistrarServicio" for 127.0.0.1 at 2020-05-19 23:46:24 -0500
+Processing by MedicosRegistrarServicioController#MedicosRegistrarServicio as HTML
+  Rendering medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application
+  Rendered medicos_registrar_servicio/MedicosRegistrarServicio.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 23:50:51 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.7ms)
+Completed 200 OK in 2792ms (Views: 2791.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_generar_consulta/GenerarConsulta" for 127.0.0.1 at 2020-05-19 23:50:56 -0500
+Processing by PacienteGenerarConsultaController#GenerarConsulta as HTML
+  Rendering paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application
+  Rendered paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_alerts.html.erb (0.7ms)
+Completed 200 OK in 146ms (Views: 142.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_generar_consulta/GenerarConsulta" for 127.0.0.1 at 2020-05-19 23:51:55 -0500
+Processing by PacienteGenerarConsultaController#GenerarConsulta as HTML
+  Rendering paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application
+  Rendered paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.7ms)
+Completed 200 OK in 106ms (Views: 105.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_generar_consulta/GenerarConsulta" for 127.0.0.1 at 2020-05-19 23:52:48 -0500
+Processing by PacienteGenerarConsultaController#GenerarConsulta as HTML
+  Rendering paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application
+  Rendered paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 90ms (Views: 89.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_generar_consulta/GenerarConsulta" for 127.0.0.1 at 2020-05-19 23:53:18 -0500
+Processing by PacienteGenerarConsultaController#GenerarConsulta as HTML
+  Rendering paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application
+  Rendered paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 86ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 23:53:21 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_generar_consulta/GenerarConsulta" for 127.0.0.1 at 2020-05-19 23:53:23 -0500
+Processing by PacienteGenerarConsultaController#GenerarConsulta as HTML
+  Rendering paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application
+  Rendered paciente_generar_consulta/GenerarConsulta.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (2.5ms)
+Completed 200 OK in 163ms (Views: 162.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 23:55:55 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-19 23:55:57 -0500
+  Rendered layouts/_alerts.html.erb (0.6ms)
+Completed 200 OK in 3949ms (Views: 3948.1ms | ActiveRecord: 0.0ms)
+
+
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_alerts.html.erb (0.8ms)
+Completed 200 OK in 234ms (Views: 233.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-19 23:56:01 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_alerts.html.erb (0.5ms)
+Completed 200 OK in 130ms (Views: 129.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pacientes_menu/PacientesMenu" for 127.0.0.1 at 2020-05-20 00:02:40 -0500
+Processing by PacientesMenuController#PacientesMenu as HTML
+  Rendering pacientes_menu/PacientesMenu.html.erb within layouts/application
+  Rendered pacientes_menu/PacientesMenu.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:02:44 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..4)):
+    58:       <br><br>
+    59:       <p class="seccion">Método de pago</p>
+    60:       <div class="row">
+    61:         <%= radio_button_tag 'visa' %> visa   <%= radio_button_tag 'mastercard' %> MasterCard
+    62:       </div>
+    63:       <br>
+    64:       <div class="row">
+  
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:61:in `block in _app_views_paciente_datos_facturacion__atos_acturacion_html_erb__4525696800324682655_152040'
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:9:in `_app_views_paciente_datos_facturacion__atos_acturacion_html_erb__4525696800324682655_152040'
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:05:56 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:06:19 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:09:47 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 3..4)):
+    58:       <br><br>
+    59:       <p class="seccion">Método de pago</p>
+    60:       <div class="row">
+    61:         <%= radio_button :metodopago, 'visa' %> Visa
+    62:       </div>
+    63:       <br>
+    64:       <div class="row">
+  
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:61:in `block in _app_views_paciente_datos_facturacion__atos_acturacion_html_erb__4525696800324682655_152760'
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:9:in `_app_views_paciente_datos_facturacion__atos_acturacion_html_erb__4525696800324682655_152760'
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:10:07 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_alerts.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:10:34 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:11:13 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:11:58 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:13:45 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:14:04 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Sites/RubyHealthCare/app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:83: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...=( text_field_tag 'mes', size :2 );@output_buffer.safe_appen...
+...                              ^
+):
+  
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:83: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:14:14 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Sites/RubyHealthCare/app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:83: syntax error, unexpected string literal, expecting `do' or '{' or '('
+...=( text_field_tag 'mes', size '2' );@output_buffer.safe_appe...
+...                              ^
+):
+  
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:83: syntax error, unexpected string literal, expecting `do' or '{' or '('
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:15:09 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_field' for nil:NilClass):
+    80:           <label class="texto-form">Expira</label>
+    81:         </div>
+    82:         <div class="col-md-3">
+    83:           <%= f.text_field 'mes', :size=>"2" %>  /  <%= text_field_tag 'anio' %>
+    84:         </div>
+    85:       </div>
+    86:       <br>
+  
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:83:in `block in _app_views_paciente_datos_facturacion__atos_acturacion_html_erb__4525696800324682655_154840'
+app/views/paciente_datos_facturacion/DatosFacturacion.html.erb:9:in `_app_views_paciente_datos_facturacion__atos_acturacion_html_erb__4525696800324682655_154840'
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:15:30 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:16:25 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/paciente_datos_facturacion/DatosFacturacion"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+/usr/lib/ruby/vendor_ruby/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+/usr/lib/ruby/vendor_ruby/puma/configuration.rb:227:in `call'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:675:in `handle_request'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:476:in `process_client'
+/usr/lib/ruby/vendor_ruby/puma/server.rb:334:in `block in run'
+/usr/lib/ruby/vendor_ruby/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:16:55 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/paciente_datos_facturacion/DatosFacturacion" for 127.0.0.1 at 2020-05-20 00:16:57 -0500
+Processing by PacienteDatosFacturacionController#DatosFacturacion as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hkUS9cG7mR7OPiFcGk/0aAnHGE4Z56/UviRFP+1UePX7HW5rYqXFAeml9sGOfww1oIIJxsZLMPqe4WcM+zJ5Ig==", "direccion"=>"", "pais"=>"", "estado"=>"", "municipio"=>"", "telefono"=>"", "tarjeta"=>"", "mes"=>"", "anio"=>"", "titular"=>"", "csv"=>"", "commit"=>"Actualizar"}
+  Rendering paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application
+  Rendered paciente_datos_facturacion/DatosFacturacion.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_alerts.html.erb (0.4ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
