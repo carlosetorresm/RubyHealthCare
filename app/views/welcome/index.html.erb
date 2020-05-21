@@ -1,7 +1,7 @@
 <%if doctor_signed_in? %>
-        <h3>Bienvenido <%= current_doctor.name %></h3>
-    <%end%>
-    <%if patient_signed_in? %>
-        <h3>Bienvenido <%= current_patient.name %></h3>
-    <%end%>
+    <h3>Bienvenido <%= current_doctor.name %></h3>
+<%end%>
+<%if patient_signed_in? %>
+    <h3>Bienvenido <%= current_patient.name %></h3>
+<%end%>
 <%= render 'partials/login'%>

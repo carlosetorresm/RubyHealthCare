@@ -5,6 +5,8 @@ ruby '2.7.0'
 
 # Configura un servicio de sesiones seguro y rapido
 gem 'devise'
+# Permite acciones de jquery
+gem 'jquery-rails'
 # Recupera la información de paises, estados y ciudades de la bd de max mind
 gem 'city-state', '~> 0.1.0'
 # Recupera tu imagen de perfil universal de tu correo, esta en toda app de wordpress
