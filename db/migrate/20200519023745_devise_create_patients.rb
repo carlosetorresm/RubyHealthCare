@@ -4,13 +4,14 @@ class DeviseCreatePatients < ActiveRecord::Migration[5.2]
   def change
     create_table :patients do |t|
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
+      t.string :username,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       #Datos del usuario
       t.string :name
       t.string :lastname
       t.datetime :birth
+      t.string :email,              null: false, default: ""
       t.text :allergy
       t.text :chronic_diseases
       t.text :surgeries

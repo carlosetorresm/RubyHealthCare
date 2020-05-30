@@ -1,16 +1,5 @@
-<%if !patient_signed_in? && !doctor_signed_in? %>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-sm-6">
-                <h3><%=link_to "Ingresar como Medico", new_doctor_session_path%></h3>
-            </div>
-            <div class="col-sm-6">
-                <h3><%=link_to "Ingresar como Paciente", new_patient_session_path%></h3>
-            </div>
-        </div>
-        <div class="text-center">
-            <p>Si ya estas registrado puedes iniciar sesión</p>
-            <button type="button" class="btn btn-success">Aquí</button>
-        </div>
-    </div>
-<%end%>
+<div class="shadow login text-center">
+    <h2>Bienvenido al Sistema de Salud</h2>
+    <h1>Ruby Health Care</h1>
+    <p></p>
+    <%= render 'layouts/alerts' %>

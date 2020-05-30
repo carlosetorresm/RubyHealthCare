@@ -51,10 +51,11 @@ ActiveRecord::Schema.define(version: 2020_05_19_093754) do
   end
 
   create_table "doctors", force: :cascade do |t|
-    t.string "email", default: "", null: false
+    t.string "username", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name"
     t.string "lastname"
+    t.string "email", default: "", null: false
     t.string "license"
     t.bigint "speciality_id"
     t.string "address"
@@ -77,11 +78,12 @@ ActiveRecord::Schema.define(version: 2020_05_19_093754) do
   end
 
   create_table "patients", force: :cascade do |t|
-    t.string "email", default: "", null: false
+    t.string "username", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "name"
     t.string "lastname"
     t.datetime "birth"
+    t.string "email", default: "", null: false
     t.text "allergy"
     t.text "chronic_diseases"
     t.text "surgeries"

@@ -16,3 +16,42 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+.shadow {
+    display: inline-block;
+    background-color:rgba(185, 168, 206, 0.6);
+    position: absolute;
+    left: 17%;
+    width: 65%;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
+    box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
+    color: #000;
+  }
+  .login {
+    top: 10%;
+  }
+.signin {
+  display: inline-block;
+  position: relative;
+  left:15%;
+}
+.update {
+  display: inline-block;
+  position: relative;
+  left:5%;
+}
+.contenido{
+    width: 100%;
+}
+.background{
+    background-image: url(background1.jpg);
+    /*background-color: rgba(255, 0, 0, 0.4);*/
+}
+.enviar {
+  display: inline-block;
+  width: 85%;
+  border-color: rgb(63, 40, 40);
+  border-style: outset;
+  color: #000;
+}
