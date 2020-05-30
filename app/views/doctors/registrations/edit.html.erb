@@ -1,10 +1,11 @@
+<div class="shadow">
 <h2>Editar perfil de <%= resource_name.to_s.humanize %></h2>
-
+<div class="update">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 <%-# Imagen de perfil -%>  
   <div class="row">
-    <div class="col-sm-1">
+    <div class="col-sm-6">
       <%= image_tag user_avatar(resource, 100), class: "img-circle" %>
     </div>
     <div class="col-sm-4">
@@ -14,11 +15,11 @@
 <p></p>
 <%-# Nombre y Apellidos -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-5 field">
       <%= f.label :'Nombre(s)' %><br />
       <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :'Apellido(s)' %><br />
       <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
     </div>
@@ -26,14 +27,14 @@
 <p></p>
 <%-# Email y Numero telefonico -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-5 field">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <div>Esperando por confirmación de: <%= resource.unconfirmed_email %></div>
     <% end %>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Numero_de_Teléfono %><br />
       <%= f.text_field :cellphone, autofocus: true%>
     </div>
@@ -41,11 +42,11 @@
 <p></p>
 <%-# Cédula y Especialidad -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-5 field">
       <%= f.label :Cédula %><br />
       <%= f.text_field :license, autofocus: true %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Especialidad %>
       <%= f.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name, {:selected => resource.speciality_id})%>
     </div>
@@ -53,11 +54,11 @@
 <p></p>
 <%-# Pais -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-5 field">
       <%= f.label :Pais %>
       <%= f.text_field :country, autofocus: true %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Estado %>
       <%= f.text_field :state, autofocus: true %>
     </div>
@@ -65,17 +66,19 @@
 <p></p>
 <%-# Ciudad -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-5 field">
       <%= f.label :Ciudad %>
       <%= f.text_field :city, autofocus: true %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Dirección %><br />
       <%= f.text_field :address, autofocus: true %>
     </div>
   </div>
 <p></p>
-  <div class="field">
+<%-# contraseñas -%>
+ <div class="row">
+  <div class="col-sm-10 field">
     <%= f.label :Contraseña %> <i>(Dejelo en blanco si no desea cambiar su contraseña)</i><br />
     <%= f.password_field :password, autocomplete: "new-password" %>
     <% if @minimum_password_length %>
@@ -84,23 +87,31 @@
     <% end %>
   </div>
 
-  <div class="field">
+  <div class="row">
+  <div class="col-sm-10 field">
     <%= f.label :Confirmar_contraseña%><br />
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
-
-  <div class="field">
+  </div>
+</div>
+</div>
+<p></p>
+  <div class="row enviar">
+  <div class="col-sm-12 field">
     <%= f.label :Contraseña_actual %> <i>(Ingresa tu contraseña para guardar los cambios)</i><br />
     <%= f.password_field :current_password, autocomplete: "current-password" %>
   </div>
-
-  <div class="actions">
+  <p>--------------------------------------------------------------------------------------------------------------------------------</p>
+  <div class="col-sm-12 actions">
     <%= f.submit "Update" %>
+    <p></p>
   </div>
 <% end %>
+</div>
 
-<h3>Cancel my account</h3>
+<h3>Cancelar mi cuenta</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+<p>Insatisfecho? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 
 <%= link_to "Back", :back %>
+</div>

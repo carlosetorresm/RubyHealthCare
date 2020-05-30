@@ -1,15 +1,17 @@
-<h2>Registrarse</h2>
-
+<h2>Nuevo doctor</h2>
+<div class="signin">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <div class="row">
+    <div class="col-sm-8 field">
   <%= render "devise/shared/error_messages", resource: resource %>
-
+  </div></div>
 <%-# Nombre y Apellidos -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :'Nombre(s)' %><br />
       <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :'Apellido(s)' %><br />
       <%= f.text_field :lastname, autofocus: true, autocomplete: "lastname" %>
     </div>
@@ -17,11 +19,11 @@
 <p></p>
 <%-# Email y Numero telefonico -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Email %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Numero_de_Teléfono %><br />
       <%= f.text_field :cellphone, autofocus: true%>
     </div>
@@ -29,11 +31,11 @@
 <p></p>
 <%-# Cédula y Especialidad -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Cédula %><br />
       <%= f.text_field :license, autofocus: true %>
     </div>
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Especialidad %>
       <%= f.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name) %>
     </div>
@@ -41,7 +43,7 @@
 <p></p>
 <%-# Pais -%>
   <div class="row">
-    <div class="col-sm-5 field">
+    <div class="col-sm-7 field">
       <%= f.label :Pais %>
       <em>(Una vez elegido seleccione su estado y despues su ciudad)</em>
       <%= f.select :country, options_for_select(CS.countries.map { |c| [c[1], c[0]] } ) %>
@@ -50,7 +52,7 @@
 <p></p>
 <%-# Estado -%>
   <div class="row">
-    <div class="col-sm-1 field">
+    <div class="col-sm-7 field">
       <%= f.label :Estado %>
       <%= f.select :state, options_for_select([])  %>
     </div>
@@ -58,7 +60,7 @@
 <p></p>
 <%-# Ciudad -%>
   <div class="row">
-    <div class="col-sm-1 field">
+    <div class="col-sm-7 field">
       <%= f.label :Ciudad %>
       <%= f.select :city,  options_for_select([]) %>
     </div>
@@ -66,32 +68,40 @@
 <p></p>
 <%-# Dirección -%>
   <div class="row">
-    <div class="col-sm-2 field">
+    <div class="col-sm-4 field">
       <%= f.label :Dirección %><br />
       <%= f.text_field :address, autofocus: true %>
+    </div>
+    <div class="col-sm-4 field">
+      <%= f.label :'Usuario' %><br />
+      <%= f.text_field :username, autofocus: true, autocomplete: "name" %>
     </div>
   </div>
 <p></p>
 <%-# Contraseñas -%>
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       <div class="field">
       <%= f.label :Contraseña %>
-      <%= f.password_field :password, autocomplete: "new-password" %>
       <% if @minimum_password_length %>
       <em>(<%= @minimum_password_length %> caracteres minimo)</em>
       <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password" %>
     </div></div>
-    <div class="col-sm-2">
+    <div class="col-sm-4">
       <div class="field">
       <%= f.label :Confirmar_contraseña%><br />
       <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
     </div></div>
   </div>
-
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
+  <p></p>
+  <div class="row">
+  <div class="col-sm-8">
+    <div class="actions">
+      <%= f.submit "Registrarme" %>
+    </div>
 <% end %>
-
+<p></p>
 <%= render "doctors/shared/links" %>
+<p></p>
+</div>
