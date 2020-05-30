@@ -16,9 +16,10 @@
       <ul class="nav navbar-nav">
         <li class="active"><%= link_to "Inicio", root_path, class: "navbar-brand active"%></li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <%if doctor_signed_in? %>
-        <li class="active"><%= link_to "Inicio", root_path, class: "navbar-brand active"%></li>
+        <li><%= link_to "Servicios", root_path, class: "navbar-brand active"%></li>
         <%else%>
         <%end%>
         <li class="dropdown">

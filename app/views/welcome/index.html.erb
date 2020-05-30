@@ -1,8 +1,12 @@
 <%if doctor_signed_in? %>
-    <h3>Bienvenido <%= current_doctor.name %></h3>
+    <div class = "init">
+        <h3>Bienvenido <%= current_doctor.name %></h3>
+    </div>
 <%else%>
     <%if patient_signed_in? %>
+        <div class = "init">
         <h3>Bienvenido <%= current_patient.name %></h3>
+        </div>
     <%else%>
         <div class="container">
             <div class="row text-center">
