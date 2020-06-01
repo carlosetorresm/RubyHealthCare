@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col-sm-5 field">
       <%= f.label :'Nombre(s)' %><br />
-      <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+      <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"formulario"%>
     </div>
     <div class="col-sm-4 field">
       <%= f.label :'Apellido(s)' %><br />
@@ -103,7 +103,7 @@
   </div>
   <p>--------------------------------------------------------------------------------------------------------------------------------</p>
   <div class="col-sm-12 actions">
-    <%= f.submit "update" %>
+    <%= f.submit "Guardar cambios" %>
     <p></p>
   </div>
 <% end %>

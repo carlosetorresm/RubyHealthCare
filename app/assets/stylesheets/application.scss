@@ -20,24 +20,12 @@
     display: inline-block;
     background-color:rgba(185, 168, 206, 0.7);
     position: absolute;
-    left: 17%;
-    width: 65%;
-    border-radius: 10px 10px 10px 10px;
-    -webkit-box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
-    box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
-    color: #000;
-  }
-  .init {
-    display: inline-block;
-    background-color:rgba(185, 168, 206, 0.7);
-    position: absolute;
     left: 5%;
     width: 90%;
     border-radius: 10px 10px 10px 10px;
-    -webkit-box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
-    box-shadow: 10px 4px 50px 11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     color: #000;
   }
   .login {
@@ -66,4 +54,26 @@
   border-color: rgb(63, 40, 40);
   border-style: outset;
   color: #000;
+}
+
+.field{
+  margin-top:1em;
+}
+.formulario{
+  border: none;
+  border-bottom: 1px solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  padding: 10px 0px;
+  font-size: 1.2em;
+}
+table{
+  display: inline-block;
+  position: relative;
+  left: 3%;
+}
+th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }

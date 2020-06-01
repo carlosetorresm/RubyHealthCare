@@ -1,0 +1,22 @@
+<div class="shadow">
+    <h1>Agregar Servicio</h1>
+    <%= form_for @dservice, url: dservices_path do |f| %>
+        <% @dservice.errors.full_messages.each do |message| %>
+            <div class="field">
+            * <%= message%>
+            </div>
+        <%end%>
+        <div class="field">
+            <%= f.label :Servicio %><br />
+            <%= f.select :service, options_from_collection_for_select(Service.all, :id,:name) %>
+        </div>
+        <div class="field">
+            <%= f.label :Costo %><br />
+            <%= f.text_field :price, placeholder: "000.00"%>
+        </div>
+        <div class="field">
+            <%= f.submit "Guardar"%>
+        </div>
+    <%end%>
+    <p></p>
+</div>

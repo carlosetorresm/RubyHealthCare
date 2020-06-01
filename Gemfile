@@ -5,6 +5,10 @@ ruby '2.7.0'
 
 # Configura un servicio de sesiones seguro y rapido
 gem 'devise'
+# Gema para el manejo y creación de archivos PDF
+gem 'wicked_pdf'
+# Gema diseñada para transformar plantillas HTML a PDF
+gem 'wkhtmltopdf-binary'
 # Permite acciones de jquery
 gem 'jquery-rails'
 # Recupera la información de paises, estados y ciudades de la bd de max mind

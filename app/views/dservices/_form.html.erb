@@ -1,0 +1,19 @@
+<%if @dservice != [] %>
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Costo</th>
+    </tr>
+    <% @dservice.each do |s| %>
+    <tr>    
+        <td><%= Service.find_by(id: s.service).name %></td>
+        <td><%= Service.find_by(id: s.service).description %></td>
+        <td><%= s.price %><br></td>
+        <%if doctor_signed_in? %>
+            <td><%= button_to "Eliminar",dservice_url(s), method: :delete %></td>
+        <%end%>
+    </tr>
+    <%end%>
+</table>
+<%end%>

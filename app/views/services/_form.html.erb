@@ -1,0 +1,13 @@
+<table>
+    <tr>
+        <th>Servicio</th>
+        <th>Descripción</th>
+    </tr>
+    <% @service.each do |s| %>
+    <tr>
+        <td><%= s.name %></td>
+        <td><%= s.description %></td>
+        <td><%= link_to "Eliminar", s, method: :delete %></td>
+    </tr>
+<%end%>
+</table>

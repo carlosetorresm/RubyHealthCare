@@ -1,10 +1,10 @@
 <%if doctor_signed_in? %>
-    <div class = "init">
+    <div class = "shadow">
         <h3>Bienvenido <%= current_doctor.name %></h3>
     </div>
 <%else%>
     <%if patient_signed_in? %>
-        <div class = "init">
+        <div class = "shadow">
         <h3>Bienvenido <%= current_patient.name %></h3>
         </div>
     <%else%>

@@ -1,23 +1,24 @@
 <div class="shadow">
 <%= image_tag user_avatar(@user, 200), class: "img-circle center-block" %>
-<h1><%= @user.email%></h1>
 <h1><%= @user.name%> <%= @user.lastname%></h1>
+<h2>Correo electronico</h2>
+<h3><%= @user.email%></h3>
 <% if Doctor.find_by_username(params[:id]) %>
-<h1>Cédula Profesional</h1>
+<h2>Cédula Profesional</h2>
 <h3><%= @user.license%></h3>
-<h1>Especialidad</h1>
+<h2>Especialidad</h2>
 <h3><%= Speciality.find(@user.speciality_id).name%></h3>
-<h1>Localidad</h1>
+<h2>Localidad</h2>
 <h3><%= @user.city+', '+ @user.state+'.' %></h3>
 <%end%>
 <% if Patient.find_by_username(params[:id]) %>
-<h1>Localidad</h1>
+<h2>Localidad</h2>
 <h3><%= @user.city+', '+ @user.state+'.' %></h3>
-<h1>Alergias</h1>
+<h2>Alergias</h2>
 <h3><%= @user.allergy%></h3>
-<h1>Enfermedades Cronicas</h1>
+<h2>Enfermedades Cronicas</h2>
 <h3><%= @user.chronic_diseases%></h3>
-<h1>Cirugías</h1>
+<h2>Cirugías</h2>
 <h3><%= @user.surgeries%></h3>
 <%end%>
 </div>

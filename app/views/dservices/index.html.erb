@@ -1,0 +1,11 @@
+<div class="shadow">
+<%if doctor_signed_in? %>
+<h1>Mis servicios</h1>
+    <%= render 'dservices/form'%>
+    <%= button_to "Agregar servicio", new_dservice_path, method: :get %>
+    <%= button_to "Ver servicios", services_path, method: :get %>
+<%else%>
+    <%if patient_signed_in? %>
+    <%end%>
+<%end%>
+</div>
