@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'medicos_canalizar_pacientes/CanalizarPacientes'
   get 'paciente_datos_facturacion/DatosFacturacion'
   post 'paciente_datos_facturacion/DatosFacturacion'
 

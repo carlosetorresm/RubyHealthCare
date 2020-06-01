@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2020_05_31_111100) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
+<<<<<<< HEAD
   create_table "d_services", force: :cascade do |t|
     t.bigint "service_id"
     t.bigint "doctor_id"
@@ -44,6 +45,20 @@ ActiveRecord::Schema.define(version: 2020_05_31_111100) do
     t.datetime "updated_at", null: false
     t.index ["doctor_id"], name: "index_d_services_on_doctor_id"
     t.index ["service_id"], name: "index_d_services_on_service_id"
+=======
+  create_table "cities", force: :cascade do |t|
+    t.bigint "state_id"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["state_id"], name: "index_cities_on_state_id"
+  end
+
+  create_table "countries", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> 030653add51469b4e3605230221549627cda5f73
   end
 
   create_table "doctors", force: :cascade do |t|
@@ -58,7 +73,7 @@ ActiveRecord::Schema.define(version: 2020_05_31_111100) do
     t.string "city"
     t.string "state"
     t.string "country"
-    t.string "cellphone"
+    t.integer "cellphone"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -87,7 +102,7 @@ ActiveRecord::Schema.define(version: 2020_05_31_111100) do
     t.string "city"
     t.string "state"
     t.string "country"
-    t.string "cellphone"
+    t.integer "cellphone"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -115,7 +130,37 @@ ActiveRecord::Schema.define(version: 2020_05_31_111100) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "states", force: :cascade do |t|
+    t.bigint "country_id"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["country_id"], name: "index_states_on_country_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.inet "current_sign_in_ip"
+    t.inet "last_sign_in_ip"
+    t.string "permission_level"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+<<<<<<< HEAD
   add_foreign_key "d_services", "doctors"
   add_foreign_key "d_services", "services"
+=======
+  add_foreign_key "cities", "states"
+  add_foreign_key "states", "countries"
+>>>>>>> 030653add51469b4e3605230221549627cda5f73
 end
