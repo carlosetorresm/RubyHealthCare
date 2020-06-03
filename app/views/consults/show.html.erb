@@ -1,0 +1,37 @@
+<div class="shadow">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @consult.doctor.name %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @consult.patient.name %>
+</p>
+
+<p>
+  <strong>Speciality:</strong>
+  <%= @consult.speciality.name %>
+</p>
+<div style="display: inline-block;">
+  <%= (0...@consult.adj.count).each do |img|%>
+    <div style="width: 300px; height: 300px;">
+      <%if @consult.adj[img].image? %>
+        <%=image_tag (@consult.thumbnail(img)) %>
+      <%else%>
+        <%= video_tag url_for(@consult.adj[img]), size: "320x320", controls: true %>
+      <%end%>
+    </div>
+  <%end%>
+</div>
+
+<p>
+  <strong>Symptoms:</strong>
+  <%= @consult.symptoms %>
+</p>
+
+<%= link_to 'Edit', edit_consult_path(@consult) %> |
+<%= link_to 'Back', consults_path %>
+</div>

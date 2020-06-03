@@ -15,3 +15,8 @@ Speciality.create :name => "Geriatría", :description => "La Geriatría es la es
 Speciality.create :name => "Ginecología", :description => "Ginecología es la especialidad médica y quirúrgica que trata las enfermedades del sistema reproductor femenino (útero, vagina y ovarios) y de la reproducción."
 Speciality.create :name => "Neurología", :description => "La neurología es la especialidad médica que trata los trastornos del sistema nervioso."
 Speciality.create :name => "Pediatría", :description => "La pediatría es la especialidad médica que estudia al niño y sus enfermedades."
+
+Service.create :name => "Medicina preventiva", :description =>"La aplicación de vacunas de los laboratorios más reconocidos y con los distribuidores  del ramo que se han destacado por el mantenimiento de la cadena fría para que los biológicos al ser aplicados se encuentren en perfectas condiciones."
+Service.create :name => "Cirugía", :description =>"Quirófano equipado con anestesia inhalada y monitores trans quirúrgicos en donde al anestesista se le permite visualizar permanentemente las constantes del paciente como son el electrocardiograma, frecuencia respiratoria, cantidad de oxigeno y bióxido de carbono circulante en el organismo."
+Service.create :name => "Imagenología", :description =>"Radiología de alta frecuencia que es un equipo de rayos X gentil con el medio ambiente y con mucho menor riesgo para el personal que labora en el área."
+Service.create :name => "Laboratorio de análisis clínico", :description =>"Permite correr pruebas como química sanguínea en húmeda y seca, lo que facilita la obtención de datos a cualquier hora y en cuestión de minutos."

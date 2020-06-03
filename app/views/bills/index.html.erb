@@ -1,0 +1,34 @@
+<div class="shadow">
+<p id="notice"><%= notice %></p>
+
+<h1>Facturas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th style="width: 400px;">Servicios</th>
+      <th style="width: 50px;">Total</th>
+      <th>Fecha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bills.each do |bill| %>
+      <tr>
+        <td><%= bill.patient.name + " " + bill.patient.lastname %></td>
+        <td><%= bill.body %></td>
+        <td><%= bill.total %></td>
+        <td><%= bill.created_at %></td>
+        <td><%= button_to 'Imprimir', bill_path(bill, :format => :pdf), method: :get  %></td>
+        <td><%= button_to 'Eliminar', bill, method: :delete, data: { confirm: 'Seguro de eliminar la factura?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= button_to 'Nueva Factura', new_bill_path, method: :get%>
+</div>

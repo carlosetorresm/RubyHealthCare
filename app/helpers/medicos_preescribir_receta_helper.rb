@@ -1,2 +1,0 @@
-module MedicosPreescribirRecetaHelper
-end

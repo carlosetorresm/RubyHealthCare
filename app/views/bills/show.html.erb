@@ -1,0 +1,26 @@
+<div class="shadow">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Doctor:</strong>
+  <%= @bill.doctor.name %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @bill.patient.name %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @bill.body %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @bill.total %>
+</p>
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>
+</div>

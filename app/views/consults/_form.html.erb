@@ -1,0 +1,38 @@
+<%= form_with(model: consult, local: true) do |form| %>
+  <% if consult.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(consult.errors.count, "error") %> prohibited this consult from being saved:</h2>
+
+      <ul>
+      <% consult.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Especialidad %>
+    <%if doctor_signed_in?%>
+      <%= form.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name, {:selected => resource.speciality_id})%>
+    <%else%>
+      <%= form.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name)%>
+    <%end%>
+  </div>
+
+  <div class="field">
+    <%= form.label :symptoms %>
+    <%= form.text_area :symptoms %>
+  </div>
+
+  <div class="field">
+  <%= form.label :Adjuntar %><i>(Añada imagenes o videos)</i>
+  </div>
+   <div class="field">
+  <%= form.file_field :adj, multiple: true %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

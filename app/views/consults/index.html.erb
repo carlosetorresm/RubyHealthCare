@@ -1,0 +1,48 @@
+<div class="shadow">
+<p id="notice"><%= notice %></p>
+
+<h1>Consultas</h1>
+<%if @consults != nil %>
+  <table>
+    <thead>
+      <tr>
+        <%if patient_signed_in?%>
+          <th>Doctor</th>
+        <%else%>
+          <%if doctor_signed_in?%>
+            <th>Patient</th>
+          <%end%>
+        <%end%>
+        <th>Especialidad</th>
+        <th>Fecha</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <% @consults.each do |consult| %>
+          <tr>
+          <%if patient_signed_in?%>
+            <td><%= consult.doctor.name %></td>
+          <%else%>
+            <%if doctor_signed_in?%>
+            <td><%= consult.patient.name %></td>
+            <%end%>
+          <%end%>
+            <td><%= consult.speciality.name %></td>
+            <td><%= consult.created_at %></td>
+            <td><%= link_to 'Show', consult %></td>
+            <%if patient_signed_in?%>
+              <td><%= link_to 'Edit', edit_consult_path(consult) %></td>
+              <td><%= link_to 'Destroy', consult, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <%end%>
+          </tr>
+        <% end %>
+    </tbody>
+  </table>
+<%end%>
+<br>
+<%if patient_signed_in?%>
+<%= link_to 'New Consult', new_consult_path %>
+<%end%>
+</div>
