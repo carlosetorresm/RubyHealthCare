@@ -20,3 +20,5 @@ Service.create :name => "Medicina preventiva", :description =>"La aplicación de
 Service.create :name => "Cirugía", :description =>"Quirófano equipado con anestesia inhalada y monitores trans quirúrgicos en donde al anestesista se le permite visualizar permanentemente las constantes del paciente como son el electrocardiograma, frecuencia respiratoria, cantidad de oxigeno y bióxido de carbono circulante en el organismo."
 Service.create :name => "Imagenología", :description =>"Radiología de alta frecuencia que es un equipo de rayos X gentil con el medio ambiente y con mucho menor riesgo para el personal que labora en el área."
 Service.create :name => "Laboratorio de análisis clínico", :description =>"Permite correr pruebas como química sanguínea en húmeda y seca, lo que facilita la obtención de datos a cualquier hora y en cuestión de minutos."
+
+Doctor.create!({:username => "none",:name => "none", :speciality_id => 1, :email => "14030641@itcelaya.edu.mx", :password => "111111", :password_confirmation => "111111" })

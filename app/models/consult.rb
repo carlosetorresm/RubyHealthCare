@@ -16,8 +16,8 @@ class Consult < ApplicationRecord
       errors.add(:adj, "are missing!")
     end
     adj.each do |image|
-      if !image.content_type.in?(%('image/jepg image/png video/mp4 video/webm')) 
-        errors.add(:adj, "solo se reciben archivos jpeg, png, mp4 o webm")
+      if !image.content_type.in?(%('image/jpg image/jpeg image/png video/mp4 video/webm')) 
+        errors.add(:adj, "solo se reciben archivos jpg, jpeg, png, mp4 o webm")
       end
     end
   end

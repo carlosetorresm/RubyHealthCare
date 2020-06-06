@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   
   resources :consults do
     resources :answers
+    put 'mandar'
   end
+
   resources :bills
   get 'medicos_canalizar_pacientes/CanalizarPacientes'
   get 'paciente_datos_facturacion/DatosFacturacion'

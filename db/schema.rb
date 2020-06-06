@@ -59,8 +59,9 @@ ActiveRecord::Schema.define(version: 2020_06_03_021513) do
     t.bigint "doctor_id"
     t.bigint "patient_id"
     t.bigint "speciality_id"
+    t.string "subject"
     t.text "symptoms"
-    t.boolean "closed"
+    t.integer "closed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["doctor_id"], name: "index_consults_on_doctor_id"

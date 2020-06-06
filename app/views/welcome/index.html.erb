@@ -1,6 +1,8 @@
 <%if doctor_signed_in? %>
     <div class = "shadow">
         <h3>Bienvenido <%= current_doctor.name %></h3>
+        <h2>Consultas Actuales</h2>
+        <%= render 'consults/see'%>
     </div>
 <%else%>
     <%if patient_signed_in? %>

@@ -1,3 +1,18 @@
 // Place all the styles related to the Consults controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.wrapper{
+    width:1170px;
+    margin: 1% auto;
+}
+
+.wrapper a img{
+    width:100%;
+}
+
+.wrapper a{
+    width: 15%;
+    float: left;
+    margin: 1%;
+}

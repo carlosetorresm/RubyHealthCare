@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Facturas</h1>
-
+<%if @bills != [] %>
 <table>
   <thead>
     <tr>
@@ -29,6 +29,6 @@
 </table>
 
 <br>
-
+<%end%>
 <%= button_to 'Nueva Factura', new_bill_path, method: :get%>
 </div>

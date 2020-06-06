@@ -5,7 +5,7 @@ class ConsultsController < ApplicationController
   # GET /consults.json
   def index
     if current_doctor
-      @consults = Consult.where(speciality: current_doctor.speciality_id, doctor: 1)
+      @consults = Consult.where(speciality: current_doctor.speciality_id, doctor: 1, closed: 0)
     else 
       if current_patient
         @consults = Consult.where(patient: current_patient)
@@ -66,6 +66,18 @@ class ConsultsController < ApplicationController
     end
   end
 
+  def redirigir
+  end
+
+  def mandar
+    @consult = Consult.find(params[:consult_id])
+    if @consult.update(udp_params)
+    redirect_to consults_path
+    else
+      redirect_to root_path
+    end
+  end
+
   # DELETE /consults/1
   # DELETE /consults/1.json
   def destroy
@@ -84,6 +96,10 @@ class ConsultsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def consult_params
-          params.require(:consult).permit(:speciality_id, :symptoms, adj: []).merge(patient_id: current_patient.id, doctor_id: Doctor.first.id)
+          params.require(:consult).permit(:closed, :subject, :speciality_id, :symptoms, adj: []).merge(patient_id: current_patient.id, doctor_id: Doctor.first.id)
+    end
+    #Actualiza hospitalizacion, se manda a doctor nulo
+    def udp_params
+        params.require(:consult).permit(:doctor_id, :speciality_id, :closed).merge(updated_at: Time.now)
     end
 end

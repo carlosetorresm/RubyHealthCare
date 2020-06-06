@@ -13,15 +13,16 @@
 
   <div class="field">
     <%= form.label :Especialidad %>
-    <%if doctor_signed_in?%>
-      <%= form.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name, {:selected => resource.speciality_id})%>
-    <%else%>
       <%= form.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name)%>
-    <%end%>
   </div>
 
   <div class="field">
-    <%= form.label :symptoms %>
+    <%= form.label :asunto %><i>(Ej. dolor en el abdomen bajo)</i>
+    <%= form.text_field :subject %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sintomas %>
     <%= form.text_area :symptoms %>
   </div>
 
@@ -31,7 +32,7 @@
    <div class="field">
   <%= form.file_field :adj, multiple: true %>
   </div>
-
+  <%=form.hidden_field :closed, :value => 0 %>
   <div class="actions">
     <%= form.submit %>
   </div>

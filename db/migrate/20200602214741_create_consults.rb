@@ -4,8 +4,9 @@ class CreateConsults < ActiveRecord::Migration[5.2]
       t.references :doctor, foreign_key: true
       t.references :patient, foreign_key: true
       t.references :speciality, foreign_key: true
+      t.string :subject
       t.text :symptoms
-      t.boolean :closed
+      t.integer :closed
 
       t.timestamps
     end
