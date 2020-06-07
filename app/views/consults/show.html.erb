@@ -59,7 +59,21 @@
     </div>
 <%end%>
 </div>
-  
+<div>
+  <h3>Respuestas</h3>
+  <%if doctor_signed_in?%>
+    <%= render "answers/form"%>
+  <%end%>
+  <ul id="answer-box">
+    <% @consult.answer.each do |answer|%>
+      <li>
+        <%= answer.doctor.name %><br>
+        <%= answer.body %>
+      </li>
+    <%end%>
+  </ul>
+</div> 
+
 
 <%= link_to 'Edit', edit_consult_path(@consult) %> |
 <%= link_to 'Back', consults_path %>

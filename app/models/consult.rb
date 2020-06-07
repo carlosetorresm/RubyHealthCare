@@ -3,6 +3,7 @@ class Consult < ApplicationRecord
   belongs_to :patient
   belongs_to :speciality
   has_many_attached :adj
+  has_many :answer
 
   validates :symptoms, presence: true, length: { minimum: 10}
   validate :adj_type

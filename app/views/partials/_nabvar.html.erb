@@ -8,22 +8,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">RubyHealthCare</a>
+      <a class="navbar-brand" href=<%=root_path%>>RubyHealthCare</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><%= link_to "Inicio", root_path, class: "navbar-brand active"%></li>
-      </ul>
-
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Consultas", consults_path, class: "navbar-brand active"%></li>
         <%if doctor_signed_in? %>
+          <li><%= link_to "Nuevas Consultas", consults_path, class: "navbar-brand active"%></li>
           <li><%= link_to "Facturas", bills_path, class: "navbar-brand active"%></li>
           <li><%= link_to "Mis Servicios", dservices_path, class: "navbar-brand active"%></li>
         <%else%>
           <%if patient_signed_in? %>
+          <li><%= link_to "Mis Consultas", consults_path, class: "navbar-brand active"%></li>
           <%end%>
         <%end%>
         <li class="dropdown">

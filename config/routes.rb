@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   
   resources :consults do
-    resources :answers
-    put 'mandar'
+      resources :answers, only: [:create, :destroy, :update]
+      put 'mandar'
   end
 
   resources :bills

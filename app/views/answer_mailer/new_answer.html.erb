@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<h3>Dr. <%= @answer.doctor.name%></h3>
+<p>
+<%= @answer.consult.subject %><br>
+<%= @answer.body %>
+</p>
+<p>
+<%=link_to "Leer mas", consult_url(@answer.consult)%>
+</p>
+</body>
+</head>
+</html>

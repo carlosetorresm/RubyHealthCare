@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_03_021513) do
+ActiveRecord::Schema.define(version: 2020_06_06_045241) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,10 +38,12 @@ ActiveRecord::Schema.define(version: 2020_06_03_021513) do
 
   create_table "answers", force: :cascade do |t|
     t.bigint "consult_id"
+    t.bigint "doctor_id"
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["consult_id"], name: "index_answers_on_consult_id"
+    t.index ["doctor_id"], name: "index_answers_on_doctor_id"
   end
 
   create_table "bills", force: :cascade do |t|
@@ -150,6 +152,7 @@ ActiveRecord::Schema.define(version: 2020_06_03_021513) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "answers", "consults"
+  add_foreign_key "answers", "doctors"
   add_foreign_key "bills", "doctors"
   add_foreign_key "bills", "patients"
   add_foreign_key "consults", "doctors"

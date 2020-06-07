@@ -18,6 +18,7 @@ class ConsultsController < ApplicationController
   # GET /consults/1
   # GET /consults/1.json
   def show
+    @answer = Answer.new
   end
 
   # GET /consults/new

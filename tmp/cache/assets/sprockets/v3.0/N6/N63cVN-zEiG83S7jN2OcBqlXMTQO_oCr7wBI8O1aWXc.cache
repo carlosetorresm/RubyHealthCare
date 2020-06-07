@@ -1,0 +1,7 @@
+I"¹(function() {
+  $(document).on("ajax:success", "form#answers-form", function(ev, data) {
+    return $("#answer-box").append("<li>" + data.body + " - " + "</li>");
+  });
+
+}).call(this);
+:ET

@@ -2,8 +2,10 @@
 
 one:
   consult: one
+  doctor: one
   body: MyText
 
 two:
   consult: two
+  doctor: two
   body: MyText

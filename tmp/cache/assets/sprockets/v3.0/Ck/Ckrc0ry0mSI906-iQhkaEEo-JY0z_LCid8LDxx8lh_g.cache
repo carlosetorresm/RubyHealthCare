@@ -1,0 +1,5 @@
+I"q(function() {
+  $(document).on("ajax:success", "form#answers-form", function(ev, data) {});
+
+}).call(this);
+:ET
