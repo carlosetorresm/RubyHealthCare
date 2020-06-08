@@ -4,8 +4,8 @@ class BillsController < ApplicationController
   # GET /bills
   # GET /bills.json
   def index
-    if current_doctor
-      @bills = Bill.where(doctor_id: current_doctor)
+    if doctor_signed_in?
+      @bills = Bill.paginate(page: params[:page], per_page:5).where(doctor: current_doctor).ultimos
     else
       redirect_to root_path
     end
@@ -14,7 +14,7 @@ class BillsController < ApplicationController
   # GET /bills/1
   # GET /bills/1.json
   def show
-    if !current_doctor
+    if !doctor_signed_in?
       redirect_to root_path
     end
     respond_to do |format|
@@ -26,7 +26,7 @@ class BillsController < ApplicationController
 
   # GET /bills/new
   def new
-    if current_doctor
+    if doctor_signed_in?
       @bill = Bill.new
     else
       redirect_to root_path
@@ -35,7 +35,7 @@ class BillsController < ApplicationController
 
   # GET /bills/1/edit
   def edit
-    if !current_doctor
+    if !doctor_signed_in?
       redirect_to root_path
     end
   end
@@ -59,18 +59,14 @@ class BillsController < ApplicationController
   # PATCH/PUT /bills/1
   # PATCH/PUT /bills/1.json
   def update
-    if current_doctor
-      respond_to do |format|
-        if @bill.update(bill_params)
-          format.html { redirect_to @bill, notice: 'Bill was successfully updated.' }
-          format.json { render :show, status: :ok, location: @bill }
-        else
-          format.html { render :edit }
-          format.json { render json: @bill.errors, status: :unprocessable_entity }
-        end
+    respond_to do |format|
+      if @bill.update(bill_params)
+        format.html { redirect_to @bill, notice: 'Bill was successfully updated.' }
+        format.json { render :show, status: :ok, location: @bill }
+      else
+        format.html { render :edit }
+        format.json { render json: @bill.errors, status: :unprocessable_entity }
       end
-    else
-      redirect_to root_path
     end
   end
 

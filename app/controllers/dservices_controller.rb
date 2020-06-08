@@ -3,7 +3,7 @@ class DservicesController < ApplicationController
     #GET /dservices
     def index
         if current_doctor
-            @dservice = DService.where(doctor: current_doctor)
+            @dservice = DService.paginate(page: params[:page], per_page:5).where(doctor: current_doctor)
         else
             @dservice = DService.all
         end

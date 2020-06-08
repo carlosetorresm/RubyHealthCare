@@ -1,40 +1,17 @@
 Rails.application.routes.draw do
   
+  resources :covid_conditions
+  resources :prescriptions do
+  post 'reenviar' => "prescriptions#reenviar", as: :reenviar
+  end
+
   resources :consults do
       resources :answers, only: [:create, :destroy, :update]
       put 'mandar'
   end
 
   resources :bills
-  get 'medicos_canalizar_pacientes/CanalizarPacientes'
-  get 'paciente_datos_facturacion/DatosFacturacion'
-  post 'paciente_datos_facturacion/DatosFacturacion'
-
-  get 'paciente_generar_consulta/GenerarConsulta'
-  post 'paciente_generar_consulta/GenerarConsulta'
-
-  get 'medicos_emitir_factura/EmitirFactura'
-  post 'medicos_emitir_factura/EmitirFactura'
-
-  get 'medicos_preescribir_receta/MedicosPreescribirReceta'
-  post 'medicos_preescribir_receta/MedicosPreescribirReceta'
-
-  get 'medicos_registrar_servicio/MedicosRegistrarServicio'
-  post 'medicos_registrar_servicio/MedicosRegistrarServicio'
-
-  get 'pacientes_menu/PacientesMenu'
-
-  get 'medicos_menu/MedicosMenu'
-
-  get 'registro_pacientes/RegistroPacientes'
-  post 'registro_pacientes/RegistroPacientes'
-
-  get 'registro_medicos/RegistroMedicos'
-  post 'registro_medicos/RegistroMedicos'
-
-  get 'registro_medicos/new'
-  get 'registro_medicos/create'
-
+  
   resources :states, only: :index
   resources :cities, only: :index
   resources :profile, only: :show
@@ -52,5 +29,7 @@ Rails.application.routes.draw do
     registrations: "doctors/registrations" }
 
   root 'welcome#index'
+
+  get 'welcome/closed'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

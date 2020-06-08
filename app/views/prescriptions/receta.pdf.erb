@@ -1,0 +1,32 @@
+<h1 class="text-center">RubyHealthCare</h1>
+
+<div style="position: absolute; padding-left: 5%;">
+    <p><%=@prescription.doctor.address%></p>
+    <p><%=@prescription.doctor.city%>, <%=@prescription.doctor.state+"."%></p>
+    <p><%=@prescription.doctor.cellphone%></p>
+</div>
+<div style="position: absolute; padding-top: 12%; padding-left: 30%;">
+    <h2><%=@prescription.doctor.name%><%=@prescription.doctor.lastname%></h2>
+    <p>Especialidad: <%=@prescription.doctor.speciality.name%></p>
+    <p><%=@prescription.doctor.license%></p>
+</div>    
+<div style="position: absolute; padding-top: 30%; text-align: center;">
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+</div>
+<div style="position:absolute; padding-top: 30%;padding-left: 30px;">
+    <p>Paciente:<%=@prescription.patient.name + " " + @prescription.patient.lastname%></p>
+    <p><%=@prescription.patient.address%></p>
+    <p><%=@prescription.patient.city+", "+@prescription.patient.state+"."%></p>
+</div>
+<div style="position:absolute; padding-top: 30%; padding-left: 65%;">
+    <p>Edad: <%=Time.now.year - @prescription.patient.birth.year%> años</p>
+    <p>Teléfono: <%=@prescription.patient.cellphone%></p>
+</div>
+<div style="position:absolute; padding-top: 50%; padding-left: 25%;">
+    <h3>Rp/</h3>
+    <p><%=@prescription.body%></p>
+    <p>Diagnostico: <%=@prescription.subject%></p>
+</div>
+<div style="position:absolute; padding-top: 65%; padding-left: 15%;">
+    <p>Fecha: <%=@prescription.created_at%></p>
+</div>

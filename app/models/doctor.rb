@@ -7,4 +7,6 @@ class Doctor < ApplicationRecord
   validates :username, presence: true, uniqueness: true
   has_one_attached :avatar
   has_many :answers
+  has_many :prescription
+  belongs_to :speciality
 end

@@ -13,16 +13,22 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <%if doctor_signed_in? %>
+        <ul class="nav navbar-nav navbar-left">
+          <li><%= link_to "Consultas Archivadas", welcome_closed_path, class: "navbar-brand active"%></li>
+        </ul>
+      <%end%>
       <ul class="nav navbar-nav navbar-right">
         <%if doctor_signed_in? %>
+          <li><%= link_to "COVID-19", covid_conditions_path, class: "navbar-brand active"%></li>
           <li><%= link_to "Nuevas Consultas", consults_path, class: "navbar-brand active"%></li>
           <li><%= link_to "Facturas", bills_path, class: "navbar-brand active"%></li>
-          <li><%= link_to "Mis Servicios", dservices_path, class: "navbar-brand active"%></li>
         <%else%>
           <%if patient_signed_in? %>
           <li><%= link_to "Mis Consultas", consults_path, class: "navbar-brand active"%></li>
           <%end%>
         <%end%>
+        <li><%= link_to "Recetas", prescriptions_path, class: "navbar-brand active"%></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perfil <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -32,6 +38,7 @@
               <li role="separator" class="divider"></li>
               <li class="text-center"><%= link_to "Ver perfil", profile_path(current_doctor.username) %></li>
               <li class="text-center"><%= link_to "Editar perfil", edit_doctor_registration_path%></li>
+              <li class="text-center"><%= link_to "Mis Servicios", dservices_path%></li>
               <li role="separator" class="divider"></li>
               <li class="text-center"><%= link_to "Cerrar sesión", destroy_doctor_session_path, method: :delete %></li>
             <%else%>

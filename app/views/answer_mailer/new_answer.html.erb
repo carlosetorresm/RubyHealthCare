@@ -2,10 +2,10 @@
 <html>
 <head>
 <body>
-<h3>Dr. <%= @answer.doctor.name%></h3>
+<h2>Dr.<%= @answer.doctor.name%> <%= @answer.doctor.lastname%></h2>
 <p>
 <%= @answer.consult.subject %><br>
-<%= @answer.body %>
+<%= truncate(@answer.body, length: 30)%>
 </p>
 <p>
 <%=link_to "Leer mas", consult_url(@answer.consult)%>

@@ -1,0 +1,41 @@
+<%if @prescriptions != []%>
+<table>
+<thead>
+<tr>
+<%if doctor_signed_in?%>
+<th>Paciente</th>
+<%else%>
+<th>Doctor</th>
+<%end%>
+<th>Tipo de consulta</th>
+<th>Diagnóstico</th>
+<th>Fecha de creación</th>
+<th colspan="3"></th>
+</tr>
+</thead>
+
+<tbody>
+<% @prescriptions.each do |prescription| %>
+<tr>
+<%if doctor_signed_in?%>
+<td><a href= <%=profile_path(prescription.patient.username)%>>
+    <%= prescription.patient.name %> <%= prescription.patient.lastname %>
+</td>
+<%else%>
+<td><a href= <%=profile_path(prescription.doctor.username)%>>
+    <%= prescription.doctor.name %> <%= prescription.doctor.lastname %>
+</td>
+<%end%> 
+<td><%= prescription.consult_type.name %></td>
+<td><%= prescription.subject %></td>
+<td><%= prescription.created_at %></td>
+<td><%= button_to 'Imprimir', prescription_path(prescription, :format => :pdf), method: :get  %></td>
+<%if doctor_signed_in?%>
+<td><%= button_to "Reenviar", prescription_reenviar_path(:prescription_id => prescription.id) %></td>
+<td><%= button_to 'Eliminar', prescription, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
+<%end%>
+</tr>
+<% end %>
+</tbody>
+</table>
+<%end%>

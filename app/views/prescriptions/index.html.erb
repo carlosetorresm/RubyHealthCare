@@ -1,0 +1,14 @@
+<div class="shadow">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Recetas</h1>
+
+  <%=render "see"%>
+  <br>
+  <div class="digg_pagination">
+    <%= will_paginate @prescriptions, :container => false %>
+  </div>
+  <%if doctor_signed_in? %>
+  <%= button_to 'Nueva Receta', new_prescription_path,  method: :get %>
+  <%end%>
+</div>

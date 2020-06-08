@@ -1,17 +1,18 @@
 <h1 class="text-center">RubyHealthCare</h1>
-<div class="padding-left: 30px;">
+<div style="position: absolute; padding-left: 30px;">
     <p><%=@bill.doctor.address%></p>
     <p><%=@bill.doctor.city+", "+@bill.doctor.state+"."%></p>
     <p><%=@bill.doctor.cellphone%></p>
+</div>
     <p style="text-align:right;">FECHA: <%=@bill.created_at%></p>
-    
+<div style="position: absolute; padding-top: 10%; padding-left: 30px;">    
     <h3>FACTURAR A:</h3>
     <p><%=@bill.patient.name + " " + @bill.patient.lastname%></p>
     <p><%=@bill.patient.address%></p>
     <p><%=@bill.patient.city+", "+@bill.patient.state+"."%></p>
     <p><%=@bill.patient.cellphone%></p>
 </div>
-<div class="center">
+<div class="center" style="position: absolute; padding-top: 35%;">
     <table>
         <thead>
             <tr>

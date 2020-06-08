@@ -9,6 +9,9 @@ class AnswersController < ApplicationController
     @answer.consult = @consult
     respond_to do |format|
       if @answer.save
+        @consult.answered = 1
+        @consult.updated_at = Time.now
+        @consult.save
         format.html { redirect_to @answer.consult, notice: 'Answer was successfully created.' }
         format.json { render :show, status: :created, location: @answer.consult }
       else

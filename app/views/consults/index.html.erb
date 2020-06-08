@@ -1,9 +1,12 @@
 <div class="shadow">
 <p id="notice"><%= notice %></p>
-<h2>Consultas</h2>
+<h2>Consultas Nuevas</h2>
 <%= render 'consults/see'%>
 <br>
+<div class="digg_pagination">
+    <%= will_paginate @consult, :container => false %>
+</div>
 <%if patient_signed_in?%>
-<%= link_to 'Nueva Consulta', new_consult_path %>
+    <%= button_to 'Nueva Consulta', new_consult_path, method: :get %>
 <%end%>
 </div>

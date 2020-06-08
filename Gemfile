@@ -9,6 +9,8 @@ gem 'devise'
 gem 'wicked_pdf'
 # Gema diseñada para transformar plantillas HTML a PDF
 gem 'wkhtmltopdf-binary'
+#
+gem 'will_paginate'
 # Permite acciones de jquery
 gem 'jquery-rails'
 # Recupera la información de paises, estados y ciudades de la bd de max mind

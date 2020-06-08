@@ -1,0 +1,30 @@
+ <div class="shadow">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Paciente:</strong>
+    <%= @prescription.patient.name %> <%= @prescription.patient.lastname %>
+  </p>
+
+  <p>
+    <strong>Tipo de receta:</strong>
+    <%= @prescription.consult_type.name %>
+  </p>
+  <p>
+    <strong>Fecha de creacion:</strong>
+    <%= @prescription.created_at %>
+  </p>
+  <p>
+    <strong>Diagnóstico:</strong>
+    <%= @prescription.subject %>
+  </p>
+
+
+  <p>
+    <strong>Receta:</strong>
+    <%= @prescription.body %>
+  </p>
+
+  <%= link_to 'Edit', edit_prescription_path(@prescription) %> |
+  <%= link_to 'Back', prescriptions_path %>
+</div>

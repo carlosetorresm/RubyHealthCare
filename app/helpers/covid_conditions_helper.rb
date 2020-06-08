@@ -1,0 +1,2 @@
+module CovidConditionsHelper
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @covid_condition.patient %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @covid_condition.condition %>
+</p>
+
+<%= link_to 'Edit', edit_covid_condition_path(@covid_condition) %> |
+<%= link_to 'Back', covid_conditions_path %>

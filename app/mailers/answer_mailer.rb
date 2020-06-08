@@ -4,5 +4,15 @@ class AnswerMailer < ApplicationMailer
         
         mail to: @answer.consult.patient.email, 
              subject: "Se ha respondido a su consulta"
-    end        
+    end     
+    def new_prescription(prescription)
+        @prescription = prescription
+
+        attachments["Receta_#{@prescription.id}.pdf"] = WickedPdf.new.pdf_from_string(
+        render_to_string(:template => 'prescriptions/receta', :pdf =>'Receta', :layout => 'pdf.html'), 
+        )
+        
+        mail to: @prescription.patient.email, 
+             subject: "Su receta ha sido generada"
+    end         
 end

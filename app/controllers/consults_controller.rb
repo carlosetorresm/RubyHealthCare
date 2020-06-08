@@ -4,11 +4,11 @@ class ConsultsController < ApplicationController
   # GET /consults
   # GET /consults.json
   def index
-    if current_doctor
-      @consults = Consult.where(speciality: current_doctor.speciality_id, doctor: 1, closed: 0)
+    if doctor_signed_in?
+      @consults = Consult.paginate(page: params[:page], per_page:5).where(speciality: current_doctor.speciality_id, doctor: 1).abierta
     else 
-      if current_patient
-        @consults = Consult.where(patient: current_patient)
+      if patient_signed_in?
+        @consults = Consult.where(patient: current_patient).norespondida
       else
         redirect_to root_path
       end
@@ -19,6 +19,17 @@ class ConsultsController < ApplicationController
   # GET /consults/1.json
   def show
     @answer = Answer.new
+    @consult = Consult.find(params[:id])
+    if doctor_signed_in?
+      if @consult.doctor == Doctor.first
+        @consult.doctor = current_doctor
+        @consult.save
+      else
+        if @consult.doctor != current_doctor
+          redirect_to root_path
+        end
+      end
+    end
   end
 
   # GET /consults/new
@@ -82,6 +93,10 @@ class ConsultsController < ApplicationController
   # DELETE /consults/1
   # DELETE /consults/1.json
   def destroy
+    @answer=Answer.where(consult_id: @consult.id)
+    @answer.each do |answer|
+      answer.destroy
+    end
     @consult.destroy
     respond_to do |format|
       format.html { redirect_to consults_url, notice: 'Consult was successfully destroyed.' }
@@ -97,10 +112,10 @@ class ConsultsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def consult_params
-          params.require(:consult).permit(:closed, :subject, :speciality_id, :symptoms, adj: []).merge(patient_id: current_patient.id, doctor_id: Doctor.first.id)
+          params.require(:consult).permit(:closed, :subject, :speciality_id, :symptoms, adj: []).merge(answered: 0, patient_id: current_patient.id, doctor_id: Doctor.first.id)
     end
-    #Actualiza hospitalizacion, se manda a doctor nulo
+    #Manda la consulta a otro medico
     def udp_params
-        params.require(:consult).permit(:doctor_id, :speciality_id, :closed).merge(updated_at: Time.now)
+        params.require(:consult).permit(:doctor_id).merge(closed: 0, answered: 0, updated_at: Time.now)
     end
 end

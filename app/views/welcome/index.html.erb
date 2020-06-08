@@ -1,13 +1,23 @@
 <%if doctor_signed_in? %>
     <div class = "shadow">
         <h3>Bienvenido <%= current_doctor.name %></h3>
-        <h2>Consultas Actuales</h2>
+        <h2>Consultas Propias</h2>
         <%= render 'consults/see'%>
+        <br>
+        <div class="digg_pagination">
+            <%= will_paginate @consults, :container => false %>
+        </div>
     </div>
 <%else%>
     <%if patient_signed_in? %>
         <div class = "shadow">
-        <h3>Bienvenido <%= current_patient.name %></h3>
+            <h3>Bienvenido <%= current_patient.name %></h3>
+            <h2>Consultas Respondidas</h2>
+            <%= render 'consults/see'%>
+            <br>
+            <div class="digg_pagination">
+            <%= will_paginate @consults, :container => false %>
+            </div>
         </div>
     <%else%>
         <div class="container">

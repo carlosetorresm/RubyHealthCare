@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_06_045241) do
+ActiveRecord::Schema.define(version: 2020_06_08_112210) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -57,6 +57,18 @@ ActiveRecord::Schema.define(version: 2020_06_06_045241) do
     t.index ["patient_id"], name: "index_bills_on_patient_id"
   end
 
+  create_table "conditions", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "consult_types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "consults", force: :cascade do |t|
     t.bigint "doctor_id"
     t.bigint "patient_id"
@@ -66,9 +78,19 @@ ActiveRecord::Schema.define(version: 2020_06_06_045241) do
     t.integer "closed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "answered"
     t.index ["doctor_id"], name: "index_consults_on_doctor_id"
     t.index ["patient_id"], name: "index_consults_on_patient_id"
     t.index ["speciality_id"], name: "index_consults_on_speciality_id"
+  end
+
+  create_table "covid_conditions", force: :cascade do |t|
+    t.bigint "patient_id"
+    t.bigint "condition_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["condition_id"], name: "index_covid_conditions_on_condition_id"
+    t.index ["patient_id"], name: "index_covid_conditions_on_patient_id"
   end
 
   create_table "d_services", force: :cascade do |t|
@@ -136,6 +158,19 @@ ActiveRecord::Schema.define(version: 2020_06_06_045241) do
     t.index ["reset_password_token"], name: "index_patients_on_reset_password_token", unique: true
   end
 
+  create_table "prescriptions", force: :cascade do |t|
+    t.bigint "doctor_id"
+    t.bigint "patient_id"
+    t.bigint "consult_type_id"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "subject"
+    t.index ["consult_type_id"], name: "index_prescriptions_on_consult_type_id"
+    t.index ["doctor_id"], name: "index_prescriptions_on_doctor_id"
+    t.index ["patient_id"], name: "index_prescriptions_on_patient_id"
+  end
+
   create_table "services", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -158,6 +193,11 @@ ActiveRecord::Schema.define(version: 2020_06_06_045241) do
   add_foreign_key "consults", "doctors"
   add_foreign_key "consults", "patients"
   add_foreign_key "consults", "specialities"
+  add_foreign_key "covid_conditions", "conditions"
+  add_foreign_key "covid_conditions", "patients"
   add_foreign_key "d_services", "doctors"
   add_foreign_key "d_services", "services"
+  add_foreign_key "prescriptions", "consult_types"
+  add_foreign_key "prescriptions", "doctors"
+  add_foreign_key "prescriptions", "patients"
 end

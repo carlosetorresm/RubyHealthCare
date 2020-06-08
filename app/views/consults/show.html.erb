@@ -1,27 +1,24 @@
 <div class="shadow">
 
 <p>
-    <%if @consult.doctor == current_doctor || @consult.doctor.name = "none" && !patient_signed_in?%>
-      <%= form_for @consult, method: :put, url: [@consult, :mandar] do |f| %>
+  <%if !patient_signed_in? && @consult.closed == 0%>
+    <%= form_for @consult, method: :put, url: [@consult, :mandar] do |f| %>
       <div style="display: inline-block;">
             <strong>Doctor:</strong>
             <%=f.select :doctor_id, options_from_collection_for_select(Doctor.all, :id,:name, {:selected => @consult.doctor.id})%>
-
-            <strong>Especialidad:</strong>
-            <%=f.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name, {:selected => @consult.speciality.id})%>
         <%= f.submit 'redirigir'%>
       </div>
-      <% end %>
-    <%else%>
-      <strong>Doctor:</strong>
-      <%if @consult.doctor.name != "none" %>
-        <a href= <%=profile_path(@consult.doctor.username)%>>
-          <%= @consult.doctor.lastname %>
-        </a>
-      <%end%>
-      <strong>Especialidad:</strong>
-      <%= @consult.speciality.name %>
+    <% end %>
+  <%else%>
+    <strong>Doctor:</strong>
+    <%if @consult.doctor.name != "none" %>
+      <a href= <%=profile_path(@consult.doctor.username)%>>
+        <%= @consult.doctor.name %> <%= @consult.doctor.lastname %>
+      </a>
     <%end%>
+    <strong>Especialidad:</strong>
+    <%= @consult.speciality.name %>
+  <%end%>
 </p>
 
 <p>
@@ -43,25 +40,32 @@
   <% (0...@consult.adj.count).each do |img|%>
     <div class="wrapper" >
           <%if @consult.adj[img].image? %>
-          <div style="position: relative; left:25%;">
-          <a data-fancybox="gallery" href=<%image_tag (@consult.adj[img])%>>
-            <%=image_tag (@consult.adj[img].variant(resize: "720x480"))%>
-          </a>
-          </div>
+            <div style="position: relative; left:25%;">
+              <a data-fancybox="gallery" href=<%image_tag (@consult.adj[img])%>>
+                <%=image_tag (@consult.adj[img].variant(resize: "720x480"))%>
+              </a>
+            </div>
           <%else%>
-          <div style="position: relative; left:25%">
-          <a data-fancybox="gallery" href="<%video_tag rails_blob_path(@consult.adj[img])%>">
-            <%= video_tag rails_blob_path(@consult.adj[img]), size: "150x150", controls: true, poster: "video.png"%>
-          </a>
-          
-          </div>
+            <div style="position: relative; left:25%">
+              <a data-fancybox="gallery" href="<%video_tag rails_blob_path(@consult.adj[img])%>">
+                <%= video_tag rails_blob_path(@consult.adj[img]), size: "150x150", controls: true, poster: "video.png"%>
+              </a>
+            </div>
           <%end%>
     </div>
-<%end%>
+  <%end%>
 </div>
+ <%if !patient_signed_in? && @consult.closed == 0%>
+        <%= form_for @consult, method: :put, url: [@consult, :mandar] do |f| %>
+        <div style="display: inline-block;">
+              <%=f.hidden_field :closed, :value => 1 %>
+          <%= f.submit 'Cerrar consulta'%>
+        </div>
+        <% end %>
+    <%end%>
 <div>
   <h3>Respuestas</h3>
-  <%if doctor_signed_in?%>
+  <%if doctor_signed_in?  && @consult.closed == 0 %>
     <%= render "answers/form"%>
   <%end%>
   <ul id="answer-box">
@@ -73,10 +77,6 @@
     <%end%>
   </ul>
 </div> 
-
-
-<%= link_to 'Edit', edit_consult_path(@consult) %> |
-<%= link_to 'Back', consults_path %>
 </div>
 <script>
   $('[data-fancybox]').fancybox({

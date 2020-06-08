@@ -9,7 +9,7 @@
       <th>Paciente</th>
       <th style="width: 400px;">Servicios</th>
       <th style="width: 50px;">Total</th>
-      <th>Fecha</th>
+      <th>Fecha de creación</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +17,9 @@
   <tbody>
     <% @bills.each do |bill| %>
       <tr>
-        <td><%= bill.patient.name + " " + bill.patient.lastname %></td>
+        <td><a href= <%=profile_path(bill.patient.username)%>>
+          <%= bill.patient.name %> <%=bill.patient.lastname%>
+        </td>
         <td><%= bill.body %></td>
         <td><%= bill.total %></td>
         <td><%= bill.created_at %></td>
@@ -29,6 +31,9 @@
 </table>
 
 <br>
+<div class="digg_pagination">
+            <%= will_paginate @bills, :container => false %>
+        </div>
 <%end%>
 <%= button_to 'Nueva Factura', new_bill_path, method: :get%>
 </div>

@@ -22,3 +22,11 @@ Service.create :name => "Imagenología", :description =>"Radiología de alta fre
 Service.create :name => "Laboratorio de análisis clínico", :description =>"Permite correr pruebas como química sanguínea en húmeda y seca, lo que facilita la obtención de datos a cualquier hora y en cuestión de minutos."
 
 Doctor.create!({:username => "none",:name => "none", :speciality_id => 1, :email => "14030641@itcelaya.edu.mx", :password => "111111", :password_confirmation => "111111" })
+
+ConsultType.create :name => "Ninguno"
+ConsultType.create :name => "Mensaje"
+ConsultType.create :name => "Video"
+
+Condition.create :name => "Indeterminado"
+Condition.create :name => "Sospechoso"
+Condition.create :name => "Confirmado"
