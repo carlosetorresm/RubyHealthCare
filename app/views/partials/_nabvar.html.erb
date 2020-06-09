@@ -16,10 +16,12 @@
       <%if doctor_signed_in? %>
         <ul class="nav navbar-nav navbar-left">
           <li><%= link_to "Consultas Archivadas", welcome_closed_path, class: "navbar-brand active"%></li>
+          <li><%= link_to "Video Consulta", calls_path, class: "navbar-brand active"%></li>
         </ul>
       <%else%>
         <ul class="nav navbar-nav navbar-left">
           <li><%= link_to "Buscar", url="welcome/search?algo[speciality_id]=0", class: "navbar-brand active"%></li>
+          <li><%= link_to "Video Consulta", calls_path, class: "navbar-brand active"%></li>
         </ul>
       <% end %>
       <ul class="nav navbar-nav navbar-right">

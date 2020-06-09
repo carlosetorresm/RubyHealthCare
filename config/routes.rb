@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'calls' => "calls#root", as: :calls
+  resources :calls, only: :create
+  mount ActionCable.server, at: '/cable'
+
   resources :covid_conditions
   resources :prescriptions do
   post 'reenviar' => "prescriptions#reenviar", as: :reenviar
