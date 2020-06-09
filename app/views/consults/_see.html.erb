@@ -20,9 +20,13 @@
         <% @consults.each do |consult| %>
           <tr>
           <%if patient_signed_in?%>
-            <td><a href= <%=profile_path(consult.doctor.username)%>>
-              <%= consult.doctor.name %> <%= consult.doctor.lastname %>
-            </td>
+            <%if consult.doctor.name != "none" %>
+              <td><a href= <%=profile_path(consult.doctor.username)%>>
+                <%= consult.doctor.name %> <%= consult.doctor.lastname %>
+              </td>
+              <%else%>
+                <td>No asignado</td>
+              <%end%>
           <%else%>
             <%if doctor_signed_in?%>
             <td><a href= <%=profile_path(consult.patient.username)%>>
@@ -33,10 +37,10 @@
             <td><%= consult.speciality.name %></td>
             <td><%= consult.subject %></td>
             <td><%= consult.updated_at %></td>
-            <td><%= button_to 'Show', consult %></td>
+            <td><%= button_to 'Mostrar', consult, method: :get %></td>
             <%if patient_signed_in? && consult.closed == 0 %>
-              <td><%= button_to 'Edit', edit_consult_path(consult) %></td>
-              <td><%= button_to 'Destroy', consult, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td><%= button_to 'Editar', edit_consult_path(consult), method: :get %></td>
+              <td><%= button_to 'Eliminar', consult, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <%end%>
           </tr>
         <% end %>

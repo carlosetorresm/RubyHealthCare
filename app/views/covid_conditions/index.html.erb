@@ -2,10 +2,9 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Sistema de identificación de COVID-19</h1>
-
-<%=render 'see'%>
-<br>
 <div class="digg_pagination">
     <%= will_paginate @covid_conditions, :container => false %>
 </div>
+<%=render 'see'%>
+<br>
 </div>

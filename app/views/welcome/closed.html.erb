@@ -1,10 +1,10 @@
 <%if doctor_signed_in? %>
     <div class = "shadow">
-        <h2>Consultas Archivadas</h2>
-        <%= render 'consults/see'%>
-        <br>
         <div class="digg_pagination">
             <%= will_paginate @consults, :container => false %>
         </div>
+        <h2>Consultas Archivadas</h2>
+        <%= render 'consults/see'%>
+        <br>
     </div>
 <%end%>

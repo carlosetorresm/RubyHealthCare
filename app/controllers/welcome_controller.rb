@@ -13,4 +13,14 @@ class WelcomeController < ApplicationController
       @consults = Consult.paginate(page: params[:page], per_page:5).where(doctor: current_doctor).cerrada.ultimos
     end 
   end
+  def search
+    if doct = Doctor.where(speciality_id: search_params[:speciality_id])
+      @search = DService.where(doctor: doct, service_id: search_params[:service_id])
+    else
+      @search = nil
+    end
+  end
+  def search_params
+    params.require(:algo).permit(:speciality_id,:service_id)
+  end
 end

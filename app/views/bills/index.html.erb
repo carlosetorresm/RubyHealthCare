@@ -3,6 +3,9 @@
 
 <h1>Facturas</h1>
 <%if @bills != [] %>
+<div class="digg_pagination">
+  <%= will_paginate @bills, :container => false %>
+</div>
 <table>
   <thead>
     <tr>
@@ -29,11 +32,7 @@
     <% end %>
   </tbody>
 </table>
-
 <br>
-<div class="digg_pagination">
-            <%= will_paginate @bills, :container => false %>
-        </div>
 <%end%>
 <%= button_to 'Nueva Factura', new_bill_path, method: :get%>
 </div>

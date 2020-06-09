@@ -1,0 +1,41 @@
+<div class="shadow">
+<h3>Indique que desea buscar</h3>
+    <%= form_for :algo, url: "search",method: :get do |f| %>
+        <div style="display: inline-block;">
+            <strong>Especialidad:</strong>
+            <%=f.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name)%>
+            <strong>Servicio:</strong>
+            <%=f.select :service_id, options_from_collection_for_select(Service.all, :id,:name)%>
+
+            <%= f.submit 'Buscar' %>
+        </div>
+    <% end %>
+    <br>
+    <%if @search != [] %>
+        <table>
+            <thead>
+            <tr>
+                <th>Doctor</th>
+                <th>Cédula</th>
+                <th>Localidad</th>
+            </tr>
+            </thead>
+
+            <tbody>
+                <% @search.each do |search| %>
+                    <%if search.doctor.name != "none" %>
+                        <tr>
+                            <td><a href= <%=profile_path(search.doctor.username)%>>
+                                <%= search.doctor.name %> <%= search.doctor.lastname %>
+                            </td>
+                            <td><%= search.doctor.license %></td>
+                            <td>
+                            <%= search.doctor.city %>, <%= search.doctor.state %>., <%= search.doctor.country %>.
+                            </td>
+                        </tr>
+                    <%end%>
+                <% end %>
+            </tbody>
+        </table>
+    <%end%>
+</div>

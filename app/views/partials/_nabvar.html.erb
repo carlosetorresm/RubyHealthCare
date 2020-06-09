@@ -17,7 +17,11 @@
         <ul class="nav navbar-nav navbar-left">
           <li><%= link_to "Consultas Archivadas", welcome_closed_path, class: "navbar-brand active"%></li>
         </ul>
-      <%end%>
+      <%else%>
+        <ul class="nav navbar-nav navbar-left">
+          <li><%= link_to "Buscar", url="welcome/search?algo[speciality_id]=0", class: "navbar-brand active"%></li>
+        </ul>
+      <% end %>
       <ul class="nav navbar-nav navbar-right">
         <%if doctor_signed_in? %>
           <li><%= link_to "COVID-19", covid_conditions_path, class: "navbar-brand active"%></li>
