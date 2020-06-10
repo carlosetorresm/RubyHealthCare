@@ -8,9 +8,9 @@
     </tr>
     <% @dservice.each do |s| %>
     <tr>    
-        <td><%= Service.find_by(id: s.service).name %></td>
+        <td class="text-center"><%= Service.find_by(id: s.service).name %></td>
         <td><%= Service.find_by(id: s.service).description %></td>
-        <td>$ <%= s.price %><br></td>
+        <td class="text-center">$ <%= s.price %><br></td>
         <%if doctor_signed_in? %>
             <td><%= button_to "Eliminar",dservice_url(s), method: :delete %></td>
         <%end%>

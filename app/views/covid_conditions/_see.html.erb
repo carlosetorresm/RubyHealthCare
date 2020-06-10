@@ -11,10 +11,10 @@
     <tbody>
       <% @covid_conditions.each do |covid_condition| %>
         <tr>
-          <td><a href= <%=profile_path(covid_condition.patient.username)%>>
+          <td class="text-center"><a href= <%=profile_path(covid_condition.patient.username)%>>
           <%= covid_condition.patient.name %> <%= covid_condition.patient.lastname %>
           </a></td>
-          <td><%= covid_condition.condition.name %></td>
+          <td class="text-center"><%= covid_condition.condition.name %></td>
           <td><%= button_to 'Cambiar estado', edit_covid_condition_path(covid_condition), method: :get %></td>
         </tr>
       <% end %>

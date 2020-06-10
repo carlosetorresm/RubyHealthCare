@@ -59,6 +59,7 @@
               <li role="separator" class="divider"></li>
               <li class="text-center"><%= link_to "Ver perfil", profile_path(current_patient.username) %></li>
               <li class="text-center"><%= link_to "Editar perfil", edit_patient_registration_path%></li>
+              <li class="text-center"><%= link_to "Compras", welcome_recipe_path%></li>
               <li role="separator" class="divider"></li>
               <li class="text-center"><%= link_to "Cerrar sesión", destroy_patient_session_path, method: :delete %></li>
             <%end%>

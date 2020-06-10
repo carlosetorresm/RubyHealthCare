@@ -1,0 +1,47 @@
+<div class="shadow">
+<p id="notice"><%= notice %></p>
+<h1>Compras Realizadas</h1>
+<%if @sell != [] %>
+<div class="digg_pagination">
+  <%= will_paginate @sell, :container => false %>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th style="width: 180px;">Fecha de compra</th>
+      <th style="width: 100px;">Productos</th>
+      <th style="width: 100px;">Cantidad</th>
+      <th style="width: 50px;">SubTotal</th>
+      <th style="width: 50px;">Total</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sell.each do |sell| %>
+      <tr>
+        <td><%= sell.created_at %></td>
+
+        <%@product = SellDetail.where(sell: sell)%>
+            <td class="text-center">
+                <% @product.each do |prod| %>
+                -><%= prod.medicament.name %><br>
+                <%end%>
+            </td>
+            
+            <td class="text-center">
+                <% @product.each do |prod| %>
+                -><%= prod.quantity %><br>
+                <%end%>
+            </td>
+            <td class="text-center"><%= sell.total %></td>
+            <td class="text-center"><%= sell.total + (sell.total* 0.16) %></td>
+            <td><%= button_to 'Imprimir', welcome_recipe_path(sell: sell.id, :format => :pdf), method: :get  %></td>
+       </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%end%>
+<br>
+</div>

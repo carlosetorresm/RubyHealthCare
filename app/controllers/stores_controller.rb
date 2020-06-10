@@ -6,7 +6,7 @@ class StoresController < ApplicationController
   # GET /stores
   # GET /stores.json
   def index
-    @stores = Medicament.all
+    @stores = Medicament.paginate(page: params[:page], per_page:2).all
   end
 
   def show

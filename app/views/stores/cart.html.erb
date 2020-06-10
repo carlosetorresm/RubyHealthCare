@@ -14,9 +14,9 @@
     <tbody>
         <% @carrito.each do |cart| %>
         <tr>
-            <td> <%= cart.medicament.name %> </td>
-            <td> <%= cart.medicament.price %> </td>
-            <td> <%= cart.quantity %> </td>
+            <td class="text-center"> <%= cart.medicament.name %> </td>
+            <td class="text-center"> <%= cart.medicament.price %> </td>
+            <td class="text-center"> <%= cart.quantity %> </td>
             <td><%= button_to 'Eliminar', cart_path(cart: cart), method: :delete, data: { confirm: 'Esta seguro?' } %></td>
         </tr>
         <% end %>

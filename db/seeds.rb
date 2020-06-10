@@ -21,7 +21,7 @@ Service.create :name => "Cirugía", :description =>"Quirófano equipado con anes
 Service.create :name => "Imagenología", :description =>"Radiología de alta frecuencia que es un equipo de rayos X gentil con el medio ambiente y con mucho menor riesgo para el personal que labora en el área."
 Service.create :name => "Laboratorio de análisis clínico", :description =>"Permite correr pruebas como química sanguínea en húmeda y seca, lo que facilita la obtención de datos a cualquier hora y en cuestión de minutos."
 
-Doctor.create!({:username => "none",:name => "none", :speciality_id => 1, :email => "14030641@itcelaya.edu.mx", :password => "111111", :password_confirmation => "111111" })
+Doctor.create!({:username => "none",:name => "none", :speciality_id => 1, :email => "seekeroftheholders@gmail.com", :password => "111111", :password_confirmation => "111111" })
 
 ConsultType.create :name => "Ninguno"
 ConsultType.create :name => "Mensaje"
@@ -43,3 +43,12 @@ Medicament.create :name => "Apirental", :type_medication_id => 1, :active => "Pa
 Medicament.create :name => "Alugelybis", :type_medication_id => 2, :active => "Algeldrato", :presentation => "500 mg.", :price => 500
 Medicament.create :name => "Tavegil", :type_medication_id => 3, :active => "Clemastina", :presentation => "200 mg.", :price => 1500
 Medicament.create :name => "Soñodor", :type_medication_id => 3, :active => "Difenhidramina", :presentation => "200 mg.", :price => 150
+Medicament.create :name => "Tempraforte", :type_medication_id => 2, :active => "Paracetamol", :presentation => "tabetas", :price => 120
+Medicament.create :name => "Desenfriol-D", :type_medication_id => 3, :active => "Clofenamina, Fenilefrina, Paracetamol", :presentation => "tabletas", :price => 36
+Medicament.create :name => "Buscapina", :type_medication_id => 4, :active => "Hioscina", :presentation => "Tableta 10 mg.", :price => 250
+Medicament.create :name => "Flanax", :type_medication_id => 5, :active => "Naproxeno sódico", :presentation => "Tableta", :price => 225
+Medicament.create :name => "Aspirina Efervescente", :type_medication_id => 6, :active => "Ácido acetilzalicílico", :presentation => " Tabletas", :price => 38
+Medicament.create :name => "Omeprazol", :type_medication_id => 7, :active => "Omeprazol", :presentation => "Capsulas", :price => 399
+Medicament.create :name => "Diosmina Hesperidina", :type_medication_id => 5, :active => "Diosmina Hesperidina", :presentation => "tableta", :price => 1330
+Medicament.create :name => "Xarelto", :type_medication_id => 4, :active => "Rivaroxabán", :presentation => "Capsulas", :price => 2450
+Medicament.create :name => "Meloxicam 15mg 10 Tabletas Apotex", :type_medication_id => 2, :active => "Meloxicam", :presentation => "Tableta", :price => 294

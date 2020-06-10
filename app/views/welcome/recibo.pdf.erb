@@ -1,0 +1,38 @@
+<h1 class="text-center">RubyHealthCare</h1>
+
+<h1>Completar compra</h1>
+<div style="position: absolute; padding-top:5%;padding-left:30%;">
+    <h3><strong>Datos de envío</strong></h3>
+    <div class ="row" style=" border-style: solid; display: inline-block;">
+        <h3>&nbsp;&nbsp;&nbsp; Medicamentos &nbsp;&nbsp;&nbsp;</h3>
+        <ul>
+            <%@total = 0%>
+            <%@product = SellDetail.where(sell: @sell)%>
+            <% @product.each do |cart| %>
+                <li><%=cart.medicament.name%> - $<%=cart.medicament.price%> - <%=cart.quantity%> unidades</li>
+                <%@total = @total + cart.medicament.price * cart.quantity%>
+            <%end%>
+        </ul>
+        <h3>&nbsp;&nbsp;&nbsp; Dirección de envio &nbsp;&nbsp;&nbsp;</h3>
+        <%@shipping = Sell.find_by(id: @sell).shipping%>
+        <ul>
+            <li>Quién recibe: <%= @shipping.name%> <%= @shipping.lastname%></li>
+            <li>Dirección: <%= @shipping.detail%>, <%= @shipping.city%>, <%= @shipping.state%>, <%= @shipping.country%>. &nbsp;&nbsp;</li>
+            <li>Código Postal: <%= @shipping.postal_code%></li>
+        </ul>
+        <h3>&nbsp;&nbsp;&nbsp; Información de pago &nbsp;&nbsp;&nbsp;</h3>
+        <%@payment = Sell.find_by(id: @sell).payment%>
+        <ul>
+            <li>Nombre: <%=@payment.name%> <%=@payment.lastname%></li>
+            <li>Número de tarjeta:<strong> <%=@payment.number%></strong></li>
+            <li>Fecha de caducidad: <%=@payment.exdate%></li>
+        </ul>
+        <h3>&nbsp;&nbsp;&nbsp; Total &nbsp;&nbsp;&nbsp;</h3>
+        <h3><strong><%= @total %></strong><h3>
+        <p></p>
+    </div>
+    <p></p>
+</div>
+
+
+</div>

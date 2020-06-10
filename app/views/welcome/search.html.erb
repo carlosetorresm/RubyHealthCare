@@ -25,11 +25,11 @@
                 <% @search.each do |search| %>
                     <%if search.doctor.name != "none" %>
                         <tr>
-                            <td><a href= <%=profile_path(search.doctor.username)%>>
+                            <td class="text-center"><a href= <%=profile_path(search.doctor.username)%>>
                                 <%= search.doctor.name %> <%= search.doctor.lastname %>
                             </td>
-                            <td><%= search.doctor.license %></td>
-                            <td>
+                            <td class="text-center"><%= search.doctor.license %></td>
+                            <td class="text-center">
                             <%= search.doctor.city %>, <%= search.doctor.state %>., <%= search.doctor.country %>.
                             </td>
                         </tr>

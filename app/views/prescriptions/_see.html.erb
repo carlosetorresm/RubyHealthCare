@@ -18,15 +18,15 @@
 <% @prescriptions.each do |prescription| %>
 <tr>
 <%if doctor_signed_in?%>
-<td><a href= <%=profile_path(prescription.patient.username)%>>
+<td class="text-center"><a href= <%=profile_path(prescription.patient.username)%>>
     <%= prescription.patient.name %> <%= prescription.patient.lastname %>
 </td>
 <%else%>
-<td><a href= <%=profile_path(prescription.doctor.username)%>>
+<td class="text-center"><a href= <%=profile_path(prescription.doctor.username)%>>
     <%= prescription.doctor.name %> <%= prescription.doctor.lastname %>
 </td>
 <%end%> 
-<td><%= prescription.consult_type.name %></td>
+<td class="text-center"><%= prescription.consult_type.name %></td>
 <td><%= prescription.subject %></td>
 <td><%= prescription.created_at %></td>
 <td><%= button_to 'Imprimir', prescription_path(prescription, :format => :pdf), method: :get  %></td>

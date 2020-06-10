@@ -22,11 +22,11 @@
     <%else%>
         <div class="container">
             <div class="row text-center">
-                <div class="col-sm-4">
-                    <h3><%=link_to "Ingresar como Medico", new_doctor_session_path%></h3>
+                <div class="col-sm-7">
+                    <%=link_to image_tag("doctor.png", :size => "260x180", class: "img-circle center-block"), new_doctor_session_path%>
                 </div>
-                <div class="col-sm-5">
-                    <h3><%=link_to "Ingresar como Paciente", new_patient_session_path%></h3>
+                <div class="col-sm-1">
+                    <%=link_to image_tag("patient.png", :size => "260x180", class: "img-circle center-block"), new_patient_session_path%>
                 </div>
             </div>
             <p></p>

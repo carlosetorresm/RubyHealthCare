@@ -25,17 +25,17 @@
     <% @bills.each do |bill| %>
       <tr>
         <%if doctor_signed_in?%>
-        <td><a href= <%=profile_path(bill.patient.username)%>>
+        <td class="text-center"><a href= <%=profile_path(bill.patient.username)%>>
           <%= bill.patient.name %> <%=bill.patient.lastname%>
         </td>
         <%else%>
-        <td><a href= <%=profile_path(bill.doctor.username)%>>
+        <td class="text-center"><a href= <%=profile_path(bill.doctor.username)%>>
           <%= bill.doctor.name %> <%=bill.doctor.lastname%>
         </td>
         <%end%>
         <td><%= bill.body %></td>
-        <td><%= bill.total %></td>
-        <td><%= bill.created_at %></td>
+        <td class="text-center"><%= bill.total %></td>
+        <td class="text-center"><%= bill.created_at %></td>
         <td><%= button_to 'Imprimir', bill_path(bill, :format => :pdf), method: :get  %></td>
         <%if doctor_signed_in?%>
           <td><%= button_to "Reenviar", bill_reenviar_path(:bill_id => bill.id),data: { confirm: 'Seguro de reenviar la factura?' }  %></td>

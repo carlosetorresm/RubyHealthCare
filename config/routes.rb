@@ -44,6 +44,8 @@ Rails.application.routes.draw do
 
   get 'welcome/closed'
   get 'welcome/search'
+  get 'welcome/recipe'
+  
   post 'cart' => "stores#cart"
   get 'cart' => "stores#cart"
   post 'shipping' => "stores#shipping"
