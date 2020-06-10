@@ -14,7 +14,9 @@ Rails.application.routes.draw do
       put 'mandar'
   end
 
-  resources :bills
+  resources :bills do
+  post 'reenviar' => "bills#reenviar", as: :reenviar
+  end
   
   resources :states, only: :index
   resources :cities, only: :index
@@ -34,10 +36,26 @@ Rails.application.routes.draw do
     registrations: "doctors/registrations",
     confirmations: "doctors/confirmations" }
 
+    resources :stores do
+      post 'show' => "stores#show", as: :show
+    end
+
   root 'welcome#index'
 
   get 'welcome/closed'
   get 'welcome/search'
+  post 'cart' => "stores#cart"
+  get 'cart' => "stores#cart"
+  post 'shipping' => "stores#shipping"
+  get 'shipping' => "stores#shipping"
+  post 'saveship' => "stores#saveship"
+  post 'payment' => "stores#payment"
+  get 'payment' => "stores#payment"
+  post 'savepay' => "stores#savepay"
+  post 'sell' => "stores#sell"
+  get 'sell' => "stores#sell"
+  post 'savesell' => "stores#savesell"
+  delete 'cart' => "stores#quitaritem", as: :delete
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

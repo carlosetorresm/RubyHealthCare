@@ -4,7 +4,7 @@ class PrescriptionsController < ApplicationController
   def reenviar
     @prescription = Prescription.find(params[:prescription_id])
     AnswerMailer.new_prescription(@prescription).deliver!
-    flash[:notice] = "Mensaje reenviado."
+    flash[:notice] = "Receta reenviada."
     redirect_to prescriptions_path
   end
 

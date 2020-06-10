@@ -30,3 +30,16 @@ ConsultType.create :name => "Video"
 Condition.create :name => "Indeterminado"
 Condition.create :name => "Sospechoso"
 Condition.create :name => "Confirmado"
+
+TypeMedication.create :name => "Analgésicos"
+TypeMedication.create :name => "Antiácidos y antiulcerosos"
+TypeMedication.create :name => "Antialérgicos"
+TypeMedication.create :name => "Antidiarreicos y laxantes"
+TypeMedication.create :name => "Antiinfecciosos"
+TypeMedication.create :name => "Antiinflamatorios"
+TypeMedication.create :name => "Antipiréticos"
+
+Medicament.create :name => "Apirental", :type_medication_id => 1, :active => "Paracetamol", :presentation => "200 mg.", :price => 200
+Medicament.create :name => "Alugelybis", :type_medication_id => 2, :active => "Algeldrato", :presentation => "500 mg.", :price => 500
+Medicament.create :name => "Tavegil", :type_medication_id => 3, :active => "Clemastina", :presentation => "200 mg.", :price => 1500
+Medicament.create :name => "Soñodor", :type_medication_id => 3, :active => "Difenhidramina", :presentation => "200 mg.", :price => 150

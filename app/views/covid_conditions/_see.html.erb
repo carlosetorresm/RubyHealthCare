@@ -1,22 +1,24 @@
-<table>
-  <thead>
-    <tr>
-      <th>Paciente</th>
-      <th>Condicion</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @covid_conditions.each do |covid_condition| %>
+<%if @covid_condition != nil %>
+  <table>
+    <thead>
       <tr>
-        <td><a href= <%=profile_path(covid_condition.patient.username)%>>
-        <%= covid_condition.patient.name %> <%= covid_condition.patient.lastname %>
-        </a></td>
-        <td><%= covid_condition.condition.name %></td>
-        <td><%= button_to 'Cambiar estado', edit_covid_condition_path(covid_condition), method: :get %></td>
+        <th>Paciente</th>
+        <th>Condicion</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @covid_conditions.each do |covid_condition| %>
+        <tr>
+          <td><a href= <%=profile_path(covid_condition.patient.username)%>>
+          <%= covid_condition.patient.name %> <%= covid_condition.patient.lastname %>
+          </a></td>
+          <td><%= covid_condition.condition.name %></td>
+          <td><%= button_to 'Cambiar estado', edit_covid_condition_path(covid_condition), method: :get %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%end%>
 

@@ -7,6 +7,7 @@ class Patient < ApplicationRecord
   validates :username, presence: true, uniqueness: true
   has_one_attached :avatar
   has_many :prescription
+  has_many :sell
 
   after_create :insertarcovid
 

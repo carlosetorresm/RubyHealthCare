@@ -1,0 +1,35 @@
+<div class="shadow">
+<h1>Completar compra</h1>
+<div>
+    <h3><strong>Datos de envío</strong></h3>
+    <div class ="row" style=" border-style: solid; display: inline-block;">
+        <h3>&nbsp;&nbsp;&nbsp; Medicamentos &nbsp;&nbsp;&nbsp;</h3>
+        <ul>
+            <%@total = 0%>
+            <% @carrito.each do |cart| %>
+                <li><%=cart.medicament.name%> - $<%=cart.medicament.price%> - <%=cart.quantity%> unidades</li>
+                <%@total = @total + cart.medicament.price * cart.quantity%>
+            <%end%>
+        </ul>
+        <h3>&nbsp;&nbsp;&nbsp; Dirección de envio &nbsp;&nbsp;&nbsp;</h3>
+        <ul>
+            <li>Quién recibe: <%= @envio.name%> <%= @envio.lastname%></li>
+            <li>Dirección: <%= @envio.detail%>, <%= @envio.city%>, <%= @envio.state%>, <%= @envio.country%>. &nbsp;&nbsp;</li>
+            <li>Código Postal: <%= @envio.postal_code%></li>
+        </ul>
+        <h3>&nbsp;&nbsp;&nbsp; Información de pago &nbsp;&nbsp;&nbsp;</h3>
+        <ul>
+            <li>Nombre: <%=@pago.name%> <%=@pago.lastname%></li>
+            <li>Número de tarjeta:<strong> <%=@pago.number%></strong></li>
+            <li>Fecha de caducidad: <%=@pago.exdate%></li>
+        </ul>
+        <h3>&nbsp;&nbsp;&nbsp; Total &nbsp;&nbsp;&nbsp;</h3>
+        <h3><strong><%= @total %></strong><h3>
+        <%=button_to "Realizar Compra", savesell_path, method: :post %>
+        <p></p>
+    </div>
+    <p></p>
+</div>
+
+
+</div>

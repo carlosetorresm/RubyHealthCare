@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'Admin@tutrasero.com'
+  default from: '14030641@itcelaya.edu.com'
   layout nil
 end

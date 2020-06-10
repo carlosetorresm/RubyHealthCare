@@ -1,22 +1,30 @@
 class BillsController < ApplicationController
   before_action :set_bill, only: [:show, :edit, :update, :destroy]
 
+  def reenviar
+    @bill = Bill.find(params[:bill_id])
+    AnswerMailer.new_bill(@bill).deliver!
+    flash[:notice] = "Factura reenviada."
+    redirect_to bills_path
+  end
+
   # GET /bills
   # GET /bills.json
   def index
     if doctor_signed_in?
       @bills = Bill.paginate(page: params[:page], per_page:5).where(doctor: current_doctor).ultimos
     else
-      redirect_to root_path
+      if patient_signed_in?
+        @bills = Bill.paginate(page: params[:page], per_page:5).where(patient: current_patient).ultimos
+      else
+        redirect_to root_path
+      end
     end
   end
 
   # GET /bills/1
   # GET /bills/1.json
   def show
-    if !doctor_signed_in?
-      redirect_to root_path
-    end
     respond_to do |format|
       format.html
       format.json

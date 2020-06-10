@@ -31,7 +31,7 @@
 <td><%= prescription.created_at %></td>
 <td><%= button_to 'Imprimir', prescription_path(prescription, :format => :pdf), method: :get  %></td>
 <%if doctor_signed_in?%>
-<td><%= button_to "Reenviar", prescription_reenviar_path(:prescription_id => prescription.id) %></td>
+<td><%= button_to "Reenviar", prescription_reenviar_path(:prescription_id => prescription.id), data: { confirm: 'Seguro de reenviar la factura?' }%></td>
 <td><%= button_to 'Eliminar', prescription, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
 <%end%>
 </tr>

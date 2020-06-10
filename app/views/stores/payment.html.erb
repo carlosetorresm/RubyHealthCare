@@ -1,0 +1,50 @@
+<div class="shadow">
+<h1>Información de pago</h1>
+<div class="update">
+    <%= form_for :algo, method: :post, url: savepay_path do |form| %>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Nombre %>
+                    <%= form.text_field :name, value: @pago.name %>
+                </div> 
+            </div>
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Apellido %>
+                    <%= form.text_field :lastname, value:  @pago.lastname%>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Numero %>
+                    <%= form.number_field :number, value:  @pago.number%>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Numero_secreto %>
+                    <%= form.text_field :secret_code, value:  @pago.secret_code%>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Fecha_de_expiración %>
+                    <%= form.text_field :exdate, value: @pago.exdate %>
+                </div> 
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-10"> 
+                <%= form.submit 'Proceder a pagar'%>
+            </div>
+        </div>    
+    </div>
+<%end%>
+
+</div>
+</div>

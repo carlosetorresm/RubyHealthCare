@@ -14,5 +14,16 @@ class AnswerMailer < ApplicationMailer
         
         mail to: @prescription.patient.email, 
              subject: "Su receta ha sido generada"
-    end         
+    end    
+    
+    def new_bill(bill)
+        @bill = bill
+
+        attachments["Receta_#{@bill.id}.pdf"] = WickedPdf.new.pdf_from_string(
+        render_to_string(:template => 'bills/factura', :pdf =>'factura', :layout => 'pdf.html'), 
+        )
+        
+        mail to: @bill.patient.email, 
+             subject: "Su receta ha sido generada"
+    end     
 end

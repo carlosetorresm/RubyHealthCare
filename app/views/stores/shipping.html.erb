@@ -1,0 +1,63 @@
+<div class="shadow">
+<h1>Dirección de envio</h1>
+<div class="update">
+    <%= form_for :algo, method: :post, url: saveship_path do |form| %>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Nombre %>
+                    <%= form.text_field :name, value: @envio.name %>
+                </div> 
+            </div>
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Apellido %>
+                    <%= form.text_field :lastname, value:  @envio.lastname%>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Ciudad %>
+                    <%= form.text_field :city, value:  @envio.city%>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Estado %>
+                    <%= form.text_field :state, value:  @envio.state%>
+                </div> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Pais %>
+                    <%= form.text_field :country, value: @envio.country %>
+                </div> 
+            </div>
+            <div class="col-md-5">
+                <div class="field">
+                    <%= form.label :Codigo_Postal %>
+                    <%= form.text_field :postal_code, value: @envio.postal_code %>
+                </div>
+            </div>  
+        </div>  
+        <div class="row">
+            <div class="col-md-10"> 
+                <div class="field">
+                    <%= form.label :Dirección %>
+                    <%= form.text_field :detail, value: @envio.detail %>
+                </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-10"> 
+                <%= form.submit 'Continuar'%>
+            </div>
+        </div>    
+    </div>
+<%end%>
+
+</div>
