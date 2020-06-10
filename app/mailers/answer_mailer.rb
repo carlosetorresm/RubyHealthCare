@@ -19,7 +19,7 @@ class AnswerMailer < ApplicationMailer
     def new_bill(bill)
         @bill = bill
 
-        attachments["Receta_#{@bill.id}.pdf"] = WickedPdf.new.pdf_from_string(
+        attachments["Factura_#{@bill.id}.pdf"] = WickedPdf.new.pdf_from_string(
         render_to_string(:template => 'bills/factura', :pdf =>'factura', :layout => 'pdf.html'), 
         )
         

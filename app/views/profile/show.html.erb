@@ -4,12 +4,12 @@
 <h2>Correo electronico</h2>
 <h3><%= @user.email%></h3>
 <% if Doctor.find_by_username(params[:id]) %>
+<h2>Localidad</h2>
+<h3><%= @user.city+', '+ @user.state+'.' %></h3>
 <h2>Cédula Profesional</h2>
 <h3><%= @user.license%></h3>
 <h2>Especialidad</h2>
 <h3><%= Speciality.find(@user.speciality_id).name%></h3>
-<h2>Localidad</h2>
-<h3><%= @user.city+', '+ @user.state+'.' %></h3>
 <%end%>
 <% if Patient.find_by_username(params[:id]) %>
 <h2>Localidad</h2>

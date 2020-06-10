@@ -1,3 +1,4 @@
+<div class="consulta">
 <%= form_with(model: consult, local: true) do |form| %>
   <% if consult.errors.any? %>
     <div id="error_explanation">
@@ -10,30 +11,36 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<div class="row">
+  <div class="col-sm-4 field">
     <%= form.label :Especialidad %>
       <%= form.select :speciality_id, options_from_collection_for_select(Speciality.all, :id,:name)%>
   </div>
-
-  <div class="field">
+  <div class="col-sm-5 field">
     <%= form.label :Descripción %><i>(Escriba el motivo de la consulta)</i>
     <%= form.text_field :subject %>
   </div>
+</div>
+<div class="row">
+  <div class="col-md-9 field">
+    <%= form.label :Describa_lo_que_siente %>
+    <%= form.text_area :symptoms, :cols => 53, :rows => 3  %>
+  </div>
+</div>
 
-  <div class="field">
-    <%= form.label :sintomas %>
-    <%= form.text_area :symptoms %>
+<div class="row">
+  <div class="col-md-10 field">
+    <%= form.label :Adjuntar %><i>(Añada imagenes o videos)</i>
+    <%= form.file_field :adj, multiple: true %>
   </div>
-
-  <div class="field">
-  <%= form.label :Adjuntar %><i>(Añada imagenes o videos)</i>
-  </div>
-   <div class="field">
-  <%= form.file_field :adj, multiple: true %>
-  </div>
-  <%=form.hidden_field :closed, :value => 0 %>
-  <div class="actions">
-    <%= form.submit %>
+</div>
+<div class="row">
+  <div class="col-md-10 field">
+    <%=form.hidden_field :closed, :value => 0 %>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+    </div>
   </div>
 <% end %>
+</div>

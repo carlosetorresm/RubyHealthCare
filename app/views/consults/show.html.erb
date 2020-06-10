@@ -20,7 +20,7 @@
     <%= @consult.speciality.name %>
   <%end%>
 </p>
-
+<%if !patient_signed_in?%>
 <p>
   <strong>Paciente:</strong>
   <a href= <%=profile_path(@consult.patient.username)%>>
@@ -28,6 +28,7 @@
   </a>
 </p>
 <p>
+<%end%>
   <strong>Asunto:</strong>
   <%= @consult.subject %>
 </p>

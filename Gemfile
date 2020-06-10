@@ -13,8 +13,10 @@ gem 'wkhtmltopdf-binary'
 gem 'will_paginate'
 # Permite acciones de jquery
 gem 'jquery-rails'
-# Recupera la información de paises, estados y ciudades de la bd de max mind
-gem 'city-state', '~> 0.1.0'
+# Agrega funcionalidades de ubicación
+gem 'geocoder'
+# Consume el API de google maps
+gem 'gmaps4rails'
 # Recupera tu imagen de perfil universal de tu correo, esta en toda app de wordpress
 gem 'gravatar_image_tag', github: 'mdeering/gravatar_image_tag'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

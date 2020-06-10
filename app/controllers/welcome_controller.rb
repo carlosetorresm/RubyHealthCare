@@ -20,6 +20,7 @@ class WelcomeController < ApplicationController
       @search = nil
     end
   end
+
   def show
   end
   def recipe

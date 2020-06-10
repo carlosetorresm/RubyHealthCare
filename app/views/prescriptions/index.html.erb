@@ -8,5 +8,6 @@
   <%=render "see"%>
   <%if doctor_signed_in? %>
   <%= button_to 'Nueva Receta', new_prescription_path,  method: :get %>
+  <br>
   <%end%>
 </div>

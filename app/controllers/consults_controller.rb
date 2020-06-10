@@ -116,6 +116,6 @@ class ConsultsController < ApplicationController
     end
     #Manda la consulta a otro medico
     def udp_params
-        params.require(:consult).permit(:doctor_id).merge(closed: 0, answered: 0, updated_at: Time.now)
+      params.require(:consult).permit(:doctor_id, :closed).merge(answered: 0, updated_at: Time.now)
     end
 end

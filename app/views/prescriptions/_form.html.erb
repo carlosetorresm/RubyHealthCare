@@ -1,3 +1,4 @@
+<div class="Prescripcion">
 <%= form_with(model: prescription, local: true) do |form| %>
   <% if prescription.errors.any? %>
     <div id="error_explanation">
@@ -10,27 +11,31 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<div class="row">
+  <div class="col-sm-5 field">
     <%= form.label :paciente %>
     <%= form.select :patient_id, options_from_collection_for_select(Patient.all, :id,:name)%>
   </div>
-
-  <div class="field">
+  <div class="col-sm-5 field">
     <%= form.label :Tipo_de_consulta %>
     <%= form.select :consult_type_id, options_from_collection_for_select(ConsultType.all, :id,:name)%>
   </div>
-  <div class="field">
-    <%= form.label :Diagnstico %>
+</div>
+<div class="row">
+  <div class="col-sm-9 field">
+    <%= form.label :Diagnostico %>
     <%= form.text_field :subject %>
   </div>
-
-  <div class="field">
+</div>
+<div class="row">
+  <div class="col-sm-11 field">
     <%= form.label :Receta %>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, :cols => 53, :rows => 3 %>
   </div>
+</div>
 
   <div class="actions">
     <%= form.submit %>
   </div>
 <% end %>
+</div>

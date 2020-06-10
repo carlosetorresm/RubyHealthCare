@@ -11,10 +11,16 @@ class Patient < ApplicationRecord
 
   after_create :insertarcovid
 
+  geocoded_by :origin
+  after_validation :geocode
   def insertarcovid
     @CovidCondition = CovidCondition.new
     @CovidCondition.patient = self
     @CovidCondition.condition = Condition.find(1)
     @CovidCondition.save
+  end
+
+  def origin
+    [city, state, country].compact.join(', ')
   end
 end

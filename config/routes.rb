@@ -18,8 +18,6 @@ Rails.application.routes.draw do
   post 'reenviar' => "bills#reenviar", as: :reenviar
   end
   
-  resources :states, only: :index
-  resources :cities, only: :index
   resources :profile, only: :show
   resources :services, only: [:index, :new, :create, :destroy]
   resources :dservices, only: [:index, :new, :create, :destroy]

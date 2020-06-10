@@ -20,6 +20,8 @@ class DeviseCreatePatients < ActiveRecord::Migration[5.2]
       t.string :state
       t.string :country
       t.string :cellphone
+      t.float :latitude
+      t.float :longitude
 
       ## Recoverable
       t.string   :reset_password_token

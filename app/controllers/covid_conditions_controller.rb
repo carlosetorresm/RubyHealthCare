@@ -6,6 +6,12 @@ class CovidConditionsController < ApplicationController
   def index
     if doctor_signed_in?
       @covid_conditions = CovidCondition.paginate(page: params[:page], per_page:5).all.primeros
+      @users = CovidCondition.where.not(condition: Condition.first)
+      @hash = Gmaps4rails.build_markers(@users) do |user, marker|
+        marker.lat user.patient.latitude
+        marker.lng user.patient.longitude
+        marker.infowindow user.patient.name
+      end
     else
       redirect_to root_path
     end
